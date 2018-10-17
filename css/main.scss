@@ -138,6 +138,16 @@ $xl: 1440px;
 .u__flex {
       display: flex;
 }
+.u__flex-break-md {
+      @media (min-width: $md-min ) and (max-width: $md) {
+            display: block;
+      }
+}
+.u__flex-break-sm {
+      @media (max-width: $sm) {
+            display: block;
+      }
+}
 .u__flex-reverse {
       flex-direction: row-reverse;
 }
@@ -591,68 +601,69 @@ body {
       background: $white;
       max-width: $xl;
       margin: 0 auto;
-      min-height: 100vh;
+      height: 100vh;
+      overflow-y: hidden;
+      .center-content-chunk {
+            overflow-y: scroll;
+      }
 }
 .margin__aside {
-      @media (max-width: $md) {
-            &:first-of-type {
-                  display: none;
-            }
-      }
-      width: 92px;
-      overflow: hidden;
-      transition: width 500ms ease-in-out;
-      .hidden-content {
-            transition: opacity 1s ease-in-out;
+      @media (min-width: $lg-min) {
+            width: 92px;
             overflow: hidden;
-            opacity: 0;
-            height: 100vh;
-            padding-left: 92px;
-            padding-right: 20px;
-      }
-      &:hover {
-            width: 500px;
+            position: relative;
+            transition: width 500ms ease-in-out;
             .hidden-content {
-                  opacity: 1;
-                  display: block;
-                  position: fixed;
-                  max-width: calc(500px - 112px);
-                  overflow-y: scroll;
+                  transition: opacity 1s ease-in-out;
+                  overflow: hidden;
+                  opacity: 0;
+                  height: 100vh;
+                  padding-left: 92px;
+                  padding-right: 20px;
             }
-      }
-      .margin__aside-wrapper {
-            height: 100vh;
-            position: fixed;
-            z-index: 2;
-            .u__rotate-90 {
-                  transform-origin: 0px 0px;
-                  white-space: nowrap;
-                  position: absolute;
-                  display: block;
-                  line-height: 1;
-                  left: 47px;
-                  transform: rotate(90deg) translateY(-50%);
-                  &:first-of-type {
-                        top: 20px;
-                  }
-                  &:last-of-type {
-                        bottom: 40px;
+            &:hover {
+                  width: 500px;
+                  .hidden-content {
+                        opacity: 1;
+                        display: inline-block;
+                        width: calc(500px - 112px);
+                        overflow-y: scroll;
                   }
             }
-            .u__rotate-270 {
-                  transform-origin: 0px 0px;
-                  white-space: nowrap;
-                  position: absolute;
-                  display: block;
-                  line-height: 1;
-                  left: 47px;
-                  transform: rotate(270deg) translateY(-50%);
-                  &:first-of-type {
-                        top: 340px;
-                        text-align: right;
+            .margin__aside-wrapper {
+                  height: 100vh;
+                  z-index: 2;
+                  display: inline;
+                  .u__rotate-90 {
+                        transform-origin: 0px 0px;
+                        white-space: nowrap;
+                        position: absolute;
+                        display: block;
+                        line-height: 1;
+                        left: 47px;
+                        transform: rotate(90deg) translateY(-50%);
+                        &:first-of-type {
+                              top: 20px;
+                        }
+                        &:last-of-type {
+                              bottom: 40px;
+                        }
                   }
-                  &:last-of-type {
-                        bottom: 0px;
+                  .u__rotate-270 {
+                        transform-origin: 0px 0px;
+                        white-space: nowrap;
+                        position: absolute;
+                        display: block;
+                        line-height: 1;
+                        left: 47px;
+                        transform: rotate(270deg) translateY(-50%);
+                        &:first-of-type {
+                              top: 340px;
+                              text-align: right;
+                        }
+                        &:last-of-type {
+                              bottom: 0px;
+                        }
                   }
             }
       }
