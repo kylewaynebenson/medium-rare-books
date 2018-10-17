@@ -8,14 +8,8 @@ layout: default
 
 		<ul class="list__border">
 		{% for book in site.data.books %}
-		    <li class="u__border-padding"><a href="{{ book.title | datapage_url: 'books' }}">{{book.title}}</a> <span>{{book.category}}</span></li>
+		    <li><a class="u__border-padding {{book.category | remove: " " }}" href="{{ book.title | datapage_url: 'books' }}">{{book.title}} <span class="pill">{{book.category}}</span></a></li>
 		{% endfor %}
 		</ul>
-	</section>
-	<div class="divider-lines"></div>
-	<section class="section padding-half blue-background center-align">
-		<div class="container">
-			<h2 class="h2 white no-margin">Song Club is <a class="gold" href="{% post_url 2018-06-07-freelance-pr-licensing %}">looking for PR and licensing help</a></h2>
-		</div>
 	</section>
 </div>

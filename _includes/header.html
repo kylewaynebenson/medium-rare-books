@@ -4,13 +4,22 @@
                   <span class="h2 u__rotate-270">Medium Rare Books</span>
                   <span class="h2 u__rotate-270">IBS</span>
             </div>
+            <section class="hidden-content">
+                  <div class="sp__1"></div>
+                  <h2 class="h2">About the Intercom Brand Studio Library</h2>
+                  <p>Our library began in April 2018 with the aquisition of a chunk of rare books from <a href="https://www.grainedit.com/">Dave Cuzner</a>.</p>
+
+                  <h3 class="h3">Why do we have our own library?</h3>
+                  <p>We’re constantly bombarded on a daily basis by visual “inspiration”. New websites, rebrands etc. It can be overwhelming and tough to critically assess what parts of that can influence our work. That inspired me to think of ways that we can surface inspiration material that just doesn’t exist online. And though it is from years gone by, still influences design today. We should have access to that material.</p>
+                  <p>The act of picking a book, sitting with it, enjoying it and absorbing helps us slow down and form a more thoughtful perspective on where design has been, and how it can shape our current and future work. It also acts as a counter balance to so much of the trend driven work that surrounds us. </p>
+            </section>
       </aside>
       <div class="u__flex-grow-1 u__border-left u__border-right">
             <header class="site-header" role="banner">
                 {% assign default_paths = site.pages | map: "path" %}
                 {% assign page_paths = site.header_pages | default: default_paths %}
                 <div class="u__flex">
-                      <a class="u__flex-grow-1 logo" href="{{ "/" | relative_url }}">
+                      <a class=" logo" href="{{ "/" | relative_url }}">
                             <svg xmlns="http://www.w3.org/2000/svg" width="94.351" height="82.579" viewBox="0 0 94.351 82.579">
                                   <foreignobject class="logo-text t__center" x="-1" y="28" width="100" height="100">
                                         <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
@@ -25,7 +34,7 @@
 
                            </svg>
                       </a>
-                      <input class="input__field input__search u__flex-grow-9 u__border u__border-black u__border-padding" type="text" id="search-input" placeholder="Search books...">
+                      <input class="input__field input__search u__flex-grow-1 u__border u__border-black u__border-padding" type="text" id="search-input" placeholder="Search books...">
                 </div>
                 <ul class="" id="results-container"></ul>
                 {% if page_paths %}
