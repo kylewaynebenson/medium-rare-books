@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<section class="section padding-bottom">
+  <div class="container">
+    <article class="post book" data-isbn="{{ page.ISBN }}" itemscope itemtype="http://schema.org/BlogPosting">
+      <header class="post-header">
+        <h1 class="h1 post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+        <h2 class="author {{ page.author | remove: ' ' }}">{{ page.author }}</h2>
+        <h2 class="published-date {{ page.published-date }}">{{ page.published-date }}</h2>
+        <div class="post-content" itemprop="articleBody">
+             <img src="http://covers.openlibrary.org/b/isbn/{{ page.ISBN }}-L.jpg" alt="" class="thumbnail isbn-{{ page.ISBN }}" />
+       </div>
+      <script>
+      var isbn = $('.book').data('isbn');
+      if (isbn == "unknown") {
+           $('.thumbnail.isbn-unknown').attr('src', "../../images/placeholder.jpg");
+      } else {
+            console.log(isbn);
+            $.ajax({
+              dataType: 'json',
+              url: 'https://www.googleapis.com/books/v1/volumes?q=isbn:' + isbn,
+              success: handleResponse
+            });
+
+
+            function handleResponse( response ) {
+              console.log(response);
+              $.each( response.items, function( i, item ) {
+
+                var title    = item.volumeInfo.title,
+                    author   = item.volumeInfo.authors[0],
+                    thumb    = item.volumeInfo.imageLinks.thumbnail;
+
+                $('.author.unknown').text( author );
+                $('.thumbnail.isbn-unknown').attr('src', thumb);
+              });
+            }
+      }
+      </script>
+    </article>
+  </div>
+</section>

@@ -1,0 +1,15 @@
+---
+---
+[
+  {% for book in site.data.books %}
+    {
+
+      "title"    : "{{ book.title | escape }}",
+      "url"      : "{{ book.title | datapage_url: 'books' }}",
+      "category" : "{{ book.category }}",
+      "tags"     : "{{ book.tags | join: ', ' }}",
+      "desc"     : "{{ book.description }}"
+
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

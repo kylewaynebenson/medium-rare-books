@@ -1,0 +1,29 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta name="author" content="Song Club Records">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Song Club Records" />
+  <meta property="og:site_name" content="Song Club Records"/>
+  <meta property="og:description" content="Create songthing meaningful" />
+  <meta property="og:image" content="{{ site.baseurl }}/images/facebook-big.png"/>
+  <meta name="twitter:card" content="{{ site.baseurl }}/images/twitter-big.png"/>
+  <meta name="twitter:image" content="{{ site.baseurl }}/images/twitter-big.png"/>
+
+  <link href="{{ site.baseurl }}/css/main.css?{{site.time | date: '%s%N'}}" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="{{ site.baseurl }}/js/application.js?{{site.time | date: '%s%N'}}" type="text/javascript"></script>
+  <link rel="icon" type="image/png" href="{{ "/images/favicon.png" | relative_url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+
+  {% if jekyll.environment == 'production' and site.google_analytics %}
+  {% include google-analytics.html %}
+  {% endif %}
+
+
+</head>
