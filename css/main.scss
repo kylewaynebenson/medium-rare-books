@@ -272,16 +272,22 @@ $brown: #9f4c34;
 $blue: #5772f7;
 $black: #231f20;
 $white: #fff;
+$pink: #f8e4e8;
 
 .orange { color: $orange; }
 .yellow { color: $yellow; }
 .black { color: $black; }
 .white { color: $white; }
 
-.orange-background { background-color: $orange; }
-.yellow-background { background-color: $yellow; }
-.black-background { background-color: $black; }
-.white-background { background-color: $white; }
+.u__background-orange { background-color: $orange; }
+.u__background-yellow { background-color: $yellow; }
+.u__background-black { background-color: $black; }
+.u__background-white { background-color: $white; }
+.u__background-blue { background-color: $blue; }
+.u__background-canary { background-color: $canary; }
+.u__background-green { background-color: $green; }
+.u__background-brown { background-color: $brown; }
+.u__background-pink { background-color: $pink; }
 
 .svg__fill-orange { fill: $orange; }
 .svg__fill-yellow { fill: $yellow; }
@@ -402,7 +408,7 @@ body {
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.h2 {
+.h1 {
       font-family: "BestSans";
       font-weight: 100;
       font-size: 34px;
@@ -427,7 +433,7 @@ body {
       font-size: 34px;
       line-height: 1.1;
       letter-spacing: -.005em;
-      margin: 0px;
+      margin: 0 0 20px;
       @media (min-width: $md-min ) and (max-width: $md) {
         font-size: 28px;
         letter-spacing: 0em;
@@ -442,17 +448,17 @@ body {
 }
 .h3 {
       font-family: "BestSans";
-      font-weight: 200;
-      font-size: 64px;
-      line-height: 1.1;
-      letter-spacing: -.005em;
-      margin: 0px;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 1.5;
+      letter-spacing: -.01em;
+      margin: 0 0 20px;
       @media (min-width: $md-min ) and (max-width: $md) {
-        font-size: 50px;
+        font-size: 21px;
       }
 
       @media (max-width: $sm) {
-        font-size: 46px;
+        font-size: 18px;
       }
 }
 .h4 {
@@ -468,6 +474,22 @@ body {
 
       @media (max-width: $sm) {
         font-size: 18px;
+      }
+}
+.h6 {
+      font-family: "BestSans";
+      font-weight: 500;
+      font-size: 12px;
+      text-transform: uppercase;
+      line-height: 1.5;
+      letter-spacing: -.01em;
+      margin: 0 auto 20px;
+      @media (min-width: $md-min ) and (max-width: $md) {
+        font-size: 12px;
+      }
+
+      @media (max-width: $sm) {
+        font-size: 12px;
       }
 }
 
@@ -551,10 +573,11 @@ $repeat: 20;
             list-style-type: none;
             padding: 4px 10px;
             color: $black;
-            @for $i from 1 through $repeat {
-                &:nth-child(#{length($colors)}n+#{$i}) {
-                    background: lighten(nth($colors, random(length($colors))), 0%);
-                }
+            &.design {
+                  @extend .u__background-green;
+            }
+            &.children {
+                  @extend .u__background-blue;
             }
       }
 }
@@ -568,6 +591,7 @@ body {
       background: $white;
       max-width: $xl;
       margin: 0 auto;
+      min-height: 100vh;
 }
 .margin__aside {
       @media (max-width: $md) {
@@ -576,6 +600,26 @@ body {
             }
       }
       width: 92px;
+      overflow: hidden;
+      transition: width 500ms ease-in-out;
+      .hidden-content {
+            transition: opacity 1s ease-in-out;
+            overflow: hidden;
+            opacity: 0;
+            height: 100vh;
+            padding-left: 92px;
+            padding-right: 20px;
+      }
+      &:hover {
+            width: 500px;
+            .hidden-content {
+                  opacity: 1;
+                  display: block;
+                  position: fixed;
+                  max-width: calc(500px - 112px);
+                  overflow-y: scroll;
+            }
+      }
       .margin__aside-wrapper {
             height: 100vh;
             position: fixed;
@@ -615,6 +659,11 @@ body {
 }
 
 .logo {
+      min-width: 200px;
+      text-align: center;
+      svg {
+            display: inline-block;
+      }
       .logo-top, .logo-bottom, .logo-text {
             transition: transform 300ms ease-in-out;
             transform: translateY(0px) scale(1);
@@ -642,5 +691,31 @@ body {
             &:last-of-type {
                   border-bottom: $weight solid $black;
             }
+            a {
+                  display: block;
+                  &.design:hover {
+                        @extend .u__background-green;
+                  }
+                  &.children:hover {
+                        @extend .u__background-blue;
+                  }
+            }
+      }
+}
+.pill {
+      @extend .h6;
+      background: $pink;
+      padding: 4px 6px;
+      border: $weight solid $black;
+}
+.color-proof {
+      margin: 0px;
+      padding: 0px;
+      li {
+            border-radius: 25px;
+            width: 40px;
+            height: 40px;
+            list-style-type: none;
+            display: inline-block;
       }
 }
