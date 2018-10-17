@@ -26,6 +26,7 @@ instagram_username:  intercombrandstudio
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - random
 
 
 paginate_path: "/books/page:num/"
