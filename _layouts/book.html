@@ -9,6 +9,7 @@ layout: default
         <h2 class="published-date {{ page.published-date }}">{{ page.published-date }}</h2>
         <div class="post-content" itemprop="articleBody">
              <img src="http://covers.openlibrary.org/b/isbn/{{ page.ISBN }}-L.jpg" alt="" class="thumbnail isbn-{{ page.ISBN }}" />
+             <p class="published-description {{ page.description }}">{{ page.description }}</p>
        </div>
       <script>
       var isbn = $('.book').data('isbn');

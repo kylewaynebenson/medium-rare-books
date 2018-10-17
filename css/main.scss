@@ -573,11 +573,30 @@ $repeat: 20;
             list-style-type: none;
             padding: 4px 10px;
             color: $black;
-            &.design {
+            &.illustration, &.children {
+                  @extend .u__background-orange;
+            }
+            &.typography {
+                  @extend .u__background-brown;
+            }
+            &.catalog {
+                  @extend .u__background-blue;
+            }
+            &.collection, &.design {
                   @extend .u__background-green;
             }
-            &.children {
-                  @extend .u__background-blue;
+            &.designwriting {
+                  @extend .u__background-black;
+                  color: $white;
+            }
+            &.layout {
+                  @extend .u__background-yellow;
+            }
+            &.iconography {
+                  @extend .u__background-canary;
+            }
+            &.systems {
+                  @extend .u__background-orange;
             }
       }
 }
@@ -693,11 +712,30 @@ body {
             }
             a {
                   display: block;
-                  &.design:hover {
+                  &.illustration:hover, &.children:hover {
+                        @extend .u__background-orange;
+                  }
+                  &.typography:hover {
+                        @extend .u__background-brown;
+                  }
+                  &.catalog:hover {
+                        @extend .u__background-blue;
+                  }
+                  &.collection:hover, &.design:hover {
                         @extend .u__background-green;
                   }
-                  &.children:hover {
-                        @extend .u__background-blue;
+                  &.designwriting:hover {
+                        @extend .u__background-black;
+                        color: $white;
+                  }
+                  &.layout:hover {
+                        @extend .u__background-yellow;
+                  }
+                  &.iconography:hover {
+                        @extend .u__background-canary;
+                  }
+                  &.systems:hover {
+                        @extend .u__background-orange;
                   }
             }
       }
