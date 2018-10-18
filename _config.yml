@@ -27,7 +27,7 @@ markdown: kramdown
 plugins:
   - jekyll-feed
 
-
+include: ['_books']
 paginate_path: "/books/page:num/"
 
 # Exclude from processing.
