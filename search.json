@@ -6,7 +6,8 @@
       "url"      : "{{ book.title | datapage_url: 'books' }}",
       "category" : "{{ book.category }}",
       "tags"     : "{{ book.tags | join: ', ' }}",
-      "desc"     : "{{ book.description }}"
+      "desc"     : "{{ book.description }}",
+      "permalink" : "/{{ book.title | datapage_url: 'books' }}/"
 
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
