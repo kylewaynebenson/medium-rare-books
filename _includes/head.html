@@ -5,11 +5,11 @@
 
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-  <meta name="author" content="Song Club Records">
+  <meta name="author" content="{{ site.title }}">
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Song Club Records" />
-  <meta property="og:site_name" content="Song Club Records"/>
-  <meta property="og:description" content="Create songthing meaningful" />
+  <meta property="og:title" content="{{ site.title }}" />
+  <meta property="og:site_name" content="{{ site.title }}"/>
+  <meta property="og:description" content="{{ site.description }}" />
   <meta property="og:image" content="{{ site.baseurl }}/images/facebook-big.png"/>
   <meta name="twitter:card" content="{{ site.baseurl }}/images/twitter-big.png"/>
   <meta name="twitter:image" content="{{ site.baseurl }}/images/twitter-big.png"/>
