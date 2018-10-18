@@ -6,23 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Medium Rare Books</title>
+  <title>Special Edition</title>
   <meta name="description" content="Medium, rare books">
   <meta name="author" content="Medium Rare Books">
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Medium Rare Books" />
   <meta property="og:site_name" content="Medium Rare Books"/>
   <meta property="og:description" content="Medium, rare books" />
-  <meta property="og:image" content="/images/facebook-big.png"/>
-  <meta name="twitter:card" content="/images/twitter-big.png"/>
-  <meta name="twitter:image" content="/images/twitter-big.png"/>
+  <meta property="og:image" content="/medium-rare-books/images/facebook-big.png"/>
+  <meta name="twitter:card" content="/medium-rare-books/images/twitter-big.png"/>
+  <meta name="twitter:image" content="/medium-rare-books/images/twitter-big.png"/>
 
-  <link href="/css/main.css?1539901128619898000" rel="stylesheet">
+  <link href="/medium-rare-books/css/main.css?1539902955693318717" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="/js/application.js?1539901128619898000" type="text/javascript"></script>
-  <link rel="icon" type="image/png" href="/images/favicon.png">
-  <link rel="canonical" href="http://localhost:4000/404.html">
-  <link rel="alternate" type="application/rss+xml" title="Medium Rare Books" href="/feed.xml">
+<script src="/medium-rare-books/js/application.js?1539902955693318717" type="text/javascript"></script>
+  <link rel="icon" type="image/png" href="/medium-rare-books/images/favicon.png">
+  <link rel="canonical" href="https://kylewaynebenson.github.io/medium-rare-books/books/special-edition.html">
+  <link rel="alternate" type="application/rss+xml" title="Medium Rare Books" href="/medium-rare-books/feed.xml">
 
   
 
@@ -53,10 +53,10 @@
                 
                 
                 <div class="u__flex">
-                      <a class=" logo" href="/">
+                      <a class=" logo" href="/medium-rare-books/">
                             <svg xmlns="http://www.w3.org/2000/svg" width="94.351" height="82.579" viewBox="0 0 94.351 82.579">
                                   <foreignobject class="logo-text t__center" x="-1" y="28" width="100" height="100">
-                                        <a class="site-title" href="/">Medium Rare Books</a>
+                                        <a class="site-title" href="/medium-rare-books/">Medium Rare Books</a>
                                   </foreignobject>
                                   <g class="logo-bottom">
                                         <ellipse class="svg__stroke-black svg__fill-orange" cx="47.176" cy="78.461" rx="46.715" ry="3.658" />
@@ -75,33 +75,75 @@
                     <div class="trigger">
                       
                         <!-- <ul>
-                          <li><a id="about" href="/about/" >About</a></li>
-                          <li><a href="/news/" >News</a></li>
-                          <li><a href="/artists/" >Artists</a></li>
+                          <li><a id="about" href="/medium-rare-books/about/" >About</a></li>
+                          <li><a href="/medium-rare-books/news/" >News</a></li>
+                          <li><a href="/medium-rare-books/artists/" >Artists</a></li>
                         </ul> -->
                     </div>
                   </nav>
                 
             </header>
 
-            <script src="/js/simple-jekyll-search.min.js" type="text/javascript"></script>
+            <script src="/medium-rare-books/js/simple-jekyll-search.min.js" type="text/javascript"></script>
 
             <!-- Configuration -->
             <script>
             SimpleJekyllSearch({
               searchInput: document.getElementById('search-input'),
               resultsContainer: document.getElementById('results-container'),
-              json: '/search.json'
+              json: '/medium-rare-books/search.json'
             })
             </script>
 
-      <main class="page-content" aria-label="Content">
-          <div class="container">
-  <h1>404</h1>
+      <main class="page-content" aria-label="Content" data-cms-content-wrapper="/_layouts/default.html">
+          <section class="section u__border-padding">
+    <article class="post book" data-isbn="9789881222725" itemscope itemtype="http://schema.org/BlogPosting">
+      <header class="post-header">
+      </header>
+      <div class="post-content" itemprop="articleBody">
+            <div class="u__flex u__flex-break-sm">
+                  <div>
+                        <img src="http://covers.openlibrary.org/b/isbn/9789881222725-L.jpg" alt="" class="thumbnail isbn-9789881222725" />
+                  </div>
+                  <div>
+                        <h1 class="h1 post-title" itemprop="name headline">Special Edition</h1>
+                        <span class="h6 author viction:workshopltd">viction:workshop ltd</span>
+                        <span class="h6 published-date 2015">2015</span>
+                        <span class="h6 isbn 2015">9789881222725</span>
+                        <span class="h6 publisher 2015">viction:ary</span>
+                        <p class="published-description unknown">unknown</p>
+                  </div>
+            </div>
+      </div>
+      <script>
+      var isbn = $('.book').data('isbn');
+      if (isbn == "unknown") {
+           $('.thumbnail.isbn-unknown').attr('src', "../../images/placeholder.jpg");
+      } else {
+            console.log(isbn);
+            $.ajax({
+              dataType: 'json',
+              url: 'https://www.googleapis.com/books/v1/volumes?q=isbn:' + isbn,
+              success: handleResponse
+            });
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+
+            function handleResponse( response ) {
+              console.log(response);
+              $.each( response.items, function( i, item ) {
+
+                var title    = item.volumeInfo.title,
+                    author   = item.volumeInfo.authors[0],
+                    thumb    = item.volumeInfo.imageLinks.thumbnail;
+
+                $('.author.unknown').text( author );
+                $('.thumbnail.isbn-unknown').attr('src', thumb);
+              });
+            }
+      }
+      </script>
+    </article>
+</section>
 
       </main>
                   <div class="u__border-padding">

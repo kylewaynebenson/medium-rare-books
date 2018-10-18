@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Medium Rare Books</title>
+  <title>Inside Design: Morton Goldsholl</title>
   <meta name="description" content="Medium, rare books">
   <meta name="author" content="Medium Rare Books">
   <meta property="og:type" content="website" />
@@ -21,7 +21,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="/js/application.js?1539901128619898000" type="text/javascript"></script>
   <link rel="icon" type="image/png" href="/images/favicon.png">
-  <link rel="canonical" href="http://localhost:4000/404.html">
+  <link rel="canonical" href="http://localhost:4000/books/inside-design-morton-goldsholl.html">
   <link rel="alternate" type="application/rss+xml" title="Medium Rare Books" href="/feed.xml">
 
   
@@ -96,12 +96,54 @@
             </script>
 
       <main class="page-content" aria-label="Content">
-          <div class="container">
-  <h1>404</h1>
+          <section class="section u__border-padding">
+    <article class="post book" data-isbn="476610417X" itemscope itemtype="http://schema.org/BlogPosting">
+      <header class="post-header">
+      </header>
+      <div class="post-content" itemprop="articleBody">
+            <div class="u__flex u__flex-break-sm">
+                  <div>
+                        <img src="http://covers.openlibrary.org/b/isbn/476610417X-L.jpg" alt="" class="thumbnail isbn-476610417X" />
+                  </div>
+                  <div>
+                        <h1 class="h1 post-title" itemprop="name headline">Inside Design: Morton Goldsholl</h1>
+                        <span class="h6 author unknown">unknown</span>
+                        <span class="h6 published-date unknown">unknown</span>
+                        <span class="h6 isbn unknown">476610417X</span>
+                        <span class="h6 publisher unknown">unknown</span>
+                        <p class="published-description unknown">unknown</p>
+                  </div>
+            </div>
+      </div>
+      <script>
+      var isbn = $('.book').data('isbn');
+      if (isbn == "unknown") {
+           $('.thumbnail.isbn-unknown').attr('src', "../../images/placeholder.jpg");
+      } else {
+            console.log(isbn);
+            $.ajax({
+              dataType: 'json',
+              url: 'https://www.googleapis.com/books/v1/volumes?q=isbn:' + isbn,
+              success: handleResponse
+            });
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+
+            function handleResponse( response ) {
+              console.log(response);
+              $.each( response.items, function( i, item ) {
+
+                var title    = item.volumeInfo.title,
+                    author   = item.volumeInfo.authors[0],
+                    thumb    = item.volumeInfo.imageLinks.thumbnail;
+
+                $('.author.unknown').text( author );
+                $('.thumbnail.isbn-unknown').attr('src', thumb);
+              });
+            }
+      }
+      </script>
+    </article>
+</section>
 
       </main>
                   <div class="u__border-padding">
