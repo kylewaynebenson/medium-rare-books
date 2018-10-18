@@ -303,10 +303,10 @@ $pink: #f8e4e8;
 .svg__fill-yellow { fill: $yellow; }
 .svg__fill-black { fill: $black; }
 .svg__fill-white { fill: $white; }
-.svg__stroke-orange { stroke: $orange; stroke-weight: $weight; }
-.svg__stroke-yellow { stroke: $yellow; stroke-weight: $weight; }
-.svg__stroke-black { stroke: $black; stroke-weight: $weight; }
-.svg__stroke-white { stroke: $white; stroke-weight: $weight; }
+.svg__stroke-orange { stroke: $orange; stroke-weight: $weight; vector-effect: non-scaling-stroke; }
+.svg__stroke-yellow { stroke: $yellow; stroke-weight: $weight; vector-effect: non-scaling-stroke; }
+.svg__stroke-black { stroke: $black; stroke-weight: $weight; vector-effect: non-scaling-stroke; }
+.svg__stroke-white { stroke: $white; stroke-weight: $weight; vector-effect: non-scaling-stroke; }
 
 .u__border {
       border: $weight $black solid;
@@ -400,19 +400,6 @@ Fonts
 .fa-spotify:before {
   content: "\F1BC";
 }
-/***********************
-Styles
-************************/
-
-html {
-  font-size: 62.5%; }
-body {
-  font-size: 1.75em; /* currently ems cause chrome bug misinterpreting rems on body element */
-  line-height: 1.4;
-  letter-spacing: .045rem;
-  font-weight: 400;
-  font-family: "BestSans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222; }
 
 
 /* Typography
@@ -559,7 +546,7 @@ a {
             background: darken($yellow, 10%);
       }
       &:focus {
-            background: $yellow;
+            background: $pink;
       }
 }
 #search-input {
@@ -613,17 +600,40 @@ $repeat: 20;
 
 /* General
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+html {
+  font-size: 62.5%; }
 body {
-      background: $black;
+  font-size: 1.75em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.4;
+  letter-spacing: .045rem;
+  font-weight: 400;
+  font-family: "BestSans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: $black;
+  background: url("../images/tile-background@2x-80.jpg") repeat;
+  background-size: 180px 44px;
+}
+body::-webkit-scrollbar {
+      width: 15px;
+}
+body::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+body::-webkit-scrollbar-thumb {
+      background-color: $black;
+      outline: none;
 }
 .max-container {
       background: $white;
-      max-width: $xl;
+      max-width: $xl + 100px;
       margin: 0 auto;
       height: 100vh;
       overflow-y: hidden;
+      transition: background 500ms ease-in-out;
       .center-content-chunk {
             overflow-y: scroll;
+      }
+      &.focus {
+            background: $yellow;
       }
 }
 .margin__aside {
@@ -631,7 +641,8 @@ body {
             width: 92px;
             overflow: hidden;
             position: relative;
-            transition: width 500ms ease-in-out;
+            background: $white;
+            transition: width 500ms ease-in-out, background 2s ease-in-out;
             .hidden-content {
                   transition: opacity 1s ease-in-out;
                   overflow: hidden;
@@ -642,6 +653,7 @@ body {
             }
             &:hover {
                   width: 500px;
+                  background: $yellow;
                   .hidden-content {
                         opacity: 1;
                         display: inline-block;
@@ -691,8 +703,10 @@ body {
 .logo {
       min-width: 200px;
       text-align: center;
+      padding: 10px;
       svg {
             display: inline-block;
+            height: 80px;
       }
       .logo-top, .logo-bottom, .logo-text {
             transition: transform 300ms ease-in-out;
@@ -751,11 +765,26 @@ body {
             }
       }
 }
+.list__colors {
+      li {
+            list-style: none;
+            $colors: $orange, $canary, $green, $blue, $pink;
+            $repeat: 20;
+            @for $i from 1 through $repeat {
+                &:nth-child(#{length($colors)}n+#{$i}):before {
+                    color: lighten(nth($colors, random(length($colors))), 0%);
+                    font-size: 20px;
+                    content: "• ";
+                }
+            }
+      }
+}
 .pill {
       @extend .h6;
       background: $pink;
       padding: 4px 6px;
       border: $weight solid $black;
+      float: right;
 }
 .color-proof {
       margin: 0px;
