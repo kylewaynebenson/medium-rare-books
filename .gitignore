@@ -1,5 +1,4 @@
-_site/*
-!_site/books/
+_site/
 .sass-cache
 .jekyll-metadata
 .DS_Store
