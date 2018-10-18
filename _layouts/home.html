@@ -8,7 +8,11 @@ layout: default
 
 		<ul class="list__border">
 		{% for book in site.data.books %}
+<<<<<<< HEAD
 		    <li><a class="u__border-padding {{book.category | remove: " " }}" href="{{ book.title | datapage_url: 'books' }}">{{book.title}} <span class="pill">{{book.category}}</span></a></li>
+=======
+		    <li><a class="u__border-padding {{book.category | remove: " " }}" href="{{ site.baseurl }}{{ book.title | datapage_url: 'books' }}">{{book.title}} <span class="pill">{{book.category}}</span></a></li>
+>>>>>>> parent of 895165f... snapshot 18-10-18 15:21
 		{% endfor %}
 		</ul>
 	</section>
