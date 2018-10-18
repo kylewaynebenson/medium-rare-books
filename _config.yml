@@ -52,7 +52,4 @@ page_gen:
     dir: 'books'
     filter: 'cataloged'
 
-collections:
-  books:
-    output: true
-    permalink: /:collection/:name
+permalink: /:categories/:title/
