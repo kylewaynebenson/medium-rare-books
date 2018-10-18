@@ -51,3 +51,8 @@ page_gen:
     name: 'title'
     dir: 'books'
     filter: 'cataloged'
+
+collections:
+  books:
+    output: true
+    permalink: /:collection/:name
