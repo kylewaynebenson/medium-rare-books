@@ -1218,4 +1218,15 @@
             "tags": "packaging, collection",
             "cataloged": true,
       },
+      {
+            "title": "Idea Magazine Special Issue: Graphic Designers of the West Coast",
+            "author": "Edited by Yoshihisa Ishihara",
+            "ISBN": "unknown",
+            "description": "First published in 1953, IDEA magazine focuses on graphic design and typography. Published quarterly in Tokyo, Japan.",
+            "published-date": "1975",
+            "publisher": "Shigeo Ogawa",
+            "category": "periodical",
+            "tags": "Japan, illustration, advertising",
+            "cataloged": true,
+      },
 ]
