@@ -300,6 +300,7 @@ $pink: #f8e4e8;
 .u__background-pink { background-color: $pink; }
 
 .svg__fill-orange { fill: $orange; }
+.svg__fill-brown { fill: $brown; }
 .svg__fill-yellow { fill: $yellow; }
 .svg__fill-black { fill: $black; }
 .svg__fill-white { fill: $white; }
@@ -326,7 +327,11 @@ $pink: #f8e4e8;
 /***********************
 Fonts
 ************************/
-
+@font-face {
+      font-family: 'Gosh';
+      src: url('../fonts/GoshGX.ttf');
+      font-style: normal;
+}
 @font-face {
   font-family: 'FontAwesome';
   font-weight: normal;
@@ -336,30 +341,81 @@ Fonts
     url('../fonts/FontAwesome-Regular.woff') format('woff');
 }
 @font-face {
-  font-family: 'BestSans';
-  font-weight: 100;
+  font-family: 'IntercomRound';
+  font-weight: 400;
+  src: url('../fonts/IntercomSquare-Regular.eot'); /* IE9 */
+  src: url('../fonts/IntercomSquare-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/IntercomSquare-Regular.woff2') format('woff2'),
+    url('../fonts/IntercomSquare-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Best Sans';
+  font-weight: 200;
   src: url('../fonts/BestSans-Thin.eot'); /* IE9 */
   src: url('../fonts/BestSans-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
     url('../fonts/BestSans-Thin.woff2') format('woff2'),
     url('../fonts/BestSans-Thin.woff') format('woff');
 }
 @font-face {
-  font-family: 'BestSans';
-  font-weight: 900;
-  font-style: italic;
-  src: url('../fonts/BestSans-Black.eot'); /* IE9 */
-  src: url('../fonts/BestSans-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../fonts/BestSans-Black.woff2') format('woff2'),
-    url('../fonts/BestSans-Black.woff') format('woff');
+  font-family: 'Best Sans';
+  font-weight: 300;
+  src: url('../fonts/BestSans-Light.eot'); /* IE9 */
+  src: url('../fonts/BestSans-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/BestSans-Light.woff2') format('woff2'),
+    url('../fonts/BestSans-Light.woff') format('woff');
 }
 @font-face {
-  font-family: 'CovikSans';
+  font-family: 'Best Sans';
   font-weight: 400;
-  src: url('../fonts/CovikSans-Regular.eot'); /* IE9 */
-  src: url('../fonts/CovikSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../fonts/CovikSans-Regular.woff2') format('woff2'),
-    url('../fonts/CovikSans-Regular.woff') format('woff');
+  src: url('../fonts/BestSans-Regular.eot'); /* IE9 */
+  src: url('../fonts/BestSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/BestSans-Regular.woff2') format('woff2'),
+    url('../fonts/BestSans-Regular.woff') format('woff');
 }
+@font-face {
+  font-family: 'Best Sans';
+  font-weight: 500;
+  src: url('../fonts/BestSans-Medium.eot'); /* IE9 */
+  src: url('../fonts/BestSans-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/BestSans-Medium.woff2') format('woff2'),
+    url('../fonts/BestSans-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'Best Sans';
+  font-weight: 600;
+  src: url('../fonts/BestSans-Semibold.eot'); /* IE9 */
+  src: url('../fonts/BestSans-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/BestSans-Semibold.woff2') format('woff2'),
+    url('../fonts/BestSans-Semibold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Best Sans';
+  font-weight: 700;
+  src: url('../fonts/BestSans-Bold.eot'); /* IE9 */
+  src: url('../fonts/BestSans-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/BestSans-Bold.woff2') format('woff2'),
+    url('../fonts/BestSans-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Messer';
+  font-weight: 300;
+  src: url('../fonts/MesserV1.3-WebRegular.woff2') format('woff2'),
+    url('../fonts/MesserV1.3-WebRegular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Messer';
+  font-weight: 300;
+  font-style: italic;
+  src: url('../fonts/MesserV1.3-WebItalic.woff2') format('woff2'),
+    url('../fonts/MesserV1.3-WebItalic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Messer Condensed';
+  font-weight: 300;
+  src: url('../fonts/MesserV1.3-WebCondensed.woff2') format('woff2'),
+    url('../fonts/MesserV1.3-WebCondensed.woff') format('woff');
+}
+
 
 .fa {
   display: inline-block;
@@ -406,28 +462,29 @@ Fonts
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .h1 {
-      font-family: "BestSans";
-      font-weight: 100;
-      font-size: 55px;
+      font-family: "Messer Condensed";
+      font-weight: 300;
+      font-size: 75px;
       line-height: 1.1;
       letter-spacing: -.005em;
       margin: 0px;
       @media (min-width: $md-min ) and (max-width: $md) {
-        font-size: 40px;
+        font-size: 50px;
         letter-spacing: 0em;
         line-height: 1.2;
       }
 
       @media (max-width: $sm) {
-        font-size: 30px;
+        font-size: 35px;
         letter-spacing: .01em;
         line-height: 1.3;
       }
 }
 .h2 {
-      font-family: "BestSans";
-      font-weight: 600;
-      font-size: 34px;
+      font-family: "Messer Condensed";
+      text-shadow: 0px 0px 0px $black;
+      font-weight: 100;
+      font-size: 40px;
       line-height: 1.1;
       letter-spacing: -.005em;
       margin: 0 0 20px;
@@ -444,7 +501,7 @@ Fonts
       }
 }
 .h3 {
-      font-family: "BestSans";
+      font-family: "Messer Condensed";
       font-weight: 400;
       font-size: 24px;
       line-height: 1.5;
@@ -459,7 +516,7 @@ Fonts
       }
 }
 .h4 {
-      font-family: "BestSans";
+      font-family: "Best Sans";
       font-weight: 400;
       font-size: 24px;
       line-height: 1.5;
@@ -474,12 +531,12 @@ Fonts
       }
 }
 .h6 {
-      font-family: "BestSans";
-      font-weight: 500;
+      font-family: "IntercomRound";
+      font-weight: 400;
       font-size: 12px;
       text-transform: uppercase;
       line-height: 1.5;
-      letter-spacing: -.01em;
+      letter-spacing: .045em;
       margin: 0 auto 20px;
       @media (min-width: $md-min ) and (max-width: $md) {
         font-size: 12px;
@@ -489,19 +546,18 @@ Fonts
         font-size: 12px;
       }
 }
-
-em {
-  font-style: italic;
-  font-weight: 400;
-}
 p {
-  margin-top: 0;
-  line-height: 1.5;
+      font-family: "Messer";
+      font-weight: 300;
+      margin-top: 0;
+      line-height: 1.5;
+}
+em {
+      font-style: italic;
+      font-weight: 300;
 }
 .small {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  letter-spacing: .005rem;
+      @extend .h6;
 }
 .no-margin {
   margin-bottom: 0px;
@@ -607,21 +663,60 @@ body {
   line-height: 1.4;
   letter-spacing: .045rem;
   font-weight: 400;
-  font-family: "BestSans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Best Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-feature-settings: "ss02" 1;
   color: $black;
   background: url("../images/tile-background@2x-80.jpg") repeat;
   background-size: 180px 44px;
 }
 .book {
       .thumbnail {
-            max-width: 350px;
-            margin-right: 20px;
+            width: 25vw;
+            margin: 25px;
+            margin-right: 50px;
             height: auto;
+            position: relative;
+            img {
+                  width: 100%;
+                  z-index: 1;
+                  position: relative;
+            }
+            &:before {
+                content: " ";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: $orange;
+                transform: rotate(2deg);
+                transition: transform 300ms ease-in-out;
+            }
+            &:hover {
+                  &:before {
+                        transform: rotate(6deg);
+                  }
+            }
       }
 }
 .home {
       .pill {
             float: right;
+      }
+      .list__border {
+            .book-title {
+
+            }
+            .book-details {
+                  @extend .h6;
+                  .book-detail {
+                        margin-left: 20px;
+                  }
+            }
+            li {
+                  white-space: nowrap;
+                  overflow-x: hidden;
+            }
       }
 }
 .max-container {
@@ -653,7 +748,7 @@ body {
                   opacity: 0;
                   height: 100vh;
                   padding-left: 92px;
-                  padding-right: 20px;
+                  padding-right: 30px;
             }
             &:hover {
                   width: 500px;
@@ -661,7 +756,7 @@ body {
                   .hidden-content {
                         opacity: 1;
                         display: inline-block;
-                        width: calc(500px - 112px);
+                        width: calc(500px - 132px);
                         overflow-y: scroll;
                   }
             }
@@ -708,6 +803,10 @@ body {
       min-width: 200px;
       text-align: center;
       padding: 10px;
+      img {
+            width: 93px;
+            margin-top: 3px;
+      }
       svg {
             display: inline-block;
             height: 80px;
@@ -740,7 +839,13 @@ body {
                   border-bottom: $weight solid $black;
             }
             a {
+                  color: $black;
                   display: block;
+                  &:visited {
+                        &:before {
+                              content: "👀 ";
+                        }
+                  }
                   &.illustration:hover, &.children:hover {
                         @extend .u__background-orange;
                   }
@@ -780,6 +885,7 @@ body {
                     font-size: 20px;
                     content: "● ";
                     margin-right: 2px;
+                    margin-left: -20px;
                 }
             }
       }

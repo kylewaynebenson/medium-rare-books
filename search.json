@@ -1,3 +1,5 @@
+---
+---
 [
   {% for book in site.data.books %}
     {
@@ -6,8 +8,7 @@
       "url"      : "{{ book.title | datapage_url: 'books' }}",
       "category" : "{{ book.category }}",
       "tags"     : "{{ book.tags | join: ', ' }}",
-      "desc"     : "{{ book.description }}",
-      "permalink" : "/{{ book.title | datapage_url: 'books' }}/"
+      "desc"     : "{{ book.description }}"
 
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}

@@ -8,7 +8,16 @@ layout: default
 
 		<ul class="list__border">
 		{% for book in site.data.books %}
-		    <li><a class="u__border-padding {{book.category | remove: " " }}" href="{{ site.baseurl }}{{ book.title | datapage_url: 'books' }}">{{book.title}} <span class="pill">{{book.category}}</span></a></li>
+		    <li><a class="u__border-padding {{book.category | remove: " " }}" href="{{ site.baseurl }}{{ book.title | datapage_url: 'books' }}">
+			    <span class="book-title">{{book.title}}</span>
+			    <span class="book-details">
+				    <span class="book-detail">{{book.ISBN}}</span>
+				    <span class="book-detail">{{book.publisher}}</span>
+				    <span class="book-detail">{{book.published-date}}</span>
+				    <span class="book-detail">{{book.category}}</span>
+				    <span class="book-detail">{{book.description}}</span></a>
+			    </span>
+		    </li>
 		{% endfor %}
 		</ul>
 	</section>

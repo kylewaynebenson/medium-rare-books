@@ -5,4 +5,10 @@ $(document).ready(function () {
             .focus(function() {
               $('.max-container').addClass("focus")
             });
+
+      SimpleJekyllSearch({
+              searchInput: document.getElementById('search-input'),
+              resultsContainer: document.getElementById('results-container'),
+              json: '/search.json'
+      })
 });

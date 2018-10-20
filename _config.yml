@@ -26,6 +26,7 @@ instagram_username:  intercombrandstudio
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-archives
 
 include: ['_books']
 paginate_path: "/books/page:num/"
@@ -51,5 +52,15 @@ page_gen:
     name: 'title'
     dir: 'books'
     filter: 'cataloged'
+
+jekyll-archives:
+  enabled: []
+  layout: 'archive'
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
 
 permalink: /:categories/:title/
