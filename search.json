@@ -1,1301 +1,947 @@
 [
   
     {
-
       "title"    : "Inside Design",
-      "url"      : "books/inside-design/",
       "category" : "design",
       "tags"     : "design, collection, packaging",
-      "desc"     : "unknown",
-      "type"      : "design",
-
+      "url"      : "books/inside-design/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Alexey Brodovitch",
+      "category" : "design",
+      "tags"     : "",
       "url"      : "books/alexey-brodovitch/",
-      "category" : "design",
-      "tags"     : "",
-      "desc"     : "unknown",
-      "type"      : "design",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Graphic Design San Francisco",
-      "url"      : "books/graphic-design-san-francisco/",
       "category" : "design",
       "tags"     : "",
-      "desc"     : "unknown",
-      "type"      : "design",
-
+      "url"      : "books/graphic-design-san-francisco/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Impaginazione Grafica 67/68",
+      "category" : "design",
+      "tags"     : "design",
       "url"      : "books/impaginazione-grafica-6768/",
-      "category" : "design",
-      "tags"     : "design",
-      "desc"     : "unknown",
-      "type"      : "design",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Impaginazione Grafica #3",
-      "url"      : "books/impaginazione-grafica-3/",
       "category" : "design",
       "tags"     : "design",
-      "desc"     : "unknown",
-      "type"      : "design",
-
+      "url"      : "books/impaginazione-grafica-3/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Impaginazione Grafica #4",
-      "url"      : "books/impaginazione-grafica-4/",
       "category" : "design",
       "tags"     : "Italy, logos, collection",
-      "desc"     : "unknown",
-      "type"      : "design",
-
+      "url"      : "books/impaginazione-grafica-4/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Typography v1",
-      "url"      : "books/typography-v1/",
       "category" : "design",
       "tags"     : "print, German, typography",
-      "desc"     : "unknown",
-      "type"      : "design",
-
+      "url"      : "books/typography-v1/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Typographie v2",
-      "url"      : "books/typographie-v2/",
       "category" : "design",
       "tags"     : "design",
-      "desc"     : "unknown",
-      "type"      : "design",
-
+      "url"      : "books/typographie-v2/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Firmen-Image",
-      "url"      : "books/firmen-image/",
       "category" : "design",
       "tags"     : "German, systems, advertising",
-      "desc"     : "unknown",
-      "type"      : "design",
-
+      "url"      : "books/firmen-image/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Visual Presentation of Invisible Processes",
+      "category" : "design",
+      "tags"     : "",
       "url"      : "books/visual-presentation-of-invisible-processes/",
-      "category" : "design",
-      "tags"     : "",
-      "desc"     : "unknown",
-      "type"      : "design",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Economic Atlas Ontario",
-      "url"      : "books/economic-atlas-ontario/",
       "category" : "design",
       "tags"     : "",
-      "desc"     : "unknown",
-      "type"      : "design",
-
+      "url"      : "books/economic-atlas-ontario/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Illustrated Leisure European Map book (Edition Nobel)",
-      "url"      : "books/illustrated-leisure-european-map-book-edition-nobel/",
       "category" : "design",
       "tags"     : "design",
-      "desc"     : "unknown",
-      "type"      : "design",
-
+      "url"      : "books/illustrated-leisure-european-map-book-edition-nobel/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Signet, Signal, Symbol",
-      "url"      : "books/signet-signal-symbol/",
       "category" : "design",
       "tags"     : "logo, icon",
-      "desc"     : "A handbook of international signs. Featuring works by Paul Rand and Adrian Frutiger.",
-      "type"      : "design",
-
+      "url"      : "books/signet-signal-symbol/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "West Virginia Inspirations for Printers 1948–49",
+      "category" : "collection",
+      "tags"     : "",
       "url"      : "books/west-virginia-inspirations-for-printers-194849/",
-      "category" : "collection",
-      "tags"     : "",
-      "desc"     : "unknown",
-      "type"      : "collection",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "West Virginia Inspirations for Printers 1950–52",
+      "category" : "collection",
+      "tags"     : "",
       "url"      : "books/west-virginia-inspirations-for-printers-195052/",
-      "category" : "collection",
-      "tags"     : "",
-      "desc"     : "unknown",
-      "type"      : "collection",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Annual of Advertising Art in Japan",
-      "url"      : "books/annual-of-advertising-art-in-japan/",
       "category" : "collection",
       "tags"     : "",
-      "desc"     : "unknown",
-      "type"      : "collection",
-
+      "url"      : "books/annual-of-advertising-art-in-japan/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Annual of Advertising Art in Japan",
-      "url"      : "books/annual-of-advertising-art-in-japan/",
       "category" : "collection",
       "tags"     : "",
-      "desc"     : "unknown",
-      "type"      : "collection",
-
+      "url"      : "books/annual-of-advertising-art-in-japan/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Annual of Advertising Art in Japan",
-      "url"      : "books/annual-of-advertising-art-in-japan/",
       "category" : "collection",
       "tags"     : "",
-      "desc"     : "unknown",
-      "type"      : "collection",
-
+      "url"      : "books/annual-of-advertising-art-in-japan/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Annual of Advertising Art in Japan",
-      "url"      : "books/annual-of-advertising-art-in-japan/",
       "category" : "Japan, advertising, collection",
       "tags"     : "",
-      "desc"     : "unknown",
-      "type"      : "Japan, advertising, collection",
-
+      "url"      : "books/annual-of-advertising-art-in-japan/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Celestino Piatti",
-      "url"      : "books/celestino-piatti/",
       "category" : "illustration",
       "tags"     : "german, ads, logos, posters",
-      "desc"     : "Though this book is in German, it has a nice little collection of wonderful illustrations, ads, logos and posters.",
-      "type"      : "illustration",
-
+      "url"      : "books/celestino-piatti/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Graphis Annual 73/74",
+      "category" : "collection",
+      "tags"     : "German, advertising, illustration",
       "url"      : "books/graphis-annual-7374/",
-      "category" : "collection",
-      "tags"     : "German, advertising, illustration",
-      "desc"     : "A source of both information and inspiration: 785 illustrations, representing more than 600 artists from 32 countries.",
-      "type"      : "collection",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Graphis Annual 79/80",
+      "category" : "collection",
+      "tags"     : "German, advertising, illustration",
       "url"      : "books/graphis-annual-7980/",
-      "category" : "collection",
-      "tags"     : "German, advertising, illustration",
-      "desc"     : "unknown",
-      "type"      : "collection",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Graphis Annual 85/86",
-      "url"      : "books/graphis-annual-8586/",
       "category" : "collection",
       "tags"     : "German, advertising, illustration",
-      "desc"     : "An international annual of advertising and editorial graphics. Preface by Steven Heller.",
-      "type"      : "collection",
-
+      "url"      : "books/graphis-annual-8586/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Signatures &amp; Trademarks",
-      "url"      : "books/signatures--trademarks/",
       "category" : "collection",
       "tags"     : "logo, typography, lettering",
-      "desc"     : "A spiral bound collection of hand lettered scripts and some of their creative process.",
-      "type"      : "collection",
-
+      "url"      : "books/signatures--trademarks/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Sign Symbol &amp; Form",
+      "category" : "design",
+      "tags"     : "",
       "url"      : "books/sign-symbol--form/",
-      "category" : "design",
-      "tags"     : "",
-      "desc"     : "unknown",
-      "type"      : "design",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Plakate Aus Israel",
-      "url"      : "books/plakate-aus-israel/",
       "category" : "design",
       "tags"     : "",
-      "desc"     : "Posters of Israel. German.",
-      "type"      : "design",
-
+      "url"      : "books/plakate-aus-israel/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Polski Plakat Współczesny",
-      "url"      : "books/polski-plakat-wspolczesny/",
       "category" : "design",
       "tags"     : "design, Poland, posters",
-      "desc"     : "Words by Szymon Bojiko. “Polish Posters Today”.",
-      "type"      : "design",
-
+      "url"      : "books/polski-plakat-wspolczesny/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Trademarks and Symbols of the World",
-      "url"      : "books/trademarks-and-symbols-of-the-world/",
       "category" : "iconography",
       "tags"     : "logos, collection",
-      "desc"     : "Includes 5,800 trademarks, service marks, symbols etc. by 1,300 designers from 38 countries. Featuring work by Saul Bass, Anton Stankowski, Paul Rand, Lester Beall, Giuli Confalonieri, and Earnst Roch. Preface by Paul Rand.",
-      "type"      : "iconography",
-
+      "url"      : "books/trademarks-and-symbols-of-the-world/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Trademarks &amp; Symbols Volume 1: Alphabetical Designs",
+      "category" : "iconography",
+      "tags"     : "logos, collection, Japan",
       "url"      : "books/trademarks--symbols-volume-1-alphabetical-designs/",
-      "category" : "iconography",
-      "tags"     : "logos, collection, Japan",
-      "desc"     : "A comprehensive, profusely illustrated guide to more than 1,500 trademarks from all over the world. The trademark designs in this volume are based on letter forms and arranged alphabetically.",
-      "type"      : "iconography",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Trademarks &amp; Symbols Volume 2: Symbolical Designs",
-      "url"      : "books/trademarks--symbols-volume-2-symbolical-designs/",
       "category" : "iconography",
       "tags"     : "logos, collection, Japan",
-      "desc"     : "A comprehensive, profusely illustrated guide to more than 1,500 trademarks from all over the world. The trademark designs in this volume are based on symbol forms and arranged stylistically.",
-      "type"      : "iconography",
-
+      "url"      : "books/trademarks--symbols-volume-2-symbolical-designs/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Design of the Fifties in Croatia",
-      "url"      : "books/design-of-the-fifties-in-croatia/",
       "category" : "design",
       "tags"     : "design, Croatia, collection",
-      "desc"     : "Interior design, architecture, posters, and graphic design.",
-      "type"      : "design",
-
+      "url"      : "books/design-of-the-fifties-in-croatia/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Polski Plakat Filmowy",
-      "url"      : "books/polski-plakat-filmowy/",
       "category" : "design",
       "tags"     : "design",
-      "desc"     : "Collection of Polish Posters. Multiple languages.",
-      "type"      : "design",
-
+      "url"      : "books/polski-plakat-filmowy/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "German Advertising Art",
-      "url"      : "books/german-advertising-art/",
       "category" : "collection",
       "tags"     : "german, logos, stamps, book jackets, calendars",
-      "desc"     : "This book contains bold German advertising, logos, magazine covers, book jackets, stamps and calendars. In English.",
-      "type"      : "collection",
-
+      "url"      : "books/german-advertising-art/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Logo Art",
+      "category" : "design",
+      "tags"     : "design",
       "url"      : "books/logo-art/",
-      "category" : "design",
-      "tags"     : "design",
-      "desc"     : "unknown",
-      "type"      : "design",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Nippon Design Center",
-      "url"      : "books/nippon-design-center/",
       "category" : "design",
       "tags"     : "design",
-      "desc"     : "unknown",
-      "type"      : "design",
-
+      "url"      : "books/nippon-design-center/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Nippon Design Center",
-      "url"      : "books/nippon-design-center/",
       "category" : "design",
       "tags"     : "design",
-      "desc"     : "Nippon Design Center, founded in 1960 by Kamekura Yusaku and Hara Rira participated. This book celebrates its 5th and 10th anniversaries, a set of works published as not for sale. In addition to the ”Tokyo Olympic Posters” by Kamekura, advertisement series, calendar, book design, trademark etc. of ”International Print Biennale” poster (Kazumitsu Tanaka), Sapporo Olympic logo, ”Toyota” ”Asahi Beer” ”Toshiba” We introduce a variety of works. Text is Hara and others.",
-      "type"      : "design",
-
+      "url"      : "books/nippon-design-center/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Design Systems for Corporations: A2 — Public Transport Systems",
+      "category" : "design",
+      "tags"     : "design",
       "url"      : "books/design-systems-for-corporations-a2--public-transport-systems/",
-      "category" : "design",
-      "tags"     : "design",
-      "desc"     : "unknown",
-      "type"      : "design",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Design Systems for Corporations: A1 — The Retailing Industry",
+      "category" : "design",
+      "tags"     : "design",
       "url"      : "books/design-systems-for-corporations-a1--the-retailing-industry/",
-      "category" : "design",
-      "tags"     : "design",
-      "desc"     : "unknown",
-      "type"      : "design",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Design Systems for Corporations: A3 — Corporate Communication at Olivetti 1",
-      "url"      : "books/design-systems-for-corporations-a3--corporate-communication-at-olivetti-1/",
       "category" : "design",
       "tags"     : "design",
-      "desc"     : "unknown",
-      "type"      : "design",
-
+      "url"      : "books/design-systems-for-corporations-a3--corporate-communication-at-olivetti-1/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Design Systems for Corporations: A3 — Corporate Communication at Olivetti 2",
-      "url"      : "books/design-systems-for-corporations-a3--corporate-communication-at-olivetti-2/",
       "category" : "SANNO Institute of Management Publications Dept.",
       "tags"     : "design",
-      "desc"     : "unknown",
-      "type"      : "SANNO Institute of Management Publications Dept.",
-
+      "url"      : "books/design-systems-for-corporations-a3--corporate-communication-at-olivetti-2/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Design Systems for Corporations: B3 — Basic Design Elements and Their Systems",
+      "category" : "systems",
+      "tags"     : "",
       "url"      : "books/design-systems-for-corporations-b3--basic-design-elements-and-their-systems/",
-      "category" : "systems",
-      "tags"     : "",
-      "desc"     : "unknown",
-      "type"      : "systems",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Design Systems for Corporations: B4 — Basic Design Elements and Their Systems",
+      "category" : "systems",
+      "tags"     : "",
       "url"      : "books/design-systems-for-corporations-b4--basic-design-elements-and-their-systems/",
-      "category" : "systems",
-      "tags"     : "",
-      "desc"     : "unknown",
-      "type"      : "systems",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Design Systems for Corporations: B5 — Basic Design Elements and Their Systems",
+      "category" : "systems",
+      "tags"     : "systems, logos",
       "url"      : "books/design-systems-for-corporations-b5--basic-design-elements-and-their-systems/",
-      "category" : "systems",
-      "tags"     : "systems, logos",
-      "desc"     : "unknown",
-      "type"      : "systems",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Design Systems for Corporations: C2 — Developing a Basic Design System",
-      "url"      : "books/design-systems-for-corporations-c2--developing-a-basic-design-system/",
       "category" : "systems",
       "tags"     : "systems, logos",
-      "desc"     : "unknown",
-      "type"      : "systems",
-
+      "url"      : "books/design-systems-for-corporations-c2--developing-a-basic-design-system/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "New Home Japanese Encyclopedia #4",
+      "category" : "catalog",
+      "tags"     : "",
       "url"      : "books/new-home-japanese-encyclopedia-4/",
-      "category" : "catalog",
-      "tags"     : "",
-      "desc"     : "unknown",
-      "type"      : "catalog",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Young Designers in New York",
+      "category" : "collection",
+      "tags"     : "",
       "url"      : "books/young-designers-in-new-york/",
-      "category" : "collection",
-      "tags"     : "",
-      "desc"     : "unknown",
-      "type"      : "collection",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "American Trademarks &amp; Logotypes",
+      "category" : "collection",
+      "tags"     : "",
       "url"      : "books/american-trademarks--logotypes/",
-      "category" : "collection",
-      "tags"     : "",
-      "desc"     : "unknown",
-      "type"      : "collection",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Switzerland",
+      "category" : "design",
+      "tags"     : "design",
       "url"      : "books/switzerland/",
-      "category" : "design",
-      "tags"     : "design",
-      "desc"     : "unknown",
-      "type"      : "design",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Official Graphic Art in Switzerland",
+      "category" : "collection",
+      "tags"     : "",
       "url"      : "books/official-graphic-art-in-switzerland/",
-      "category" : "collection",
-      "tags"     : "",
-      "desc"     : "The first, comprehensive look at contemporary (1964) publicity in Switzerland as it relates to the Federal Government (i.e. Railways, Post, Telephone, National Exhibition, Industrial Fair, Transport Museum, Tourist Office, Red Cross, Lottery, International Motor Show, Swissair, etc.). Illustrated with more than 375 b/w (and some color) examples of Swiss modern typography including stationary, posters, booklets, brochures and more.",
-      "type"      : "collection",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Graphic Art of A Swiss Town",
-      "url"      : "books/graphic-art-of-a-swiss-town/",
       "category" : "collection",
       "tags"     : "",
-      "desc"     : "Documenting the rich, visual development for the city of Zürich. Profusely illustrated in b/w (some color) with examples of printed matter including: stationary, posters, programs, reports and more. Part of the comprehensive ABC Verlag series.",
-      "type"      : "collection",
-
+      "url"      : "books/graphic-art-of-a-swiss-town/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Publicité 11",
+      "category" : "design",
+      "tags"     : "Swiss, collection, illustration",
       "url"      : "books/publicite-11/",
-      "category" : "design",
-      "tags"     : "Swiss, collection, illustration",
-      "desc"     : "A review of advertising and graphic art in Switzerland. Includes work by Christoph Aeppli, Charles Affolter, Herbert Auchli, Roland Bartsch, Pierre Bataillard, Fred Bauer, Walter Bosshart, Donald Brun, Paul Buhlmann, Georges Calame, Walter Diethelm, Hans Erni, Karl Gerstner, Otto Glaser, Carl Graf, Hans Hartmann, Armin Hofmann, Othmar Jaeggi, Kurt Jordi, Pal Kolozsvari, Ruedi Kulling, Herbert Leupin, Raymond Loewy, Richard P. Lohse, Hans Looser, Lukas Martz, Erwin Meirerhofer, Pierre Monnerat, Fridolin Muller, Josef Muller-Brockmann, Hans Neuburg, Siegfried Odermatt, Hans Pfister, Celestino Piatti, Nelly Pieren, Heinrich Steiner, Franz Studer, Kurt Wirth, Marcel Wyss, and many, many others.",
-      "type"      : "design",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Publicité 8",
+      "category" : "design",
+      "tags"     : "Swiss, collection, illustration",
       "url"      : "books/publicite-8/",
-      "category" : "design",
-      "tags"     : "Swiss, collection, illustration",
-      "desc"     : "A review of advertising and graphic art in Switzerland. Includes work by Walter Bangeter, Donald Brun, Fritz Buhler, Eric Fraser, Otto Glaser, Hans Hartmann, Warja + Gottfried Honegger-Lavater, Herbert Leupin, Richard Lohse, Walter Niggli, Henri Ott, Celestino Piatti, Peter Schmidlin, Carlo Vivarelli, Kurt Wirth and many, many others.",
-      "type"      : "design",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Publicité 13",
-      "url"      : "books/publicite-13/",
       "category" : "design",
       "tags"     : "Swiss, collection, illustration",
-      "desc"     : "A review of advertising and graphic art in Switzerland.",
-      "type"      : "design",
-
+      "url"      : "books/publicite-13/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Graphic Designs of Takashi Kono",
+      "category" : "design",
+      "tags"     : "design",
       "url"      : "books/graphic-designs-of-takashi-kono/",
-      "category" : "design",
-      "tags"     : "design",
-      "desc"     : "unknown",
-      "type"      : "design",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Portfolio #1",
+      "category" : "design",
+      "tags"     : "design",
       "url"      : "books/portfolio-1/",
-      "category" : "design",
-      "tags"     : "design",
-      "desc"     : "unknown",
-      "type"      : "design",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Portfolio #3",
-      "url"      : "books/portfolio-3/",
       "category" : "design",
       "tags"     : "design",
-      "desc"     : "unknown",
-      "type"      : "design",
-
+      "url"      : "books/portfolio-3/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Label Design",
+      "category" : "design",
+      "tags"     : "",
       "url"      : "books/label-design/",
-      "category" : "design",
-      "tags"     : "",
-      "desc"     : "unknown",
-      "type"      : "design",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Der Briefbogen in Der Welt 2",
+      "category" : "design",
+      "tags"     : "layout, logos, collection",
       "url"      : "books/der-briefbogen-in-der-welt-2/",
-      "category" : "design",
-      "tags"     : "layout, logos, collection",
-      "desc"     : "An international letterhead revue. Featuring Herb Lubalin.",
-      "type"      : "design",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Die Briefbogen #3",
+      "category" : "design",
+      "tags"     : "layout, logos, collection",
       "url"      : "books/die-briefbogen-3/",
-      "category" : "design",
-      "tags"     : "layout, logos, collection",
-      "desc"     : "An international letterhead revue. Featuring Herb Lubalin.",
-      "type"      : "design",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Der Briefbogen #1",
-      "url"      : "books/der-briefbogen-1/",
       "category" : "design",
       "tags"     : "layout, logos, collection",
-      "desc"     : "An international letterhead revue.",
-      "type"      : "design",
-
+      "url"      : "books/der-briefbogen-1/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Package Design: The Force of Visual Storytelling",
-      "url"      : "books/package-design-the-force-of-visual-storytelling/",
       "category" : "design",
       "tags"     : "",
-      "desc"     : "unknown",
-      "type"      : "design",
-
+      "url"      : "books/package-design-the-force-of-visual-storytelling/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "American Standard Plumbing Fixtures: P50 Catalog",
-      "url"      : "books/american-standard-plumbing-fixtures-p50-catalog/",
       "category" : "catalog",
       "tags"     : "",
-      "desc"     : "unknown",
-      "type"      : "catalog",
-
+      "url"      : "books/american-standard-plumbing-fixtures-p50-catalog/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Corporate Design of the World #5: Package",
-      "url"      : "books/corporate-design-of-the-world-5-package/",
       "category" : "design",
       "tags"     : "",
-      "desc"     : "unknown",
-      "type"      : "design",
-
+      "url"      : "books/corporate-design-of-the-world-5-package/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Werbeform #1",
-      "url"      : "books/werbeform-1/",
       "category" : "design",
       "tags"     : "design",
-      "desc"     : "unknown",
-      "type"      : "design",
-
+      "url"      : "books/werbeform-1/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Werbeform #3",
-      "url"      : "books/werbeform-3/",
       "category" : "design",
       "tags"     : "German, collection, illustration",
-      "desc"     : "unknown",
-      "type"      : "design",
-
+      "url"      : "books/werbeform-3/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Pintori (2003 Museo d’arte provincia di nuoro)",
-      "url"      : "books/pintori-2003-museo-darte-provincia-di-nuoro/",
       "category" : "design",
       "tags"     : "",
-      "desc"     : "Italian",
-      "type"      : "design",
-
+      "url"      : "books/pintori-2003-museo-darte-provincia-di-nuoro/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Thoughts on Design",
-      "url"      : "books/thoughts-on-design/",
       "category" : "design writing",
       "tags"     : "design",
-      "desc"     : "One of the seminal texts of graphic design, Paul Rand's Thoughts on Design is now available for the first time since the 1970s. Writing at the height of his career, Rand articulated in his slender volume the pioneering vision that all design should seamlessly integrate form and function. This facsimile edition preserves Rand's original 1947 essay with the adjustments he made to its text and imagery for a revised printing in 1970, and adds only an informative and inspiring new foreword by design luminary Michael Bierut. As relevant today as it was when first published, this classic treatise is an indispensable addition to the library of every designer. - summary: fun, eyeopening, classic",
-      "type"      : "design writing",
-
+      "url"      : "books/thoughts-on-design/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Alphabet Thesaurus Vol 2",
+      "category" : "design",
+      "tags"     : "",
       "url"      : "books/alphabet-thesaurus-vol-2/",
-      "category" : "design",
-      "tags"     : "",
-      "desc"     : "unknown",
-      "type"      : "design",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Typographia #2",
-      "url"      : "books/typographia-2/",
       "category" : "design",
       "tags"     : "design",
-      "desc"     : "unknown",
-      "type"      : "design",
-
+      "url"      : "books/typographia-2/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Jacques Nathan-Garamond. Affichiste et graphiste.",
-      "url"      : "books/jacques-nathan-garamond.-affichiste-et-graphiste./",
       "category" : "design",
       "tags"     : "",
-      "desc"     : "unknown",
-      "type"      : "design",
-
+      "url"      : "books/jacques-nathan-garamond.-affichiste-et-graphiste./",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Graphic Design Manual",
-      "url"      : "books/graphic-design-manual/",
       "category" : "design",
       "tags"     : "design",
-      "desc"     : "Armin Hofmann’s richly varied work is recognized for its reliance on the fundamental elements of graphic form – point, line, and form. The book was originally a fundamentally new attempt to provide a methodical approach to challenges of graphic design. Elements of image and form are analyzed and examined with regard to their inherent laws. The thoroughly revised edition of the 1965 design manual classic includes new sections that adapt his thoughts to contemporary technological uses. Especially in times of the return to clear and minimalistic geometric forms and patterns, his rich body of work serves as a perfect starting point for contemporary design practices.",
-      "type"      : "design",
-
+      "url"      : "books/graphic-design-manual/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Due Dimensioni Vol 2",
-      "url"      : "books/due-dimensioni-vol-2/",
       "category" : "design",
       "tags"     : "collection, illustration, Italy",
-      "desc"     : "A catalog of Italian designers: Augusto Avanzi, Walter Ballmer, Roberta Balocco, Horst Blachian, Maddalena Buchwald, Titti Fabiani, Max Huber, Giancarlo Iliprandi, Laura Micheletto, Bruno Munari, Anna Sironi, Gino Sironi, Pino Trovaglia, Walter Valentini, Heinz Waibl, Paolo Zanussi. Foreword by Bruno Munari.",
-      "type"      : "design",
-
+      "url"      : "books/due-dimensioni-vol-2/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Der Grafiker Hans Hartmann",
-      "url"      : "books/der-grafiker-hans-hartmann/",
       "category" : "design",
       "tags"     : "design, German, illustration",
-      "desc"     : "A collection of work by German designer Hans Hartmann.",
-      "type"      : "design",
-
+      "url"      : "books/der-grafiker-hans-hartmann/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Avant Garde Magazine #14",
-      "url"      : "books/avant-garde-magazine-14/",
       "category" : "design",
       "tags"     : "design",
-      "desc"     : "unknown",
-      "type"      : "design",
-
+      "url"      : "books/avant-garde-magazine-14/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Corporate Design International",
-      "url"      : "books/corporate-design-international/",
       "category" : "design",
       "tags"     : "",
-      "desc"     : "unknown",
-      "type"      : "design",
-
+      "url"      : "books/corporate-design-international/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Au Jardin",
-      "url"      : "books/au-jardin/",
       "category" : "illustration",
       "tags"     : "children",
-      "desc"     : "unknown",
-      "type"      : "illustration",
-
+      "url"      : "books/au-jardin/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Morning Noises",
-      "url"      : "books/morning-noises/",
       "category" : "illustration",
       "tags"     : "children, illustration",
-      "desc"     : "unknown",
-      "type"      : "illustration",
-
+      "url"      : "books/morning-noises/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "L&#39;Energie",
+      "category" : "illustration",
+      "tags"     : "children",
       "url"      : "books/lenergie/",
-      "category" : "illustration",
-      "tags"     : "children",
-      "desc"     : "unknown",
-      "type"      : "illustration",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "L&#39;Automobile",
+      "category" : "illustration",
+      "tags"     : "children",
       "url"      : "books/lautomobile/",
-      "category" : "illustration",
-      "tags"     : "children",
-      "desc"     : "unknown",
-      "type"      : "illustration",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "La Rivièra",
+      "category" : "illustration",
+      "tags"     : "children",
       "url"      : "books/la-riviera/",
-      "category" : "illustration",
-      "tags"     : "children",
-      "desc"     : "unknown",
-      "type"      : "illustration",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Sally and Billy at the Seaside",
+      "category" : "illustration",
+      "tags"     : "children",
       "url"      : "books/sally-and-billy-at-the-seaside/",
-      "category" : "illustration",
-      "tags"     : "children",
-      "desc"     : "unknown",
-      "type"      : "illustration",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Les Plantes",
+      "category" : "illustration",
+      "tags"     : "children",
       "url"      : "books/les-plantes/",
-      "category" : "illustration",
-      "tags"     : "children",
-      "desc"     : "unknown",
-      "type"      : "illustration",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Les Insectes",
+      "category" : "illustration",
+      "tags"     : "children",
       "url"      : "books/les-insectes/",
-      "category" : "illustration",
-      "tags"     : "children",
-      "desc"     : "unknown",
-      "type"      : "illustration",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Heidi Peter und der Weltraum",
+      "category" : "illustration",
+      "tags"     : "children",
       "url"      : "books/heidi-peter-und-der-weltraum/",
-      "category" : "illustration",
-      "tags"     : "children",
-      "desc"     : "unknown",
-      "type"      : "illustration",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "La Mer",
+      "category" : "illustration",
+      "tags"     : "children",
       "url"      : "books/la-mer/",
-      "category" : "illustration",
-      "tags"     : "children",
-      "desc"     : "unknown",
-      "type"      : "illustration",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "En Route",
+      "category" : "illustration",
+      "tags"     : "children",
       "url"      : "books/en-route/",
-      "category" : "illustration",
-      "tags"     : "children",
-      "desc"     : "unknown",
-      "type"      : "illustration",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Henri&#39;s Walk to Paris",
-      "url"      : "books/henris-walk-to-paris/",
       "category" : "illustration",
       "tags"     : "children",
-      "desc"     : "unknown",
-      "type"      : "illustration",
-
+      "url"      : "books/henris-walk-to-paris/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Mein Erster Brockhaus",
-      "url"      : "books/mein-erster-brockhaus/",
       "category" : "illustration",
       "tags"     : "children, illustration, German",
-      "desc"     : "Children’s alphabet book.",
-      "type"      : "illustration",
-
+      "url"      : "books/mein-erster-brockhaus/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Dinner for Two Cookbook",
-      "url"      : "books/dinner-for-two-cookbook/",
       "category" : "illustration",
       "tags"     : "children, cookbook, illustration",
-      "desc"     : "unknown",
-      "type"      : "illustration",
-
+      "url"      : "books/dinner-for-two-cookbook/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Ho for a Hat!",
-      "url"      : "books/ho-for-a-hat/",
       "category" : "illustration",
       "tags"     : "children",
-      "desc"     : "unknown",
-      "type"      : "illustration",
-
+      "url"      : "books/ho-for-a-hat/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "The Thinking book",
-      "url"      : "books/the-thinking-book/",
       "category" : "illustration",
       "tags"     : "children, illustration",
-      "desc"     : "Written by Sandol Stoddard Warburg",
-      "type"      : "illustration",
-
+      "url"      : "books/the-thinking-book/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "To Believe in God",
-      "url"      : "books/to-believe-in-god/",
       "category" : "illustration",
       "tags"     : "children, color, lettering",
-      "desc"     : "Illustrated by Sister Corita",
-      "type"      : "illustration",
-
+      "url"      : "books/to-believe-in-god/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Space Alphabet",
-      "url"      : "books/space-alphabet/",
       "category" : "illustration",
       "tags"     : "children, space, illustration",
-      "desc"     : "Illustrated by Peter P. Plasencia",
-      "type"      : "illustration",
-
+      "url"      : "books/space-alphabet/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Detska Encyclopedia",
-      "url"      : "books/detska-encyclopedia/",
       "category" : "illustration",
       "tags"     : "children, encyclopedia, playful",
-      "desc"     : "Very cute illustrations of literally everything.",
-      "type"      : "illustration",
-
+      "url"      : "books/detska-encyclopedia/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "The Sorcerer’s Apprentice",
-      "url"      : "books/the-sorcerers-apprentice/",
       "category" : "illustration",
       "tags"     : "children, magic, illustration, japanese",
-      "desc"     : "Instead of learning to use magic wisely, the sorcerer's apprentice uses it to get out of doing chores. Translated from Japanese.",
-      "type"      : "illustration",
-
+      "url"      : "books/the-sorcerers-apprentice/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Sparkle &amp; Spin",
+      "category" : "illustration",
+      "tags"     : "children",
       "url"      : "books/sparkle--spin/",
-      "category" : "illustration",
-      "tags"     : "children",
-      "desc"     : "unknown",
-      "type"      : "illustration",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Jazz",
+      "category" : "illustration",
+      "tags"     : "children",
       "url"      : "books/jazz/",
-      "category" : "illustration",
-      "tags"     : "children",
-      "desc"     : "unknown",
-      "type"      : "illustration",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Los Trabajos de Hercules",
+      "category" : "illustration",
+      "tags"     : "children",
       "url"      : "books/los-trabajos-de-hercules/",
-      "category" : "illustration",
-      "tags"     : "children",
-      "desc"     : "unknown",
-      "type"      : "illustration",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Peter Petrake",
+      "category" : "illustration",
+      "tags"     : "children",
       "url"      : "books/peter-petrake/",
-      "category" : "illustration",
-      "tags"     : "children",
-      "desc"     : "unknown",
-      "type"      : "illustration",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "The Sun",
+      "category" : "illustration",
+      "tags"     : "children",
       "url"      : "books/the-sun/",
-      "category" : "illustration",
-      "tags"     : "children",
-      "desc"     : "unknown",
-      "type"      : "illustration",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Das Liederkarussell",
-      "url"      : "books/das-liederkarussell/",
       "category" : "illustration",
       "tags"     : "children",
-      "desc"     : "unknown",
-      "type"      : "illustration",
-
+      "url"      : "books/das-liederkarussell/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "The Happy Owls",
-      "url"      : "books/the-happy-owls/",
       "category" : "illustration",
       "tags"     : "children, illustration",
-      "desc"     : "Words by Theo van Hoijtema. “You can draw an Owl a thousand times, and never find out it's secret.” —Celestino Piatti, 1992",
-      "type"      : "illustration",
-
+      "url"      : "books/the-happy-owls/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Creatures Great and Small",
-      "url"      : "books/creatures-great-and-small/",
       "category" : "illustration",
       "tags"     : "children, animal, illustration",
-      "desc"     : "Words by Michael Flanders.",
-      "type"      : "illustration",
-
+      "url"      : "books/creatures-great-and-small/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "La Scandinavie",
-      "url"      : "books/la-scandinavie/",
       "category" : "illustration",
       "tags"     : "children",
-      "desc"     : "unknown",
-      "type"      : "illustration",
-
+      "url"      : "books/la-scandinavie/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Fernando",
-      "url"      : "books/fernando/",
       "category" : "illustration",
       "tags"     : "illustration, Poland, children",
-      "desc"     : "unknown",
-      "type"      : "illustration",
-
+      "url"      : "books/fernando/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "The Teletrips of Alala",
-      "url"      : "books/the-teletrips-of-alala/",
       "category" : "illustration",
       "tags"     : "children, toothbrush",
-      "desc"     : "Here, in living color, is the story of Alala, tomorrow's child. Meet her hip parents, Rodolphe and Anna d'Alcantara, and her best friends, a toothbrush and a turntable, both of which talk (and in several languages!). Join the menange as they float to exotic places on their plastic, deflatable house.",
-      "type"      : "illustration",
-
+      "url"      : "books/the-teletrips-of-alala/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Musicians of the World",
-      "url"      : "books/musicians-of-the-world/",
       "category" : "illustration",
       "tags"     : "children",
-      "desc"     : "unknown",
-      "type"      : "illustration",
-
+      "url"      : "books/musicians-of-the-world/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Design Origin: France",
-      "url"      : "books/design-origin-france/",
       "category" : "design",
       "tags"     : "",
-      "desc"     : "unknown",
-      "type"      : "design",
-
+      "url"      : "books/design-origin-france/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Mi Diccionario Illustrado",
-      "url"      : "books/mi-diccionario-illustrado/",
       "category" : "illustration",
       "tags"     : "children",
-      "desc"     : "unknown",
-      "type"      : "illustration",
-
+      "url"      : "books/mi-diccionario-illustrado/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Pubblicità in Italia 1958–1959",
+      "category" : "design",
+      "tags"     : "Italy, advertising, illustration",
       "url"      : "books/pubblicita-in-italia-19581959/",
-      "category" : "design",
-      "tags"     : "Italy, advertising, illustration",
-      "desc"     : "“Advertising in Italy” is an accurate look at Italian graphic design in 1958-59 including: posters, advertising, catalogs, packaging, trade-marks and more. Designed by Franco Grignani.",
-      "type"      : "design",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Pubblicità in Italia 1960–1961",
+      "category" : "design",
+      "tags"     : "Italy, advertising, illustration",
       "url"      : "books/pubblicita-in-italia-19601961/",
-      "category" : "design",
-      "tags"     : "Italy, advertising, illustration",
-      "desc"     : "“Advertising in Italy” is an accurate look at Italian graphic design in 1960-61 including: posters, advertising, catalogs, packaging, trade-marks and more. Designed by Franco Grignani.",
-      "type"      : "design",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Pubblicità in Italia 1977–1978",
+      "category" : "design",
+      "tags"     : "Italy, advertising, illustration",
       "url"      : "books/pubblicita-in-italia-19771978/",
-      "category" : "design",
-      "tags"     : "Italy, advertising, illustration",
-      "desc"     : "“Advertising in Italy” is a yearbook of prominent Italian posters and advertisements, leaflets, brochures, catalogs, editorial artifacts, calendars, greeting cards, packaging, brands and brand identity, exhibitions and showcases, film and television advertising. Designed by Franco Grignani.",
-      "type"      : "design",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Pubblicità in Italia 1959–1960",
+      "category" : "design",
+      "tags"     : "Italy, advertising, illustration",
       "url"      : "books/pubblicita-in-italia-19591960/",
-      "category" : "design",
-      "tags"     : "Italy, advertising, illustration",
-      "desc"     : "“Advertising in Italy” is a yearbook of prominent Italian posters and advertisements, leaflets, brochures, catalogs, editorial artifacts, calendars, greeting cards, packaging, brands and brand identity, exhibitions and showcases, film and television advertising. Designed by Franco Grignani.",
-      "type"      : "design",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Pubblicità in Italia 1967–1968",
+      "category" : "design",
+      "tags"     : "Italy, advertising, illustration",
       "url"      : "books/pubblicita-in-italia-19671968/",
-      "category" : "design",
-      "tags"     : "Italy, advertising, illustration",
-      "desc"     : "“Advertising in Italy” is a yearbook of prominent Italian posters and advertisements, leaflets, brochures, catalogs, editorial artifacts, calendars, greeting cards, packaging, brands and brand identity, exhibitions and showcases, film and television advertising. Designed by Franco Grignani.",
-      "type"      : "design",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Pubblicità in Italia 1966–1967",
+      "category" : "design",
+      "tags"     : "Italy, advertising, illustration",
       "url"      : "books/pubblicita-in-italia-19661967/",
-      "category" : "design",
-      "tags"     : "Italy, advertising, illustration",
-      "desc"     : "“Advertising in Italy” is a yearbook of prominent Italian posters and advertisements, leaflets, brochures, catalogs, editorial artifacts, calendars, greeting cards, packaging, brands and brand identity, exhibitions and showcases, film and television advertising. Designed by Franco Grignani.",
-      "type"      : "design",
-
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Pubblicità in Italia 1969–1970",
-      "url"      : "books/pubblicita-in-italia-19691970/",
       "category" : "design",
       "tags"     : "Italy, advertising, illustration",
-      "desc"     : "“Advertising in Italy” is a yearbook of prominent Italian posters and advertisements, leaflets, brochures, catalogs, editorial artifacts, calendars, greeting cards, packaging, brands and brand identity, exhibitions and showcases, film and television advertising. Designed by Franco Grignani.",
-      "type"      : "design",
-
+      "url"      : "books/pubblicita-in-italia-19691970/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Special Edition",
-      "url"      : "books/special-edition/",
       "category" : "design",
       "tags"     : "packaging, collection",
-      "desc"     : "unknown",
-      "type"      : "design",
-
+      "url"      : "books/special-edition/",
+      "date"     : ""
     } ,
   
     {
-
       "title"    : "Idea Magazine Special Issue: Graphic Designers of the West Coast",
-      "url"      : "books/idea-magazine-special-issue-graphic-designers-of-the-west-coast/",
       "category" : "periodical",
       "tags"     : "japanese, illustration, advertising",
-      "desc"     : "First published in 1953, IDEA magazine focuses on graphic design and typography. Published quarterly in Tokyo, Japan.",
-      "type"      : "periodical",
-
+      "url"      : "books/idea-magazine-special-issue-graphic-designers-of-the-west-coast/",
+      "date"     : ""
     } 
   
 ]
