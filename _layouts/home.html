@@ -11,11 +11,21 @@ layout: default
 		    <li><a class="u__border-padding {{book.category | remove: " " }}" href="{{ site.baseurl }}{{ book.title | datapage_url: 'books' }}">
 			    <span class="book-title">{{book.title}}</span>
 			    <span class="book-details">
+				    {% if book.ISBN != "unknown" %}
 				    <span class="book-detail">{{book.ISBN}}</span>
+				    {% endif %}
+				    {% if book.publisher != "unknown" %}
 				    <span class="book-detail">{{book.publisher}}</span>
+				    {% endif %}
+				    {% if book.published-date != "unknown" %}
 				    <span class="book-detail">{{book.published-date}}</span>
+				    {% endif %}
+				    {% if book.published-category != "unknown" %}
 				    <span class="book-detail">{{book.category}}</span>
+				    {% endif %}
+				    {% if book.published-description != "unknown" %}
 				    <span class="book-detail">{{book.description}}</span></a>
+				    {% endif %}
 			    </span>
 		    </li>
 		{% endfor %}
