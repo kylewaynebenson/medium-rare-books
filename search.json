@@ -93,7 +93,7 @@
       "title"    : "Firmen-Image",
       "url"      : "books/firmen-image/",
       "category" : "design",
-      "tags"     : "design",
+      "tags"     : "German, systems, advertising",
       "desc"     : "unknown",
       "type"      : "design",
 
@@ -225,8 +225,8 @@
       "title"    : "Graphis Annual 73/74",
       "url"      : "books/graphis-annual-7374/",
       "category" : "collection",
-      "tags"     : "",
-      "desc"     : "unknown",
+      "tags"     : "German, advertising, illustration",
+      "desc"     : "A source of both information and inspiration: 785 illustrations, representing more than 600 artists from 32 countries.",
       "type"      : "collection",
 
     } ,
@@ -236,7 +236,7 @@
       "title"    : "Graphis Annual 79/80",
       "url"      : "books/graphis-annual-7980/",
       "category" : "collection",
-      "tags"     : "",
+      "tags"     : "German, advertising, illustration",
       "desc"     : "unknown",
       "type"      : "collection",
 
@@ -247,8 +247,8 @@
       "title"    : "Graphis Annual 85/86",
       "url"      : "books/graphis-annual-8586/",
       "category" : "collection",
-      "tags"     : "",
-      "desc"     : "unknown",
+      "tags"     : "German, advertising, illustration",
+      "desc"     : "An international annual of advertising and editorial graphics. Preface by Steven Heller.",
       "type"      : "collection",
 
     } ,
@@ -299,33 +299,33 @@
   
     {
 
-      "title"    : "Trademarks &amp; Symbols of the World",
-      "url"      : "books/trademarks--symbols-of-the-world/",
+      "title"    : "Trademarks and Symbols of the World",
+      "url"      : "books/trademarks-and-symbols-of-the-world/",
       "category" : "iconography",
-      "tags"     : "",
-      "desc"     : "Includes 5,800 trademarks, service marks, symbols etc. by 1,300 designers from 38 countries.",
+      "tags"     : "logos, collection",
+      "desc"     : "Includes 5,800 trademarks, service marks, symbols etc. by 1,300 designers from 38 countries. Featuring work by Saul Bass, Anton Stankowski, Paul Rand, Lester Beall, Giuli Confalonieri, and Earnst Roch. Preface by Paul Rand.",
       "type"      : "iconography",
 
     } ,
   
     {
 
-      "title"    : "Trademarks &amp; Symbols Vol 1",
-      "url"      : "books/trademarks--symbols-vol-1/",
+      "title"    : "Trademarks &amp; Symbols Volume 1: Alphabetical Designs",
+      "url"      : "books/trademarks--symbols-volume-1-alphabetical-designs/",
       "category" : "iconography",
-      "tags"     : "",
-      "desc"     : "unknown",
+      "tags"     : "logos, collection, Japan",
+      "desc"     : "A comprehensive, profusely illustrated guide to more than 1,500 trademarks from all over the world. The trademark designs in this volume are based on letter forms and arranged alphabetically.",
       "type"      : "iconography",
 
     } ,
   
     {
 
-      "title"    : "Trademarks &amp; Symbols Vol 2",
-      "url"      : "books/trademarks--symbols-vol-2/",
+      "title"    : "Trademarks &amp; Symbols Volume 2: Symbolical Designs",
+      "url"      : "books/trademarks--symbols-volume-2-symbolical-designs/",
       "category" : "iconography",
-      "tags"     : "",
-      "desc"     : "unknown",
+      "tags"     : "logos, collection, Japan",
+      "desc"     : "A comprehensive, profusely illustrated guide to more than 1,500 trademarks from all over the world. The trademark designs in this volume are based on symbol forms and arranged stylistically.",
       "type"      : "iconography",
 
     } ,
@@ -1196,6 +1196,17 @@
       "tags"     : "children",
       "desc"     : "unknown",
       "type"      : "illustration",
+
+    } ,
+  
+    {
+
+      "title"    : "Pubblicità in Italia 1958–1959",
+      "url"      : "books/pubblicita-in-italia-19581959/",
+      "category" : "design",
+      "tags"     : "Italy, advertising, illustration",
+      "desc"     : "“Advertising in Italy” is an accurate look at Italian graphic design in 1958-59 including: posters, advertising, catalogs, packaging, trade-marks and more. Designed by Franco Grignani.",
+      "type"      : "design",
 
     } ,
   
