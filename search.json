@@ -55,7 +55,7 @@
       "title"    : "Impaginazione Grafica #4",
       "url"      : "books/impaginazione-grafica-4/",
       "category" : "design",
-      "tags"     : "design",
+      "tags"     : "Italy, logos, collection",
       "desc"     : "unknown"
 
     } ,
@@ -502,17 +502,17 @@
   
     {
 
-      "title"    : "Publicite 11 (Swiss Design Annual)",
-      "url"      : "books/publicite-11-swiss-design-annual/",
+      "title"    : "Publicité 11",
+      "url"      : "books/publicite-11/",
       "category" : "design",
-      "tags"     : "design",
-      "desc"     : "unknown"
+      "tags"     : "Swiss, collection, illustration",
+      "desc"     : "A review of advertising and graphic art in Switzerland. Includes work by Christoph Aeppli, Charles Affolter, Herbert Auchli, Roland Bartsch, Pierre Bataillard, Fred Bauer, Walter Bosshart, Donald Brun, Paul Buhlmann, Georges Calame, Walter Diethelm, Hans Erni, Karl Gerstner, Otto Glaser, Carl Graf, Hans Hartmann, Armin Hofmann, Othmar Jaeggi, Kurt Jordi, Pal Kolozsvari, Ruedi Kulling, Herbert Leupin, Raymond Loewy, Richard P. Lohse, Hans Looser, Lukas Martz, Erwin Meirerhofer, Pierre Monnerat, Fridolin Muller, Josef Muller-Brockmann, Hans Neuburg, Siegfried Odermatt, Hans Pfister, Celestino Piatti, Nelly Pieren, Heinrich Steiner, Franz Studer, Kurt Wirth, Marcel Wyss, and many, many others."
 
     } ,
   
     {
 
-      "title"    : "Publicite 8",
+      "title"    : "Publicité 8",
       "url"      : "books/publicite-8/",
       "category" : "design",
       "tags"     : "design",
@@ -522,11 +522,11 @@
   
     {
 
-      "title"    : "Publicite 13",
+      "title"    : "Publicité 13",
       "url"      : "books/publicite-13/",
       "category" : "design",
-      "tags"     : "design",
-      "desc"     : "unknown"
+      "tags"     : "Swiss, collection, illustration",
+      "desc"     : "A review of advertising and graphic art in Switzerland."
 
     } ,
   
@@ -576,7 +576,7 @@
       "url"      : "books/der-briefbogen-in-der-welt-2-letterheads/",
       "category" : "design",
       "tags"     : "Herb Lubalin",
-      "desc"     : "unknown"
+      "desc"     : "An international letterhead revue."
 
     } ,
   
@@ -645,7 +645,7 @@
       "title"    : "Werbeform #3",
       "url"      : "books/werbeform-3/",
       "category" : "design",
-      "tags"     : "design",
+      "tags"     : "German, collection, illustration",
       "desc"     : "unknown"
 
     } ,
