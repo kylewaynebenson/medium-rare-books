@@ -4,13 +4,16 @@ layout: default
 
 <div class="home">
 	<section class="section">
-		<h1 class="u__border-padding">Books</h1>
+		<h1 class="u__border-padding h1">Books</h1>
 
 		<ul class="list__border">
 		{% for book in site.data.books %}
 		    <li><a class="u__border-padding {{book.category | remove: " " }}" href="{{ site.baseurl }}{{ book.title | datapage_url: 'books' }}">
 			    <span class="book-title">{{book.title}}</span>
 			    <span class="book-details">
+				    {% if book.author != "unknown" %}
+				    <span class="book-detail">{{book.author}}</span>
+				    {% endif %}
 				    {% if book.ISBN != "unknown" %}
 				    <span class="book-detail">{{book.ISBN}}</span>
 				    {% endif %}
