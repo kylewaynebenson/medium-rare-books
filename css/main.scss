@@ -565,6 +565,9 @@ em {
       font-style: italic;
       font-weight: 300;
 }
+i {
+      font-style: none;
+}
 .small {
       @extend .h6;
 }
