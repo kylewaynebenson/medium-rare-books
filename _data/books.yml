@@ -709,7 +709,7 @@
             "published-date": "1970",
             "publisher": "Van Nostrand Reinhold",
             "category": "design writing",
-            "tags": "design"
+            "tags": "design",
             "cataloged": true,
             },
       {
@@ -1250,7 +1250,7 @@
             "published-date": "1975",
             "publisher": "Shigeo Ogawa",
             "category": "periodical",
-            "tags": "Japan, illustration, advertising",
+            "tags": "japanese, illustration, advertising",
             "cataloged": true,
       },
 ]
