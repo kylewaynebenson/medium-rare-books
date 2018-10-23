@@ -1,26 +1,26 @@
 [
   
     {
-      "title"    : "Inside Design",
-      "category" : "design",
-      "tags"     : "design, collection, packaging",
-      "url"      : "/books/inside-design/",
+      "title"    : "Inside Design a Review: 40 Years of Work",
+      "category" : "collection",
+      "tags"     : "design, collection, packaging, mid-century, chicago",
+      "url"      : "/books/inside-design-a-review-40-years-of-work/",
       "date"     : "",
-      "description"     : "unknown"
+      "description"     : "Morton Goldsholl (1911-1995) was a lifelong resident of Chicago, where he studied at the Chicago Institute of Art and the Institute of Design and, in 1955, formed Morton Goldsholl Associates. He was a faculty member at The Abraham Lincoln School for Social Sciences, the educational institution run by the Communist Party USA. Goldsholl carved out his niche with corporate identity programs, packaging, and animated commercials, and produced the Good Design Logo for the Merchandise Mart and the Museum of Modern Art in 1950."
     } ,
   
     {
       "title"    : "Alexey Brodovitch",
-      "category" : "design",
-      "tags"     : "",
+      "category" : "collection",
+      "tags"     : "monograph, photography",
       "url"      : "/books/alexey-brodovitch/",
       "date"     : "",
-      "description"     : "unknown"
+      "description"     : "This book is a comprehensive monograph on Brodovitch's life and work, drawing from interviews with a wide spectrum of colleagues and collaborators - and assimilating previously unpublished material from archives and private collections around the world - to offer an in-depth analysis and appreciation of Brodovitch's unique and lasting contribution to the visual arts. "
     } ,
   
     {
       "title"    : "Graphic Design San Francisco",
-      "category" : "design",
+      "category" : "collection",
       "tags"     : "",
       "url"      : "/books/graphic-design-san-francisco/",
       "date"     : "",
@@ -29,11 +29,11 @@
   
     {
       "title"    : "Impaginazione Grafica 67/68",
-      "category" : "design",
-      "tags"     : "design",
+      "category" : "collection",
+      "tags"     : "design, illustration, colombo, sri lanka,",
       "url"      : "/books/impaginazione-grafica-6768/",
       "date"     : "",
-      "description"     : "unknown"
+      "description"     : "Portfolio of graphics and advertising related to publishing and advertising art, with overprint."
     } ,
   
     {
@@ -56,7 +56,7 @@
   
     {
       "title"    : "Typography v1",
-      "category" : "design",
+      "category" : "typography",
       "tags"     : "print, German, typography",
       "url"      : "/books/typography-v1/",
       "date"     : "",
@@ -65,7 +65,7 @@
   
     {
       "title"    : "Typographie v2",
-      "category" : "design",
+      "category" : "typography",
       "tags"     : "design",
       "url"      : "/books/typographie-v2/",
       "date"     : "",
@@ -101,7 +101,7 @@
   
     {
       "title"    : "Illustrated Leisure European Map book (Edition Nobel)",
-      "category" : "design",
+      "category" : "illustration",
       "tags"     : "design",
       "url"      : "/books/illustrated-leisure-european-map-book-edition-nobel/",
       "date"     : "",
@@ -110,7 +110,7 @@
   
     {
       "title"    : "Signet, Signal, Symbol",
-      "category" : "design",
+      "category" : "iconography",
       "tags"     : "logo, icon",
       "url"      : "/books/signet-signal-symbol/",
       "date"     : "",
@@ -299,7 +299,7 @@
   
     {
       "title"    : "Logo Art",
-      "category" : "collection",
+      "category" : "iconography",
       "tags"     : "lettering, typography, logos",
       "url"      : "/books/logo-art/",
       "date"     : "",
@@ -416,7 +416,7 @@
   
     {
       "title"    : "American Trademarks &amp; Logotypes",
-      "category" : "collection",
+      "category" : "typography",
       "tags"     : "",
       "url"      : "/books/american-trademarks--logotypes/",
       "date"     : "",
@@ -614,7 +614,7 @@
   
     {
       "title"    : "Typographia #2",
-      "category" : "design",
+      "category" : "typography",
       "tags"     : "design",
       "url"      : "/books/typographia-2/",
       "date"     : "",
