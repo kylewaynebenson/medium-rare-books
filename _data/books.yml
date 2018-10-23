@@ -357,8 +357,8 @@
             "description": "unknown",
             "published-date": "unknown",
             "publisher": "unknown",
-            "category": "design",
-            "tags": "design",
+            "category": "iconography",
+            "tags": "design, logos",
             "cataloged": true,
       },
       {
@@ -390,8 +390,8 @@
             "description": "unknown",
             "published-date": "1976",
             "publisher": "SANNO Institute of Management Publications Dept.",
-            "category": "design",
-            "tags": "design",
+            "category": "systems",
+            "tags": "corporate, design, collection, guide",
             "cataloged": true,
       },
       {
@@ -401,8 +401,8 @@
             "description": "unknown",
             "published-date": "1977",
             "publisher": "SANNO Institute of Management Publications Dept.",
-            "category": "design",
-            "tags": "design",
+            "category": "systems",
+            "tags": "corporate, design, collection, guide",
             "cataloged": true,
       },
       {
@@ -412,8 +412,8 @@
             "description": "unknown",
             "published-date": "1978",
             "publisher": "SANNO Institute of Management Publications Dept.",
-            "category": "design",
-            "tags": "design",
+            "category": "systems",
+            "tags": "corporate, design, collection, guide",
             "cataloged": true,
       },
       {
@@ -422,9 +422,9 @@
             "ISBN": "unknown",
             "description": "unknown",
             "published-date": "1978",
-            "publisher": "unknown",
-            "category": "SANNO Institute of Management Publications Dept.",
-            "tags": "design",
+            "publisher": "SANNO Institute of Management Publications Dept.",
+            "category": "systems",
+            "tags": "corporate, design, collection, guide",
             "cataloged": true,
       },
       {
@@ -445,6 +445,7 @@
             "published-date": "1977",
             "publisher": "SANNO Institute of Management Publications Dept.",
             "category": "systems",
+            "tags": "corporate, design, collection, guide",
             "cataloged": true,
       },
       {
@@ -455,7 +456,7 @@
             "published-date": "1979",
             "publisher": "SANNO Institute of Management Publications Dept.",
             "category": "systems",
-            "tags": "systems, logos",
+            "tags": "corporate, design, collection, guide",
             "cataloged": true,
       },
       {
@@ -466,7 +467,7 @@
             "published-date": "1980",
             "publisher": "SANNO Institute of Management Publications Dept.",
             "category": "systems",
-            "tags": "systems, logos",
+            "tags": "corporate, design, collection, guide",
             "cataloged": true,
       },
       {
@@ -477,7 +478,8 @@
             "description": "unknown",
             "published-date": "unknown",
             "publisher": "unknown",
-            "category": "catalog",
+            "category": "collection",
+            "tags": "encyclopedia, japanese, collection",
             "cataloged": true,
       },
       {
@@ -801,7 +803,7 @@
             "description": "unknown",
             "published-date": "1984",
             "publisher": "ABC Edition",
-            "category": "design",
+            "category": "systems",
             "cataloged": true,
       },
       {
@@ -812,7 +814,7 @@
             "published-date": "1968",
             "publisher": "Casterman",
             "category": "illustration",
-            "tags": "children",
+            "tags": "children, illustration",
             "cataloged": true,
       },
       {
@@ -834,7 +836,7 @@
             "published-date": "1976",
             "publisher": "Casterman",
             "category": "illustration",
-            "tags": "children",
+            "tags": "children, illustration",
             "cataloged": true,
       },
       {
@@ -845,7 +847,7 @@
             "published-date": "1968",
             "publisher": "Casterman",
             "category": "illustration",
-            "tags": "children",
+            "tags": "children, illustration",
             "cataloged": true,
       },
       {
@@ -856,7 +858,7 @@
             "published-date": "1966",
             "publisher": "Casterman",
             "category": "illustration",
-            "tags": "children",
+            "tags": "children, illustration",
             "cataloged": true,
       },
       {
@@ -867,7 +869,7 @@
             "published-date": "1967",
             "publisher": "Hart Publishing",
             "category": "illustration",
-            "tags": "children",
+            "tags": "children, illustration",
             "cataloged": true,
       },
       {
@@ -878,7 +880,7 @@
             "published-date": "unknown",
             "publisher": "unknown",
             "category": "illustration",
-            "tags": "children",
+            "tags": "children, illustration",
             "cataloged": true,
       },
       {
@@ -889,7 +891,7 @@
             "published-date": "1974",
             "publisher": "Casterman",
             "category": "illustration",
-            "tags": "children",
+            "tags": "children, illustration",
             "cataloged": true,
       },
       {
@@ -900,7 +902,7 @@
             "published-date": "1972",
             "publisher": "Casterman",
             "category": "illustration",
-            "tags": "children",
+            "tags": "children, illustration",
             "cataloged": true,
       },
       {
@@ -911,7 +913,7 @@
             "published-date": "1962",
             "publisher": "Casterman",
             "category": "illustration",
-            "tags": "children",
+            "tags": "children, illustration",
             "cataloged": true,
       },
       {
@@ -922,7 +924,7 @@
             "published-date": "1963",
             "publisher": "Casterman",
             "category": "illustration",
-            "tags": "children",
+            "tags": "children, illustration",
             "cataloged": true,
       },
       {
@@ -934,7 +936,7 @@
             "publisher": "unknown",
             "tags": "Young Holt",
             "category": "illustration",
-            "tags": "children",
+            "tags": "children, illustration",
             "cataloged": true,
       },
       {
@@ -966,7 +968,7 @@
             "published-date": "unknown",
             "publisher": "unknown",
             "category": "illustration",
-            "tags": "children",
+            "tags": "children, illustration",
             "cataloged": true,
       },
       {
@@ -1033,7 +1035,7 @@
             "published-date": "1957",
             "publisher": "Harcourt, Brace and Company",
             "category": "illustration",
-            "tags": "children",
+            "tags": "children, illustration",
             "cataloged": true,
       },
       {
@@ -1044,7 +1046,7 @@
             "published-date": "1965",
             "publisher": "Edition Galatis",
             "category": "illustration",
-            "tags": "children",
+            "tags": "children, illustration",
             "cataloged": true,
       },
       {
@@ -1055,7 +1057,7 @@
             "published-date": "unknown",
             "publisher": "unknown",
             "category": "illustration",
-            "tags": "children",
+            "tags": "children, illustration",
             "cataloged": true,
       },
       {
@@ -1066,7 +1068,7 @@
             "published-date": "unknown",
             "publisher": "unknown",
             "category": "illustration",
-            "tags": "children",
+            "tags": "children, illustration",
             "cataloged": true,
       },
       {
@@ -1077,7 +1079,7 @@
             "published-date": "unknown",
             "publisher": "unknown",
             "category": "illustration",
-            "tags": "children",
+            "tags": "children, illustration",
             "cataloged": true,
       },
       {
@@ -1088,7 +1090,7 @@
             "published-date": "unknown",
             "publisher": "unknown",
             "category": "illustration",
-            "tags": "children",
+            "tags": "children, illustration",
             "cataloged": true,
       },
       {
@@ -1121,7 +1123,7 @@
             "published-date": "1975",
             "publisher": "The Hamlyn Publishing Group",
             "category": "illustration",
-            "tags": "children",
+            "tags": "children, illustration",
             "cataloged": true,
       },
       {
@@ -1154,7 +1156,7 @@
             "published-date": "unknown",
             "publisher": "unknown",
             "category": "illustration",
-            "tags": "children",
+            "tags": "children, illustration",
             "cataloged": true,
       },
       {
@@ -1164,7 +1166,8 @@
             "description": "unknown",
             "published-date": "2015",
             "publisher": "viction:ary",
-            "category": "design",
+            "category": "collection",
+            "tags": "french,  design",
             "cataloged": true,
       },
       {
@@ -1174,7 +1177,7 @@
             "published-date": "unknown",
             "publisher": "unknown",
             "category": "illustration",
-            "tags": "children",
+            "tags": "children, illustration",
             "cataloged": true,
       },
       {
@@ -1183,8 +1186,8 @@
             "description": "“Advertising in Italy” is an accurate look at Italian graphic design in 1958-59 including: posters, advertising, catalogs, packaging, trade-marks and more. Designed by Franco Grignani.",
             "published-date": "1961",
             "publisher": "L'Ufficio Moderno",
-            "category": "design",
-            "tags": "Italy, advertising, illustration",
+            "category": "collection",
+            "tags": "Italy, advertising, design, illustration",
             "cataloged": true,
       },
       {
@@ -1193,8 +1196,8 @@
             "description": "“Advertising in Italy” is an accurate look at Italian graphic design in 1960-61 including: posters, advertising, catalogs, packaging, trade-marks and more. Designed by Franco Grignani.",
             "published-date": "1961",
             "publisher": "L'Ufficio Moderno",
-            "category": "design",
-            "tags": "Italy, advertising, illustration",
+            "category": "collection",
+            "tags": "Italy, advertising, design, illustration",
             "cataloged": true,
       },
       {
@@ -1203,8 +1206,8 @@
             "description": "“Advertising in Italy” is a yearbook of prominent Italian posters and advertisements, leaflets, brochures, catalogs, editorial artifacts, calendars, greeting cards, packaging, brands and brand identity, exhibitions and showcases, film and television advertising. Designed by Franco Grignani.",
             "published-date": "1978",
             "publisher": "L'Ufficio Moderno",
-            "category": "design",
-            "tags": "Italy, advertising, illustration",
+            "category": "collection",
+            "tags": "Italy, advertising, design, illustration",
             "cataloged": true,
       },
       {
@@ -1213,8 +1216,8 @@
             "description": "“Advertising in Italy” is a yearbook of prominent Italian posters and advertisements, leaflets, brochures, catalogs, editorial artifacts, calendars, greeting cards, packaging, brands and brand identity, exhibitions and showcases, film and television advertising. Designed by Franco Grignani.",
             "published-date": "1960",
             "publisher": "L'Ufficio Moderno",
-            "category": "design",
-            "tags": "Italy, advertising, illustration",
+            "category": "collection",
+            "tags": "Italy, advertising, design, illustration",
             "cataloged": true,
       },
       {
@@ -1223,8 +1226,8 @@
             "description": "“Advertising in Italy” is a yearbook of prominent Italian posters and advertisements, leaflets, brochures, catalogs, editorial artifacts, calendars, greeting cards, packaging, brands and brand identity, exhibitions and showcases, film and television advertising. Designed by Franco Grignani.",
             "published-date": "1968",
             "publisher": "L'Ufficio Moderno",
-            "category": "design",
-            "tags": "Italy, advertising, illustration",
+            "category": "collection",
+            "tags": "Italy, advertising, design, illustration",
             "cataloged": true,
       },
       {
@@ -1233,8 +1236,8 @@
             "description": "“Advertising in Italy” is a yearbook of prominent Italian posters and advertisements, leaflets, brochures, catalogs, editorial artifacts, calendars, greeting cards, packaging, brands and brand identity, exhibitions and showcases, film and television advertising. Designed by Franco Grignani.",
             "published-date": "1967",
             "publisher": "L'Ufficio Moderno",
-            "category": "design",
-            "tags": "Italy, advertising, illustration",
+            "category": "collection",
+            "tags": "Italy, advertising, design, illustration",
             "cataloged": true,
       },
       {
@@ -1243,8 +1246,8 @@
             "description": "“Advertising in Italy” is a yearbook of prominent Italian posters and advertisements, leaflets, brochures, catalogs, editorial artifacts, calendars, greeting cards, packaging, brands and brand identity, exhibitions and showcases, film and television advertising. Designed by Franco Grignani.",
             "published-date": "1970",
             "publisher": "L'Ufficio Moderno",
-            "category": "design",
-            "tags": "Italy, advertising, illustration",
+            "category": "collection",
+            "tags": "Italy, advertising, design, illustration",
             "cataloged": true,
       },
       {
@@ -1254,8 +1257,8 @@
             "description": "unknown",
             "published-date": "2015",
             "publisher": "viction:ary",
-            "category": "design",
-            "tags": "packaging, collection",
+            "category": "collection",
+            "tags": "packaging, design",
             "cataloged": true,
       },
       {
@@ -1265,8 +1268,8 @@
             "description": "First published in 1953, IDEA magazine focuses on graphic design and typography. Published quarterly in Tokyo, Japan.",
             "published-date": "1975",
             "publisher": "Shigeo Ogawa",
-            "category": "periodical",
-            "tags": "japanese, illustration, advertising",
+            "category": "collection",
+            "tags": "japanese, illustration, advertising, periodical",
             "cataloged": true,
       },
 ]
