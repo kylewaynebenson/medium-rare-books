@@ -53,14 +53,12 @@ page_gen:
     dir: 'books'
     filter: 'cataloged'
 
-jekyll-archives:
-  enabled: []
-  layout: 'archive'
-  permalinks:
-    year: '/:year/'
-    month: '/:year/:month/'
-    day: '/:year/:month/:day/'
-    tag: '/tag/:name/'
-    category: '/category/:name/'
-
-permalink: /:categories/:title/
+categories-order:
+      - writing
+      - iconography
+      - layout
+      - systems
+      - illustration
+      - typography
+      - catalog
+      - collection

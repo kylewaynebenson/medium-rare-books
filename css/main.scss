@@ -163,6 +163,10 @@ $xl: 1440px;
 .u__rotate-270 {
       transform: rotate(270deg);
 }
+.u__pill {
+      @extend .h6;
+      padding: 6px 9px;
+}
 /***********************
 Animations
 ************************/
@@ -298,6 +302,24 @@ $pink: #f8e4e8;
 .u__background-green { background-color: $green; }
 .u__background-brown { background-color: $brown; }
 .u__background-pink { background-color: $pink; }
+
+.u__background-writing { background-color: $black; color: $white; }
+.u__background-iconography { background-color: $canary; }
+.u__background-layout { background-color: $yellow; }
+.u__background-systems { background-color: $pink; }
+.u__background-illustration { background-color: $orange; }
+.u__background-typography { background-color: $brown; }
+.u__background-catalog { background-color: $blue; }
+.u__background-collection { background-color: $green; }
+
+.u__color-writing { color: $black; }
+.u__color-iconography { color: $canary; }
+.u__color-layout { color: $yellow; }
+.u__color-systems { color: $pink; }
+.u__color-illustration { color: $orange; }
+.u__color-typography { color: $brown; }
+.u__color-catalog { color: $blue; }
+.u__color-collection { color: $green; }
 
 .svg__fill-orange { fill: $orange; }
 .svg__fill-brown { fill: $brown; }
@@ -474,17 +496,18 @@ Fonts
       font-family: "Best Sans";
       font-weight: 100;
       font-size: 75px;
-      line-height: 1.1;
+      line-height: 1;
       letter-spacing: -.005em;
       margin: 0px;
       @media (min-width: $md-min ) and (max-width: $md) {
         font-size: 50px;
         letter-spacing: 0em;
-        line-height: 1.2;
+        line-height: 1.1;
       }
 
       @media (max-width: $sm) {
         font-size: 35px;
+        font-weight: 200;
         letter-spacing: .01em;
         line-height: 1.3;
       }
@@ -638,30 +661,30 @@ $repeat: 20;
             list-style-type: none;
             padding: 4px 10px;
             color: $black;
-            &.illustration, &.children {
-                  @extend .u__background-orange;
+            &.illustration  {
+                  @extend .u__background-illustration;
             }
             &.typography {
-                  @extend .u__background-brown;
+                  @extend .u__background-typography;
             }
             &.catalog {
-                  @extend .u__background-blue;
+                  @extend .u__background-catalog;
             }
-            &.collection, &.design {
-                  @extend .u__background-green;
+            &.collection  {
+                  @extend .u__background-collection;
             }
-            &.designwriting {
-                  @extend .u__background-black;
+            &.designwriting, &.writing {
+                  @extend .u__background-writing;
                   color: $white;
             }
             &.layout {
-                  @extend .u__background-yellow;
+                  @extend .u__background-layout;
             }
             &.iconography {
-                  @extend .u__background-canary;
+                  @extend .u__background-iconography;
             }
             &.systems {
-                  @extend .u__background-orange;
+                  @extend .u__background-systems;
             }
       }
 }
@@ -679,7 +702,7 @@ body {
   font-feature-settings: "ss02" 1;
   color: $black;
   background: url("../images/tile-background@2x-80.jpg") repeat;
-  background-size: 180px 44px;
+  background-size: 160px 43px;
 }
 .book {
       .thumbnail {
@@ -732,15 +755,24 @@ body {
             @extend .u__background-canary;
       }
       &.systems .thumbnail:before {
-            @extend .u__background-orange;
+            @extend .u__background-pink;
       }
 }
 .max-container {
       background: $white;
-      max-width: $xl + 100px;
+      max-width: $xl + 500px;
       transition: background 500ms ease-in-out;
       .center-content-chunk {
             overflow-y: scroll;
+            display: flex;
+            flex-direction: column;
+
+            .categories {
+                  border-top: $weight solid $black;
+                  background: $white;
+                  position: sticky;
+                  bottom: 0px;
+            }
       }
       &.focus {
             background: $yellow;
@@ -847,6 +879,7 @@ body {
 .list__border {
       margin: 0px;
       padding: 0px;
+      margin-bottom: -$weight;
       li {
             list-style-type: none;
             border-top: $weight solid $black;
@@ -892,6 +925,7 @@ body {
       .book-title {
             font-family: "Messer";
             font-style: italic;
+            margin-right: 30px;
       }
       .book-details {
             @extend .h6;
@@ -920,20 +954,14 @@ body {
             }
       }
 }
-.pill {
-      @extend .h6;
-      background: $pink;
-      padding: 4px 6px;
-      border: $weight solid $black;
-}
 .color-proof {
       margin: 0px;
       padding: 0px;
       li {
-            border-radius: 25px;
-            width: 40px;
-            height: 40px;
             list-style-type: none;
             display: inline-block;
+            a {
+                  border-radius: 25px;
+            }
       }
 }

@@ -195,7 +195,8 @@
             "description": "unknown",
             "published-date": "1966",
             "publisher": "Bijutsu Shuppan-Sha",
-            "category": "Japan, advertising, collection",
+            "category": "collection",
+            "tags": "Japan, advertising, collection",
             "cataloged": true,
       },
       {
@@ -620,7 +621,7 @@
             "publisher": "Zanders Fine Papers",
             "category": "design",
             "tags": "design",
-            "tags": "layout, logos, collection",
+            "tags": "layout, logos, collection, Herb Lubalin",
             "cataloged": true,
       },
       {
@@ -632,7 +633,7 @@
             "publisher": "unknown",
             "publisher": "Zanders Fine Papers",
             "category": "design",
-            "tags": "layout, logos, collection",
+            "tags": "layout, logos, collection, Herb Lubalin",
             "cataloged": true,
       },
       {

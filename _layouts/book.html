@@ -20,14 +20,14 @@ layout: default
                   </div>
                   <div>
                         <h1 class="h1 post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+                        <div class="sp__1 sp__1-md sp__1-sm"></div>
+                        {% if page.category != "unknown" %} <span class="icon u__color-{{ page.category | remove: ' '}}">● </span><a href="{{ site.baseurl }}/category/{{ page.category }}/" class="h6 category">{{ page.category }}</a>{% endif %}
                         {% if page.author != "unknown" %} <span class="icon">&#9997;</span><span class="h6 author {{ page.author | remove: ' ' }}">{{ page.author }}</span>{% endif %}
                         {% if page.published-date != "unknown" %} <span class="icon">⌛</span><span class="h6 published-date">{{ page.published-date }}</span>{% endif %}
                         {% if page.ISBN != "unknown" %} <!--&#9758;--><span class="icon">📂</span><span class="h6 isbn {{ page.published-isbn }}">{{ page.ISBN }}</span>{% endif %}
                         {% if page.publisher != "unknown" %} <span class="icon">&#128214;</span><span class="h6 publisher {{ page.publisher | remove: ' '}}">{{ page.publisher }}</span>{% endif %}
-                        {% if page.description != "unknown" %} <p class="published-description">{{ page.description }}</p>{% endif %}
-                        {% for tag in page.tags %}
-                            <span class="h6 tag {{ tag }}">{{ tag }}</span>
-                        {% endfor %}
+                        {% if page.description != "unknown" %} <div class="sp__1 sp__1-md sp__1-sm"></div><p class="published-description">{{ page.description }}</p>{% endif %}
+
                   </div>
             </div>
       </div>
@@ -62,7 +62,7 @@ layout: default
       </script>
     </article>
 </section>
-<h2 class="h1 u__border-padding">You May Also Enjoy</h2>
+<h2 class="h2 u__border-padding">You May Also Enjoy</h2>
 <ul class="list__border">
 {% assign maxRelated = 4 %}
 {% assign minCommonTags =  1 %}
@@ -85,7 +85,7 @@ layout: default
    {% if sameTagCount >= minCommonTags %}
       {% if book.title != page.title %}
             <li>
-                  <a class="u__border-padding {{book.category | remove: " " }}" href="{{ site.baseurl }}{{ book.url }}">
+                  <a class="u__border-padding {{book.category | remove: " " }}" href="{{ site.baseurl }}/books{{ book.title | datapage_url: dir}}">
                         <span class="book-title">{{ book.title }}</span>
                         <span class="book-details">
                               {% if book.author != "unknown" %}

@@ -7,8 +7,9 @@ layout: null
       "title"    : "{{ book.title | escape }}",
       "category" : "{{ book.category }}",
       "tags"     : "{{ book.tags | join: ', ' }}",
-      "url"      : "{{ book.title | datapage_url: 'books' }}",
-      "date"     : "{{ book.date }}"
+      "url"      : "{{ site.baseurl }}/books{{ book.title | datapage_url: dir}}",
+      "date"     : "{{ book.date }}",
+      "description"     : "{{ book.description }}"
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
