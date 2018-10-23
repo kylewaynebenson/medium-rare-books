@@ -266,8 +266,8 @@
   
     {
       "title"    : "Logo Art",
-      "category" : "iconography",
-      "tags"     : "design, logos",
+      "category" : "collection",
+      "tags"     : "lettering, typography, logos",
       "url"      : "books/logo-art/",
       "date"     : ""
     } ,
@@ -361,10 +361,10 @@
     } ,
   
     {
-      "title"    : "Young Designers in New York",
+      "title"    : "Idea Magazine Special Issue: Young Designers in New York",
       "category" : "collection",
-      "tags"     : "",
-      "url"      : "books/young-designers-in-new-york/",
+      "tags"     : "japanese, , advertising, New York",
+      "url"      : "books/idea-magazine-special-issue-young-designers-in-new-york/",
       "date"     : ""
     } ,
   
@@ -507,7 +507,7 @@
     {
       "title"    : "Werbeform #1",
       "category" : "design",
-      "tags"     : "design",
+      "tags"     : "German, collection, illustration",
       "url"      : "books/werbeform-1/",
       "date"     : ""
     } ,
@@ -779,7 +779,7 @@
     {
       "title"    : "Los Trabajos de Hercules",
       "category" : "illustration",
-      "tags"     : "children, illustration",
+      "tags"     : "children, illustration, color, Spain",
       "url"      : "books/los-trabajos-de-hercules/",
       "date"     : ""
     } ,
@@ -787,7 +787,7 @@
     {
       "title"    : "Peter Petrake",
       "category" : "illustration",
-      "tags"     : "children, illustration",
+      "tags"     : "color, illustration, layout, Spain",
       "url"      : "books/peter-petrake/",
       "date"     : ""
     } ,
@@ -803,7 +803,7 @@
     {
       "title"    : "Das Liederkarussell",
       "category" : "illustration",
-      "tags"     : "children, illustration",
+      "tags"     : "German, children, illustration",
       "url"      : "books/das-liederkarussell/",
       "date"     : ""
     } ,
@@ -929,6 +929,14 @@
     } ,
   
     {
+      "title"    : "Pubblicità in Italia 1964–1965",
+      "category" : "collection",
+      "tags"     : "Italy, advertising, design, illustration",
+      "url"      : "books/pubblicita-in-italia-19641965/",
+      "date"     : ""
+    } ,
+  
+    {
       "title"    : "Special Edition",
       "category" : "collection",
       "tags"     : "packaging, design",
@@ -941,6 +949,14 @@
       "category" : "collection",
       "tags"     : "japanese, illustration, advertising, periodical",
       "url"      : "books/idea-magazine-special-issue-graphic-designers-of-the-west-coast/",
+      "date"     : ""
+    } ,
+  
+    {
+      "title"    : "Radio and Television Publicity",
+      "category" : "collection",
+      "tags"     : "Italy, illustration, advertising",
+      "url"      : "books/radio-and-television-publicity/",
       "date"     : ""
     } 
   
