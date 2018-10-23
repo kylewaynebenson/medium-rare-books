@@ -266,8 +266,8 @@
   
     {
       "title"    : "Logo Art",
-      "category" : "design",
-      "tags"     : "design",
+      "category" : "iconography",
+      "tags"     : "design, logos",
       "url"      : "books/logo-art/",
       "date"     : ""
     } ,
@@ -290,32 +290,32 @@
   
     {
       "title"    : "Design Systems for Corporations: A2 — Public Transport Systems",
-      "category" : "design",
-      "tags"     : "design",
+      "category" : "systems",
+      "tags"     : "corporate, design, collection, guide",
       "url"      : "books/design-systems-for-corporations-a2--public-transport-systems/",
       "date"     : ""
     } ,
   
     {
       "title"    : "Design Systems for Corporations: A1 — The Retailing Industry",
-      "category" : "design",
-      "tags"     : "design",
+      "category" : "systems",
+      "tags"     : "corporate, design, collection, guide",
       "url"      : "books/design-systems-for-corporations-a1--the-retailing-industry/",
       "date"     : ""
     } ,
   
     {
       "title"    : "Design Systems for Corporations: A3 — Corporate Communication at Olivetti 1",
-      "category" : "design",
-      "tags"     : "design",
+      "category" : "systems",
+      "tags"     : "corporate, design, collection, guide",
       "url"      : "books/design-systems-for-corporations-a3--corporate-communication-at-olivetti-1/",
       "date"     : ""
     } ,
   
     {
       "title"    : "Design Systems for Corporations: A3 — Corporate Communication at Olivetti 2",
-      "category" : "SANNO Institute of Management Publications Dept.",
-      "tags"     : "design",
+      "category" : "systems",
+      "tags"     : "corporate, design, collection, guide",
       "url"      : "books/design-systems-for-corporations-a3--corporate-communication-at-olivetti-2/",
       "date"     : ""
     } ,
@@ -331,7 +331,7 @@
     {
       "title"    : "Design Systems for Corporations: B4 — Basic Design Elements and Their Systems",
       "category" : "systems",
-      "tags"     : "",
+      "tags"     : "corporate, design, collection, guide",
       "url"      : "books/design-systems-for-corporations-b4--basic-design-elements-and-their-systems/",
       "date"     : ""
     } ,
@@ -339,7 +339,7 @@
     {
       "title"    : "Design Systems for Corporations: B5 — Basic Design Elements and Their Systems",
       "category" : "systems",
-      "tags"     : "systems, logos",
+      "tags"     : "corporate, design, collection, guide",
       "url"      : "books/design-systems-for-corporations-b5--basic-design-elements-and-their-systems/",
       "date"     : ""
     } ,
@@ -347,15 +347,15 @@
     {
       "title"    : "Design Systems for Corporations: C2 — Developing a Basic Design System",
       "category" : "systems",
-      "tags"     : "systems, logos",
+      "tags"     : "corporate, design, collection, guide",
       "url"      : "books/design-systems-for-corporations-c2--developing-a-basic-design-system/",
       "date"     : ""
     } ,
   
     {
       "title"    : "New Home Japanese Encyclopedia #4",
-      "category" : "catalog",
-      "tags"     : "",
+      "category" : "collection",
+      "tags"     : "encyclopedia, japanese, collection",
       "url"      : "books/new-home-japanese-encyclopedia-4/",
       "date"     : ""
     } ,
@@ -594,7 +594,7 @@
   
     {
       "title"    : "Corporate Design International",
-      "category" : "design",
+      "category" : "systems",
       "tags"     : "",
       "url"      : "books/corporate-design-international/",
       "date"     : ""
@@ -603,7 +603,7 @@
     {
       "title"    : "Au Jardin",
       "category" : "illustration",
-      "tags"     : "children",
+      "tags"     : "children, illustration",
       "url"      : "books/au-jardin/",
       "date"     : ""
     } ,
@@ -619,7 +619,7 @@
     {
       "title"    : "L&#39;Energie",
       "category" : "illustration",
-      "tags"     : "children",
+      "tags"     : "children, illustration",
       "url"      : "books/lenergie/",
       "date"     : ""
     } ,
@@ -627,7 +627,7 @@
     {
       "title"    : "L&#39;Automobile",
       "category" : "illustration",
-      "tags"     : "children",
+      "tags"     : "children, illustration",
       "url"      : "books/lautomobile/",
       "date"     : ""
     } ,
@@ -635,7 +635,7 @@
     {
       "title"    : "La Rivièra",
       "category" : "illustration",
-      "tags"     : "children",
+      "tags"     : "children, illustration",
       "url"      : "books/la-riviera/",
       "date"     : ""
     } ,
@@ -643,7 +643,7 @@
     {
       "title"    : "Sally and Billy at the Seaside",
       "category" : "illustration",
-      "tags"     : "children",
+      "tags"     : "children, illustration",
       "url"      : "books/sally-and-billy-at-the-seaside/",
       "date"     : ""
     } ,
@@ -651,7 +651,7 @@
     {
       "title"    : "Les Plantes",
       "category" : "illustration",
-      "tags"     : "children",
+      "tags"     : "children, illustration",
       "url"      : "books/les-plantes/",
       "date"     : ""
     } ,
@@ -659,7 +659,7 @@
     {
       "title"    : "Les Insectes",
       "category" : "illustration",
-      "tags"     : "children",
+      "tags"     : "children, illustration",
       "url"      : "books/les-insectes/",
       "date"     : ""
     } ,
@@ -667,7 +667,7 @@
     {
       "title"    : "Heidi Peter und der Weltraum",
       "category" : "illustration",
-      "tags"     : "children",
+      "tags"     : "children, illustration",
       "url"      : "books/heidi-peter-und-der-weltraum/",
       "date"     : ""
     } ,
@@ -675,7 +675,7 @@
     {
       "title"    : "La Mer",
       "category" : "illustration",
-      "tags"     : "children",
+      "tags"     : "children, illustration",
       "url"      : "books/la-mer/",
       "date"     : ""
     } ,
@@ -683,7 +683,7 @@
     {
       "title"    : "En Route",
       "category" : "illustration",
-      "tags"     : "children",
+      "tags"     : "children, illustration",
       "url"      : "books/en-route/",
       "date"     : ""
     } ,
@@ -691,7 +691,7 @@
     {
       "title"    : "Henri&#39;s Walk to Paris",
       "category" : "illustration",
-      "tags"     : "children",
+      "tags"     : "children, illustration",
       "url"      : "books/henris-walk-to-paris/",
       "date"     : ""
     } ,
@@ -715,7 +715,7 @@
     {
       "title"    : "Ho for a Hat!",
       "category" : "illustration",
-      "tags"     : "children",
+      "tags"     : "children, illustration",
       "url"      : "books/ho-for-a-hat/",
       "date"     : ""
     } ,
@@ -763,7 +763,7 @@
     {
       "title"    : "Sparkle &amp; Spin",
       "category" : "illustration",
-      "tags"     : "children",
+      "tags"     : "children, illustration",
       "url"      : "books/sparkle--spin/",
       "date"     : ""
     } ,
@@ -771,7 +771,7 @@
     {
       "title"    : "Jazz",
       "category" : "illustration",
-      "tags"     : "children",
+      "tags"     : "children, illustration",
       "url"      : "books/jazz/",
       "date"     : ""
     } ,
@@ -779,7 +779,7 @@
     {
       "title"    : "Los Trabajos de Hercules",
       "category" : "illustration",
-      "tags"     : "children",
+      "tags"     : "children, illustration",
       "url"      : "books/los-trabajos-de-hercules/",
       "date"     : ""
     } ,
@@ -787,7 +787,7 @@
     {
       "title"    : "Peter Petrake",
       "category" : "illustration",
-      "tags"     : "children",
+      "tags"     : "children, illustration",
       "url"      : "books/peter-petrake/",
       "date"     : ""
     } ,
@@ -795,7 +795,7 @@
     {
       "title"    : "The Sun",
       "category" : "illustration",
-      "tags"     : "children",
+      "tags"     : "children, illustration",
       "url"      : "books/the-sun/",
       "date"     : ""
     } ,
@@ -803,7 +803,7 @@
     {
       "title"    : "Das Liederkarussell",
       "category" : "illustration",
-      "tags"     : "children",
+      "tags"     : "children, illustration",
       "url"      : "books/das-liederkarussell/",
       "date"     : ""
     } ,
@@ -827,7 +827,7 @@
     {
       "title"    : "La Scandinavie",
       "category" : "illustration",
-      "tags"     : "children",
+      "tags"     : "children, illustration",
       "url"      : "books/la-scandinavie/",
       "date"     : ""
     } ,
@@ -851,15 +851,15 @@
     {
       "title"    : "Musicians of the World",
       "category" : "illustration",
-      "tags"     : "children",
+      "tags"     : "children, illustration",
       "url"      : "books/musicians-of-the-world/",
       "date"     : ""
     } ,
   
     {
       "title"    : "Design Origin: France",
-      "category" : "design",
-      "tags"     : "",
+      "category" : "collection",
+      "tags"     : "french,  design",
       "url"      : "books/design-origin-france/",
       "date"     : ""
     } ,
@@ -867,79 +867,79 @@
     {
       "title"    : "Mi Diccionario Illustrado",
       "category" : "illustration",
-      "tags"     : "children",
+      "tags"     : "children, illustration",
       "url"      : "books/mi-diccionario-illustrado/",
       "date"     : ""
     } ,
   
     {
       "title"    : "Pubblicità in Italia 1958–1959",
-      "category" : "design",
-      "tags"     : "Italy, advertising, illustration",
+      "category" : "collection",
+      "tags"     : "Italy, advertising, design, illustration",
       "url"      : "books/pubblicita-in-italia-19581959/",
       "date"     : ""
     } ,
   
     {
       "title"    : "Pubblicità in Italia 1960–1961",
-      "category" : "design",
-      "tags"     : "Italy, advertising, illustration",
+      "category" : "collection",
+      "tags"     : "Italy, advertising, design, illustration",
       "url"      : "books/pubblicita-in-italia-19601961/",
       "date"     : ""
     } ,
   
     {
       "title"    : "Pubblicità in Italia 1977–1978",
-      "category" : "design",
-      "tags"     : "Italy, advertising, illustration",
+      "category" : "collection",
+      "tags"     : "Italy, advertising, design, illustration",
       "url"      : "books/pubblicita-in-italia-19771978/",
       "date"     : ""
     } ,
   
     {
       "title"    : "Pubblicità in Italia 1959–1960",
-      "category" : "design",
-      "tags"     : "Italy, advertising, illustration",
+      "category" : "collection",
+      "tags"     : "Italy, advertising, design, illustration",
       "url"      : "books/pubblicita-in-italia-19591960/",
       "date"     : ""
     } ,
   
     {
       "title"    : "Pubblicità in Italia 1967–1968",
-      "category" : "design",
-      "tags"     : "Italy, advertising, illustration",
+      "category" : "collection",
+      "tags"     : "Italy, advertising, design, illustration",
       "url"      : "books/pubblicita-in-italia-19671968/",
       "date"     : ""
     } ,
   
     {
       "title"    : "Pubblicità in Italia 1966–1967",
-      "category" : "design",
-      "tags"     : "Italy, advertising, illustration",
+      "category" : "collection",
+      "tags"     : "Italy, advertising, design, illustration",
       "url"      : "books/pubblicita-in-italia-19661967/",
       "date"     : ""
     } ,
   
     {
       "title"    : "Pubblicità in Italia 1969–1970",
-      "category" : "design",
-      "tags"     : "Italy, advertising, illustration",
+      "category" : "collection",
+      "tags"     : "Italy, advertising, design, illustration",
       "url"      : "books/pubblicita-in-italia-19691970/",
       "date"     : ""
     } ,
   
     {
       "title"    : "Special Edition",
-      "category" : "design",
-      "tags"     : "packaging, collection",
+      "category" : "collection",
+      "tags"     : "packaging, design",
       "url"      : "books/special-edition/",
       "date"     : ""
     } ,
   
     {
       "title"    : "Idea Magazine Special Issue: Graphic Designers of the West Coast",
-      "category" : "periodical",
-      "tags"     : "japanese, illustration, advertising",
+      "category" : "collection",
+      "tags"     : "japanese, illustration, advertising, periodical",
       "url"      : "books/idea-magazine-special-issue-graphic-designers-of-the-west-coast/",
       "date"     : ""
     } 
