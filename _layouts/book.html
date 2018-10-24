@@ -21,11 +21,11 @@ layout: default
                   <div>
                         <h1 class="h1 post-title" itemprop="name headline">{{ page.title | escape }}</h1>
                         <div class="sp__1 sp__1-md sp__1-sm"></div>
-                        {% if page.author != "unknown" %} <span class="icon">&#9997;</span><span class="h6 author {{ page.author | remove: ' ' }}">{{ page.author }}</span>{% endif %}
-                        {% if page.published-date != "unknown" %} <span class="icon">⌛</span><span class="h6 published-date">{{ page.published-date }}</span>{% endif %}
-                        {% if page.ISBN != "unknown" %} <!--&#9758;--><span class="icon">📂</span><span class="h6 isbn {{ page.published-isbn }}">{{ page.ISBN }}</span>{% endif %}
-                        {% if page.publisher != "unknown" %} <span class="icon">&#128214;</span><span class="h6 publisher {{ page.publisher | remove: ' '}}">{{ page.publisher }}</span>{% endif %}
-                        {% if page.category != "unknown" %} <span class="icon u__color-{{ page.category | remove: ' '}}">● </span><a href="{{ site.baseurl }}/category/{{ page.category }}/" class="h6 category u__color-{{ page.category | remove: ' '}}">{{ page.category }}</a>{% endif %}
+                        {% if page.author != "unknown" %} <span class="book-detail h6 author {{ page.author | remove: ' ' }}"><span class="icon">✍ </span>{{ page.author }}</span>{% endif %}
+                        {% if page.published-date != "unknown" %} <span class="book-detail h6 published-date"><span class="icon">⌛ </span>{{ page.published-date }}</span>{% endif %}
+                        {% if page.ISBN != "unknown" %} <span class="book-detail h6 isbn {{ page.published-isbn }}"><span class="icon">🗀 </span>{{ page.ISBN }}</span>{% endif %}
+                        {% if page.publisher != "unknown" %} <span class="book-detail h6 publisher {{ page.publisher | remove: ' '}}"><span class="icon">📖 </span>{{ page.publisher }}</span>{% endif %}
+                        {% if page.category != "unknown" %} <a href="{{ site.baseurl }}/category/{{ page.category }}/" class="book-detail h6 category u__color-{{ page.category | remove: ' '}}"><span class="icon">● </span>{{ page.category }}</a>{% endif %}
                         {% if page.description != "unknown" %} <div class="sp__1 sp__1-md sp__1-sm"></div><p class="published-description">{{ page.description }}</p>{% endif %}
 
                   </div>
@@ -88,25 +88,25 @@ layout: default
                   <a class="u__border-padding {{book.category | remove: " " }}" href="{{ site.baseurl }}/books{{ book.title | datapage_url: dir}}">
                         <span class="book-title">{{ book.title }}</span>
                         <span class="book-details">
-                              {% if book.author != "unknown" %}
-                              <span class="book-detail">{{book.author}}</span>
-                              {% endif %}
-                              {% if book.ISBN != "unknown" %}
-                              <span class="book-detail">{{book.ISBN}}</span>
-                              {% endif %}
-                              {% if book.publisher != "unknown" %}
-                              <span class="book-detail">{{book.publisher}}</span>
-                              {% endif %}
-                              {% if book.published-date != "unknown" %}
-                              <span class="book-detail">{{book.published-date}}</span>
-                              {% endif %}
-                              {% if book.published-category != "unknown" %}
-                              <span class="book-detail">{{book.category}}</span>
-                              {% endif %}
-                              {% if book.published-description != "unknown" %}
-                              <span class="book-detail">{{book.description}}</span></a>
-                              {% endif %}
-                        </span>
+  				    {% if book.author != "unknown" %}
+  				    <span class="book-detail"><span class="icon">✍ </span>{{book.author}}</span>
+  				    {% endif %}
+  				    {% if book.published-date != "unknown" %}
+  				    <span class="book-detail"><span class="icon">⌛ </span>{{book.published-date}}</span>
+  				    {% endif %}
+  				    {% if book.publisher != "unknown" %}
+  				    <span class="book-detail"><span class="icon">🗀 </span>{{book.publisher}}</span>
+  				    {% endif %}
+  				    {% if book.ISBN != "unknown" %}
+  				    <span class="book-detail"><span class="icon">📖 </span>{{book.ISBN}}</span>
+  				    {% endif %}
+  				    {% if book.category != "unknown" %}
+  				    <span class="book-detail">{{book.category}}</span>
+  				    {% endif %}
+  				    {% if book.description != "unknown" %}
+  				    <span class="book-detail">{{book.description}}</span></a>
+  				    {% endif %}
+  			    </span>
                   </a>
             </li>
          {% endif %}

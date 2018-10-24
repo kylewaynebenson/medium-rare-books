@@ -8,28 +8,30 @@ layout: default
 
 		<ul class="list__border">
 		{% for book in site.data.books %}
-		    <li><a class="u__border-padding {{book.category | remove: " " }}" href="{{ site.baseurl }}{{ book.title | datapage_url: 'books' }}">
-			    <span class="book-title">{{book.title}}</span>
-			    <span class="book-details">
-				    {% if book.author != "unknown" %}
-				    <span class="book-detail">{{book.author}}</span>
-				    {% endif %}
-				    {% if book.ISBN != "unknown" %}
-				    <span class="book-detail">{{book.ISBN}}</span>
-				    {% endif %}
-				    {% if book.publisher != "unknown" %}
-				    <span class="book-detail">{{book.publisher}}</span>
-				    {% endif %}
-				    {% if book.published-date != "unknown" %}
-				    <span class="book-detail">{{book.published-date}}</span>
-				    {% endif %}
-				    {% if book.published-category != "unknown" %}
-				    <span class="book-detail">{{book.category}}</span>
-				    {% endif %}
-				    {% if book.published-description != "unknown" %}
-				    <span class="book-detail">{{book.description}}</span></a>
-				    {% endif %}
-			    </span>
+		    <li>
+			    <a class="u__border-padding {{book.category | remove: " " }}" href="{{ site.baseurl }}{{ book.title | datapage_url: 'books' }}">
+				    <span class="book-title">{{book.title}}</span>
+				    <span class="book-details">
+					    {% if book.author != "unknown" %}
+					    <span class="book-detail"><span class="icon">✍ </span>{{book.author}}</span>
+					    {% endif %}
+					    {% if book.published-date != "unknown" %}
+					    <span class="book-detail"><span class="icon">⌛ </span>{{book.published-date}}</span>
+					    {% endif %}
+					    {% if book.publisher != "unknown" %}
+					    <span class="book-detail"><span class="icon">🗀 </span>{{book.publisher}}</span>
+					    {% endif %}
+					    {% if book.ISBN != "unknown" %}
+					    <span class="book-detail"><span class="icon">📖 </span>{{book.ISBN}}</span>
+					    {% endif %}
+					    {% if book.category != "unknown" %}
+					    <span class="book-detail">{{book.category}}</span>
+					    {% endif %}
+					    {% if book.description != "unknown" %}
+					    <span class="book-detail">{{book.description}}</span></a>
+					    {% endif %}
+				    </span>
+			    </a>
 		    </li>
 		{% endfor %}
 		</ul>
