@@ -25,7 +25,7 @@ layout: default
                         {% if page.published-date != "unknown" %} <span class="book-detail h6 published-date"><span class="icon">⌛ </span>{{ page.published-date }}</span>{% endif %}
                         {% if page.ISBN != "unknown" %} <span class="book-detail h6 isbn {{ page.published-isbn }}"><span class="icon">🗀 </span>{{ page.ISBN }}</span>{% endif %}
                         {% if page.publisher != "unknown" %} <span class="book-detail h6 publisher {{ page.publisher | remove: ' '}}"><span class="icon">📖 </span>{{ page.publisher }}</span>{% endif %}
-                        {% if page.category != "unknown" %} <a href="{{ site.baseurl }}/category/{{ page.category }}/" class="book-detail h6 category u__color-{{ page.category | remove: ' '}}"><span class="icon">● </span>{{ page.category }}</a>{% endif %}
+                        {% if page.category != "unknown" %} <a href="{{ site.baseurl }}/category/{{ page.category }}/" class="book-detail h6 category u__underline u__color-{{ page.category | remove: ' '}}"><span class="icon">● </span>{{ page.category }}</a>{% endif %}
                         {% if page.description != "unknown" %} <div class="sp__1 sp__1-md sp__1-sm"></div><p class="published-description">{{ page.description }}</p>{% endif %}
 
                   </div>
