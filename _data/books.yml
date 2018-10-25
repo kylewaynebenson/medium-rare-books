@@ -29,6 +29,7 @@
             "published-date": "1979",
             "publisher": "Chronicle Books",
             "category": "collection",
+            "tags": "design",
             "cataloged": true,
       },
       {
@@ -105,6 +106,7 @@
             "published-date": "1967",
             "publisher": "Arthur Niggli",
             "category": "design",
+            "tags": "design",
             "cataloged": true,
       },
       {
@@ -115,6 +117,7 @@
             "published-date": "1969",
             "publisher": "University of Toronto",
             "category": "design",
+            "tags": "design",
             "cataloged": true,
       },
       {
@@ -147,6 +150,7 @@
             "published-date": "1948–49",
             "publisher": "unknown",
             "category": "collection",
+            "tags": "design",
             "cataloged": true,
       },
       {
@@ -157,6 +161,7 @@
             "published-date": "1950–52",
             "publisher": "unknown",
             "category": "collection",
+            "tags": "design",
             "cataloged": true,
       },
       {
@@ -167,6 +172,7 @@
             "published-date": "1957",
             "publisher": "unknown",
             "category": "collection",
+            "tags": "design",
             "cataloged": true,
       },
       {
@@ -177,6 +183,7 @@
             "published-date": "1960",
             "publisher": "unknown",
             "category": "collection",
+            "tags": "design",
             "cataloged": true,
       },
       {
@@ -187,6 +194,7 @@
             "published-date": "1964",
             "publisher": "unknown",
             "category": "collection",
+            "tags": "design",
             "cataloged": true,
       },
       {
@@ -263,6 +271,7 @@
             "published-date": "1972",
             "publisher": "Van Nostrand Reinhold Company",
             "category": "design",
+            "tags": "design",
             "cataloged": true,
       },
       {
@@ -273,6 +282,7 @@
             "published-date": "1985",
             "publisher": "Dietrich Reimer Verlag",
             "category": "design",
+            "tags": "design",
             "cataloged": true,
       },
       {
@@ -437,6 +447,7 @@
             "published-date": "1976",
             "publisher": "SANNO Institute of Management Publications Dept.",
             "category": "systems",
+            "tags": "design",
             "cataloged": true,
       },
       {
@@ -498,12 +509,12 @@
       {
             "title": "American Trademarks & Logotypes",
             "author": "Idea Special Issue",
-            "author": "unknown",
             "ISBN": "unknown",
             "description": "unknown",
             "published-date": "unknown",
             "publisher": "unknown",
             "category": "typography",
+            "tags": "design",
             "cataloged": true,
       },
       {
@@ -525,6 +536,7 @@
             "published-date": "1964",
             "publisher": "ABC Verlag",
             "category": "collection",
+            "tags": "design",
             "cataloged": true,
       },
       {
@@ -535,6 +547,7 @@
             "published-date": "1963",
             "publisher": "ABC Verlag",
             "category": "collection",
+            "tags": "design",
             "cataloged": true,
       },
       {
@@ -611,6 +624,7 @@
             "published-date": "1972",
             "publisher": "Office du Livre",
             "category": "design",
+            "tags": "design",
             "cataloged": true,
             },
       {
@@ -621,7 +635,6 @@
             "published-date": "unknown",
             "publisher": "Zanders Fine Papers",
             "category": "design",
-            "tags": "design",
             "tags": "layout, logos, collection, Herb Lubalin",
             "cataloged": true,
       },
@@ -656,17 +669,18 @@
             "published-date": "1953",
             "publisher": "Arts, Inc.",
             "category": "design",
+            "tags": "design",
             "cataloged": true,
       },
       {
             "title": "American Standard Plumbing Fixtures: P50 Catalog",
             "author": "Ladislav Sutna",
-            "author": "unknown",
             "ISBN": "unknown",
             "description": "unknown",
             "published-date": "1950",
             "publisher": "American Radiator & Standard Sanitary Corporation",
             "category": "catalog",
+            "tags": "design",
             "cataloged": true,
       },
       {
@@ -677,6 +691,7 @@
             "published-date": "unknown",
             "publisher": "unkown",
             "category": "design",
+            "tags": "design",
             "cataloged": true,
       },
       {
@@ -709,6 +724,7 @@
             "published-date": "2003",
             "publisher": "MAN_Museo d’Arte Provincia di Nuoro",
             "category": "design",
+            "tags": "design",
             "cataloged": true,
       },
       {
@@ -730,6 +746,7 @@
             "published-date": "1960",
             "publisher": "Reinhold Publishing Corporation",
             "category": "design",
+            "tags": "design",
             "cataloged": true,
       },
       {
@@ -752,6 +769,7 @@
             "published-date": "1999",
             "publisher": "Bibliothèque Forney",
             "category": "design",
+            "tags": "design",
             "cataloged": true,
       },
       {
@@ -806,6 +824,7 @@
             "published-date": "1984",
             "publisher": "ABC Edition",
             "category": "systems",
+            "tags": "design",
             "cataloged": true,
       },
       {
@@ -936,9 +955,8 @@
             "description": "unknown",
             "published-date": "unknown",
             "publisher": "unknown",
-            "tags": "Young Holt",
             "category": "illustration",
-            "tags": "children, illustration",
+            "tags": "children, illustration, Young Holt",
             "cataloged": true,
       },
       {
