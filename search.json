@@ -31,7 +31,7 @@
     {
       "title"    : "Impaginazione Grafica #3",
       "category" : "design",
-      "tags"     : "design",
+      "tags"     : "Italy, logos, collection",
       "url"      : "/books/impaginazione-grafica-3/"
     } ,
   
@@ -330,10 +330,10 @@
     } ,
   
     {
-      "title"    : "Switzerland",
-      "category" : "design",
-      "tags"     : "design",
-      "url"      : "/books/switzerland/"
+      "title"    : "Switzerland: Air View",
+      "category" : "collection",
+      "tags"     : "design, Swiss, photography",
+      "url"      : "/books/switzerland-air-view/"
     } ,
   
     {
@@ -394,8 +394,8 @@
   
     {
       "title"    : "Label Design",
-      "category" : "design",
-      "tags"     : "design",
+      "category" : "collection",
+      "tags"     : "label, typography",
       "url"      : "/books/label-design/"
     } ,
   
@@ -470,23 +470,23 @@
     } ,
   
     {
-      "title"    : "Alphabet Thesaurus Vol 2",
-      "category" : "design",
-      "tags"     : "design",
-      "url"      : "/books/alphabet-thesaurus-vol-2/"
+      "title"    : "Alphabet Thesaurus, Vol. 2",
+      "category" : "typography",
+      "tags"     : "design, collection",
+      "url"      : "/books/alphabet-thesaurus-vol.-2/"
     } ,
   
     {
-      "title"    : "Typographia #2",
+      "title"    : "Typographia 2",
       "category" : "typography",
-      "tags"     : "design",
+      "tags"     : "design, Czechoslovakia, typography",
       "url"      : "/books/typographia-2/"
     } ,
   
     {
       "title"    : "Jacques Nathan-Garamond. Affichiste et graphiste.",
-      "category" : "design",
-      "tags"     : "design",
+      "category" : "writing",
+      "tags"     : "none",
       "url"      : "/books/jacques-nathan-garamond.-affichiste-et-graphiste./"
     } ,
   
@@ -759,7 +759,7 @@
     {
       "title"    : "Mi Diccionario Illustrado",
       "category" : "illustration",
-      "tags"     : "children, illustration",
+      "tags"     : "children, illustration, Spanish",
       "url"      : "/books/mi-diccionario-illustrado/"
     } ,
   
@@ -838,6 +838,20 @@
       "category" : "collection",
       "tags"     : "Italy, illustration, advertising",
       "url"      : "/books/radio-and-television-publicity/"
+    } ,
+  
+    {
+      "title"    : "American Illustration 32",
+      "category" : "collection",
+      "tags"     : "illustration, advertising, periodical",
+      "url"      : "/books/american-illustration-32/"
+    } ,
+  
+    {
+      "title"    : "Typo",
+      "category" : "typography",
+      "tags"     : "print, Swissdr, typography",
+      "url"      : "/books/typo/"
     } 
   
 ]
