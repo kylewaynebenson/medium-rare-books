@@ -45,18 +45,18 @@
       },
       {
             "title": "Impaginazione Grafica #3",
-            "author": "unknown",
+            "author": "Words by Ambrogio Colombo",
             "ISBN": "unknown",
             "description": "unknown",
-            "published-date": "unknown",
-            "publisher": "unknown",
+            "published-date": "1981",
+            "publisher": "Centro Grafico Milano",
             "category": "design",
-            "tags": "design",
+            "tags": "Italy, logos, collection",
             "cataloged": true,
       },
       {
             "title": "Impaginazione Grafica #4",
-            "author": "Words by di Ambrogio Colombo",
+            "author": "Words by Ambrogio Colombo",
             "ISBN": "unknown",
             "description": "unknown",
             "published-date": "1985",
@@ -623,13 +623,8 @@
             "description": "1,000 illustrations chosen and introduced by Claude Humbert.",
             "published-date": "1972",
             "publisher": "Office du Livre",
-<<<<<<< HEAD
             "category": "collection",
             "tags": "label, typography",
-=======
-            "category": "design",
-            "tags": "design",
->>>>>>> 1b97fd2557a70ac2580802eefb95d9f8369f9564
             "cataloged": true,
             },
       {
@@ -747,35 +742,22 @@
             "title": "Alphabet Thesaurus, Vol. 2",
             "author": "Photo Lettering Inc.",
             "ISBN": "unknown",
-            "description": "A treasury of letter design. Edited by Edward Rondthaler and the staff of Photo-lettering, inc. Design by Edward Benguiai, Victor Caruso and Wilford Griffin.",
+            "description": "A treasury of letter design. Edited by Edward Rondthaler and the staff of Photo-lettering, inc. Design by Edward Benguiat, Victor Caruso and Wilford Griffin.",
             "published-date": "1960",
             "publisher": "Reinhold Publishing Corporation",
-<<<<<<< HEAD
             "category": "typography",
             "tags": "design, collection",
-=======
-            "category": "design",
-            "tags": "design",
->>>>>>> 1b97fd2557a70ac2580802eefb95d9f8369f9564
             "cataloged": true,
       },
       {
             "title": "Typographia 2",
             "author": "Oldřich Hlavsa",
             "ISBN": "unknown",
-<<<<<<< HEAD
             "description": "Comprehensive type specimens and practical applications. Written in Czech.",
             "published-date": "1981",
             "publisher": "SNTL",
             "category": "typography",
             "tags": "design, Czechoslovakia, typography",
-=======
-            "description": "unknown",
-            "published-date": "unknown",
-            "publisher": "unknown",
-            "category": "typography",
-            "tags": "design",
->>>>>>> 1b97fd2557a70ac2580802eefb95d9f8369f9564
             "cataloged": true,
       },
       {
@@ -785,13 +767,8 @@
             "description": "unknown",
             "published-date": "1999",
             "publisher": "Bibliothèque Forney",
-<<<<<<< HEAD
             "category": "writing",
             "tags": "none",
-=======
-            "category": "design",
-            "tags": "design",
->>>>>>> 1b97fd2557a70ac2580802eefb95d9f8369f9564
             "cataloged": true,
       },
       {
@@ -1351,6 +1328,17 @@ With an introduction by Gio Ponti.",
             "publisher": "Amilus Incorporated",
             "category": "collection",
             "tags": "illustration, advertising, periodical",
+            "cataloged": true,
+      },
+      {
+            "title": "Typo",
+            "author": "Walter Marti",
+            "ISBN": "unknown",
+            "description": "unknown",
+            "published-date": "1957",
+            "publisher": "Schill & Cie Luzern",
+            "category": "typography",
+            "tags": "print, Swissdr, typography",
             "cataloged": true,
       },
 ]
