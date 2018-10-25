@@ -17,7 +17,7 @@ title: Medium Rare Books
 email: brandstudio@intercom.io
 description: >- # this means to ignore newlines until "baseurl:"
   Medium, rare books
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/medium-rare-books" # the subpath of your site, e.g. /blog
 url: "https://kylewaynebenson.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: intercombrandstudio
 instagram_username:  intercombrandstudio
