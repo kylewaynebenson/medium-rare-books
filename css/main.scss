@@ -163,111 +163,78 @@ $xl: 1440px;
 .u__rotate-270 {
       transform: rotate(270deg);
 }
+.u__pill {
+      @extend .h6;
+      padding: 6px 9px;
+}
 /***********************
 Animations
 ************************/
-@keyframes dash {
-  0%, 100% {
-    stroke-dashoffset: 0;
-  }
-  50% {
-    stroke-dashoffset: 1000;
-  }
-}
-@keyframes upanddown {
-  0% {
-    transform: translateX(0px) translateY(0px);
-  }
-  33% {
-    transform: translateX(12px) translateY(-34px);
-  }
-  66% {
-    transform: translateX(-12px) translateY(30px);
-  }
-}
-@keyframes fadeoutin {
-  0%, 40%, 100% {
-    opacity: 0;
-  }
-  50%, 90% {
-    opacity: 1;
-  }
-}
-@keyframes fadeinout {
-  0%, 40%, 100% {
-    opacity: 1;
-  }
-  50%, 90% {
-    opacity: 0;
-  }
-}
-@keyframes fadein {
-  0%, 100% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes latefadeout {
-  0%, 60% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
+
 @keyframes shake {
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
   }
 
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
   }
 
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
   }
 
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
   }
 }
-@keyframes hoverbounce
-{
-    15%
-    {
-        -webkit-transform: translateY(5px);
-        transform: translateY(5px);
-    }
-    30%
-    {
-        -webkit-transform: translateY(-5px);
-        transform: translateY(-5px);
-    }
-    50%
-    {
-        -webkit-transform: translateY(3px);
-        transform: translateY(3px);
-    }
-    65%
-    {
-        -webkit-transform: translateY(-3px);
-        transform: translateY(-3px);
-    }
-    80%
-    {
-        -webkit-transform: translateY(2px);
-        transform: translateY(2px);
-    }
-    100%
-    {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
+.u__hover-shake {
+  display: block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
 }
-
+.u__hover-shake:hover {
+  animation-name: shake;
+  animation-duration: 0.75s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
 /***********************
 Variables
 ************************/
@@ -298,6 +265,24 @@ $pink: #f8e4e8;
 .u__background-green { background-color: $green; }
 .u__background-brown { background-color: $brown; }
 .u__background-pink { background-color: $pink; }
+
+.u__background-writing { background-color: $black; color: $white; }
+.u__background-iconography { background-color: $canary; }
+.u__background-layout { background-color: $yellow; }
+.u__background-systems { background-color: $pink; }
+.u__background-illustration { background-color: $orange; }
+.u__background-typography { background-color: $brown; }
+.u__background-catalog { background-color: $blue; }
+.u__background-collection { background-color: $green; }
+
+.u__color-writing { color: $black; }
+.u__color-iconography { color: $canary; }
+.u__color-layout { color: $yellow; }
+.u__color-systems { color: $pink; }
+.u__color-illustration { color: $orange; }
+.u__color-typography { color: $brown; }
+.u__color-catalog { color: $blue; }
+.u__color-collection { color: $green; }
 
 .svg__fill-orange { fill: $orange; }
 .svg__fill-brown { fill: $brown; }
@@ -350,60 +335,60 @@ Fonts
     url('../fonts/IntercomSquare-Regular.woff') format('woff');
 }
 @font-face {
-  font-family: 'Best Sans';
+  font-family: 'Medium Rare Sans';
   font-weight: 100;
-  src: url('../fonts/BestSans-Extrathin.eot'); /* IE9 */
-  src: url('../fonts/BestSans-Extrathin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../fonts/BestSans-Extrathin.woff2') format('woff2'),
-    url('../fonts/BestSans-Extrathin.woff') format('woff');
+  src: url('../fonts/MediumRareSans-Extrathin.eot'); /* IE9 */
+  src: url('../fonts/MediumRareSans-Extrathin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/MediumRareSans-Extrathin.woff2') format('woff2'),
+    url('../fonts/MediumRareSans-Extrathin.woff') format('woff');
 }
 @font-face {
-  font-family: 'Best Sans';
+  font-family: 'Medium Rare Sans';
   font-weight: 200;
-  src: url('../fonts/BestSans-Thin.eot'); /* IE9 */
-  src: url('../fonts/BestSans-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../fonts/BestSans-Thin.woff2') format('woff2'),
-    url('../fonts/BestSans-Thin.woff') format('woff');
+  src: url('../fonts/MediumRareSans-Thin.eot'); /* IE9 */
+  src: url('../fonts/MediumRareSans-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/MediumRareSans-Thin.woff2') format('woff2'),
+    url('../fonts/MediumRareSans-Thin.woff') format('woff');
 }
 @font-face {
-  font-family: 'Best Sans';
+  font-family: 'Medium Rare Sans';
   font-weight: 300;
-  src: url('../fonts/BestSans-Light.eot'); /* IE9 */
-  src: url('../fonts/BestSans-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../fonts/BestSans-Light.woff2') format('woff2'),
-    url('../fonts/BestSans-Light.woff') format('woff');
+  src: url('../fonts/MediumRareSans-Light.eot'); /* IE9 */
+  src: url('../fonts/MediumRareSans-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/MediumRareSans-Light.woff2') format('woff2'),
+    url('../fonts/MediumRareSans-Light.woff') format('woff');
 }
 @font-face {
-  font-family: 'Best Sans';
+  font-family: 'Medium Rare Sans';
   font-weight: 400;
-  src: url('../fonts/BestSans-Regular.eot'); /* IE9 */
-  src: url('../fonts/BestSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../fonts/BestSans-Regular.woff2') format('woff2'),
-    url('../fonts/BestSans-Regular.woff') format('woff');
+  src: url('../fonts/MediumRareSans-Regular.eot'); /* IE9 */
+  src: url('../fonts/MediumRareSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/MediumRareSans-Regular.woff2') format('woff2'),
+    url('../fonts/MediumRareSans-Regular.woff') format('woff');
 }
 @font-face {
-  font-family: 'Best Sans';
+  font-family: 'Medium Rare Sans';
   font-weight: 500;
-  src: url('../fonts/BestSans-Medium.eot'); /* IE9 */
-  src: url('../fonts/BestSans-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../fonts/BestSans-Medium.woff2') format('woff2'),
-    url('../fonts/BestSans-Medium.woff') format('woff');
+  src: url('../fonts/MediumRareSans-Medium.eot'); /* IE9 */
+  src: url('../fonts/MediumRareSans-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/MediumRareSans-Medium.woff2') format('woff2'),
+    url('../fonts/MediumRareSans-Medium.woff') format('woff');
 }
 @font-face {
-  font-family: 'Best Sans';
+  font-family: 'Medium Rare Sans';
   font-weight: 600;
-  src: url('../fonts/BestSans-Semibold.eot'); /* IE9 */
-  src: url('../fonts/BestSans-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../fonts/BestSans-Semibold.woff2') format('woff2'),
-    url('../fonts/BestSans-Semibold.woff') format('woff');
+  src: url('../fonts/MediumRareSans-Semibold.eot'); /* IE9 */
+  src: url('../fonts/MediumRareSans-Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/MediumRareSans-Semibold.woff2') format('woff2'),
+    url('../fonts/MediumRareSans-Semibold.woff') format('woff');
 }
 @font-face {
-  font-family: 'Best Sans';
+  font-family: 'Medium Rare Sans';
   font-weight: 700;
-  src: url('../fonts/BestSans-Bold.eot'); /* IE9 */
-  src: url('../fonts/BestSans-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../fonts/BestSans-Bold.woff2') format('woff2'),
-    url('../fonts/BestSans-Bold.woff') format('woff');
+  src: url('../fonts/MediumRareSans-Bold.eot'); /* IE9 */
+  src: url('../fonts/MediumRareSans-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/MediumRareSans-Bold.woff2') format('woff2'),
+    url('../fonts/MediumRareSans-Bold.woff') format('woff');
 }
 @font-face {
   font-family: 'Messer';
@@ -471,20 +456,21 @@ Fonts
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .h1 {
-      font-family: "Best Sans";
+      font-family: "Medium Rare Sans";
       font-weight: 100;
       font-size: 75px;
-      line-height: 1.1;
+      line-height: 1;
       letter-spacing: -.005em;
       margin: 0px;
       @media (min-width: $md-min ) and (max-width: $md) {
         font-size: 50px;
         letter-spacing: 0em;
-        line-height: 1.2;
+        line-height: 1.1;
       }
 
       @media (max-width: $sm) {
         font-size: 35px;
+        font-weight: 200;
         letter-spacing: .01em;
         line-height: 1.3;
       }
@@ -525,7 +511,7 @@ Fonts
       }
 }
 .h4 {
-      font-family: "Best Sans";
+      font-family: "Medium Rare Sans";
       font-weight: 400;
       font-size: 24px;
       line-height: 1.5;
@@ -638,30 +624,30 @@ $repeat: 20;
             list-style-type: none;
             padding: 4px 10px;
             color: $black;
-            &.illustration, &.children {
-                  @extend .u__background-orange;
+            &.illustration  {
+                  @extend .u__background-illustration;
             }
             &.typography {
-                  @extend .u__background-brown;
+                  @extend .u__background-typography;
             }
             &.catalog {
-                  @extend .u__background-blue;
+                  @extend .u__background-catalog;
             }
-            &.collection, &.design {
-                  @extend .u__background-green;
+            &.collection  {
+                  @extend .u__background-collection;
             }
-            &.designwriting {
-                  @extend .u__background-black;
+            &.writing, &.writing {
+                  @extend .u__background-writing;
                   color: $white;
             }
             &.layout {
-                  @extend .u__background-yellow;
+                  @extend .u__background-layout;
             }
             &.iconography {
-                  @extend .u__background-canary;
+                  @extend .u__background-iconography;
             }
             &.systems {
-                  @extend .u__background-orange;
+                  @extend .u__background-systems;
             }
       }
 }
@@ -675,11 +661,11 @@ body {
   line-height: 1.4;
   letter-spacing: .045rem;
   font-weight: 400;
-  font-family: "Best Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Medium Rare Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-feature-settings: "ss02" 1;
   color: $black;
   background: url("../images/tile-background@2x-80.jpg") repeat;
-  background-size: 180px 44px;
+  background-size: 160px 43px;
 }
 .book {
       .thumbnail {
@@ -709,6 +695,9 @@ body {
                   }
             }
       }
+      .book-detail {
+            margin-right: 20px;
+      }
       &.illustration .thumbnail:before, &.children .thumbnail:before {
             @extend .u__background-orange;
       }
@@ -721,7 +710,7 @@ body {
       &.collection .thumbnail:before, &.design .thumbnail:before {
             @extend .u__background-green;
       }
-      &.designwriting .thumbnail:before {
+      &.writing .thumbnail:before {
             @extend .u__background-black;
             color: $white;
       }
@@ -732,15 +721,23 @@ body {
             @extend .u__background-canary;
       }
       &.systems .thumbnail:before {
-            @extend .u__background-orange;
+            @extend .u__background-pink;
       }
 }
 .max-container {
       background: $white;
-      max-width: $xl + 100px;
+      max-width: $xl + 500px;
       transition: background 500ms ease-in-out;
       .center-content-chunk {
             overflow-y: scroll;
+            display: flex;
+            flex-direction: column;
+            .categories {
+                  border-top: $weight solid $black;
+                  background: $white;
+                  position: sticky;
+                  bottom: 0px;
+            }
       }
       &.focus {
             background: $yellow;
@@ -847,6 +844,7 @@ body {
 .list__border {
       margin: 0px;
       padding: 0px;
+      margin-bottom: -$weight;
       li {
             list-style-type: none;
             border-top: $weight solid $black;
@@ -874,7 +872,7 @@ body {
                   &.collection:hover, &.design:hover {
                         @extend .u__background-green;
                   }
-                  &.designwriting:hover {
+                  &.writing:hover {
                         @extend .u__background-black;
                         color: $white;
                   }
@@ -885,13 +883,14 @@ body {
                         @extend .u__background-canary;
                   }
                   &.systems:hover {
-                        @extend .u__background-orange;
+                        @extend .u__background-pink;
                   }
             }
       }
       .book-title {
             font-family: "Messer";
             font-style: italic;
+            margin-right: 30px;
       }
       .book-details {
             @extend .h6;
@@ -920,20 +919,14 @@ body {
             }
       }
 }
-.pill {
-      @extend .h6;
-      background: $pink;
-      padding: 4px 6px;
-      border: $weight solid $black;
-}
 .color-proof {
       margin: 0px;
       padding: 0px;
       li {
-            border-radius: 25px;
-            width: 40px;
-            height: 40px;
             list-style-type: none;
             display: inline-block;
+            a {
+                  border-radius: 25px;
+            }
       }
 }

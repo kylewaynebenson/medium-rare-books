@@ -2,13 +2,12 @@
 layout: null
 ---
 [
-  {% for book in site.data.books %}
+  {% for post in site.data.books %}
     {
-      "title"    : "{{ book.title | escape }}",
-      "category" : "{{ book.category }}",
-      "tags"     : "{{ book.tags | join: ', ' }}",
-      "url"      : "{{ book.title | datapage_url: 'books' }}",
-      "date"     : "{{ book.date }}"
+      "title"    : "{{ post.title | escape }}",
+      "category" : "{{ post.category }}",
+      "tags"     : "{{ post.tags | join: ', ' }}",
+      "url"      : "{{ site.baseurl }}/books{{ post.title | datapage_url: dir}}"
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]

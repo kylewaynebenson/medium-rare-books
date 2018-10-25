@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div class="post">
+<h1 class="h1 u__border-padding u__background-{{ page.category }}">{{ page.category }}</h1>
+<ul class="list__border">
+
+{% for book in site.data.books %}
+      {% if book.category == page.category %}
+        <li><a class="u__border-padding {{book.category | remove: " " }}" href="{{ site.baseurl }}/books{{ book.title | datapage_url: dir}}">
+                   <span class="book-title">{{book.title}}</span>
+                   <span class="book-details">
+                         {% if book.author != "unknown" %}
+                         <span class="book-detail"><span class="icon">✍ </span>{{book.author}}</span>
+                         {% endif %}
+                         {% if book.published-date != "unknown" %}
+                         <span class="book-detail"><span class="icon">⌛ </span>{{book.published-date}}</span>
+                         {% endif %}
+                         {% if book.publisher != "unknown" %}
+                         <span class="book-detail"><span class="icon">🗀 </span>{{book.publisher}}</span>
+                         {% endif %}
+                         {% if book.ISBN != "unknown" %}
+                         <span class="book-detail"><span class="icon">📖 </span>{{book.ISBN}}</span>
+                         {% endif %}
+                         {% if book.description != "unknown" %}
+                         <span class="book-detail">{{book.description}}</span></a>
+                         {% endif %}
+                   </span>
+             </a>
+        </li>
+      {% endif %}
+{% endfor %}
+</ul>
+</div>

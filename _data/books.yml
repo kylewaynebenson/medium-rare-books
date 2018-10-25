@@ -608,8 +608,11 @@
             "description": "1,000 illustrations chosen and introduced by Claude Humbert.",
             "published-date": "1972",
             "publisher": "Office du Livre",
+<<<<<<< HEAD
             "category": "collection",
             "tags": "label, typography",
+=======
+>>>>>>> 1b97fd2557a70ac2580802eefb95d9f8369f9564
             "cataloged": true,
             },
       {
@@ -728,19 +731,25 @@
             "description": "A treasury of letter design. Edited by Edward Rondthaler and the staff of Photo-lettering, inc. Design by Edward Benguiai, Victor Caruso and Wilford Griffin.",
             "published-date": "1960",
             "publisher": "Reinhold Publishing Corporation",
+<<<<<<< HEAD
             "category": "typography",
             "tags": "design, collection",
+=======
+>>>>>>> 1b97fd2557a70ac2580802eefb95d9f8369f9564
             "cataloged": true,
       },
       {
             "title": "Typographia 2",
             "author": "Oldřich Hlavsa",
             "ISBN": "unknown",
+<<<<<<< HEAD
             "description": "Comprehensive type specimens and practical applications. Written in Czech.",
             "published-date": "1981",
             "publisher": "SNTL",
             "category": "typography",
             "tags": "design, Czechoslovakia, typography",
+=======
+>>>>>>> 1b97fd2557a70ac2580802eefb95d9f8369f9564
             "cataloged": true,
       },
       {
@@ -750,8 +759,11 @@
             "description": "unknown",
             "published-date": "1999",
             "publisher": "Bibliothèque Forney",
+<<<<<<< HEAD
             "category": "writing",
             "tags": "none",
+=======
+>>>>>>> 1b97fd2557a70ac2580802eefb95d9f8369f9564
             "cataloged": true,
       },
       {
