@@ -17,13 +17,14 @@
   <meta name="twitter:card" content="/images/twitter-big.png"/>
   <meta name="twitter:image" content="/images/twitter-big.png"/>
 
-  <link href="/css/main.css?1540510923101655491" rel="stylesheet">
+  <link href="/css/main.css?1540590951360482183" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="/js/application.js?1540510923101655491" type="text/javascript"></script>
+<script src="/js/application.js?1540590951360482183" type="text/javascript"></script>
   <link rel="icon" type="image/png" href="/images/favicon.png">
-  <link rel="canonical" href="https://wooden-curlew.cloudvent.net/books/design-systems-for-corporations-c2--developing-a-basic-design-system.html">
+  <link rel="canonical" href="https://kylewaynebenson.github.io/medium-rare-books/books/design-systems-for-corporations-c2--developing-a-basic-design-system.html">
   <link rel="alternate" type="application/rss+xml" title="Medium Rare Books" href="/feed.xml">
   <script src="/js/simple-jekyll-search.min.js" type="text/javascript"></script>
+  <script src="/js/siema.min.js" type="text/javascript"></script>
   <script src="/js/application.js" type="text/javascript"></script>
   
     
@@ -65,8 +66,8 @@
                 <div class="u__flex">
                       <a class=" logo" href="/">
                             <svg xmlns="http://www.w3.org/2000/svg" width="94.351" height="82.579" viewBox="0 0 94.351 82.579">
-                                  <foreignobject class="logo-text t__center" x="-1" y="28" width="100" height="100">
-                                        <a href="/"><img src="/images/logo.png" class="site-title"></a>
+                                  <foreignobject class="logo-text t__center" x="-1" y="34" width="100" height="100">
+                                        <a class="t__underline" href="/">Medium <br/>Rare Books</a>
                                   </foreignobject>
                                   <g class="logo-bottom">
                                         <ellipse class="svg__stroke-black svg__stroke-weight1 svg__fill-orange" cx="47.176" cy="78.461" rx="46.715" ry="3.658" />
@@ -97,59 +98,41 @@
       <main class="page-content" aria-label="Content" data-cms-content-wrapper="/_layouts/default.html">
           <section class="section u__border-padding">
     <article class="post book systems" data-isbn="4382046645" itemscope itemtype="http://schema.org/BlogPosting">
-      <header class="post-header">
-            <div class="PageNavigation">
-                  
-               
-            </div>
-      </header>
       <div class="post-content" itemprop="articleBody">
             <div class="u__flex u__flex-break-sm">
-                  <div class="thumbnail">
-                        <img src="http://covers.openlibrary.org/b/isbn/4382046645-L.jpg" alt="" class="isbn-4382046645" />
+                  <div>
+                        <div class="carousel">
+                              <div class="carousel-shadow u__background-systems u__border"></div>
+                              <div class="siema">
+                                    <img src="https://kylewaynebenson.github.io/medium-rare-books/images/books/-1.jpg" alt="" class="ibsn-" />
+                                    <img src="https://kylewaynebenson.github.io/medium-rare-books/images/books/-2.jpg" alt="" class="ibsn-" />
+                                    <img src="https://kylewaynebenson.github.io/medium-rare-books/images/books/-3.jpg" alt="" class="ibsn-" />
+                              </div>
+                              <div class="siema__navigation u__flex">
+                                    <a class="siema__nav u__pointer u__flex-grow-1 siema__nav-prev h6 t__center">prev</a>
+                                    <a class="siema__nav siema__nav-pagination u__flex-grow-1 h6 t__center"><span class="page">1</span>/3</a>
+                                    <a class="siema__nav u__pointer u__flex-grow-1 siema__nav-next h6 t__center">next</a>
+                              </div>
+                        </div>
+                        <div class="sp__1 sp__1-md sp__1-sm"></div>
+                        <div class="book-details">
+                               <span class="book-detail h6 author WrittenandeditedbytheCoCoMASCommittee"><span class="icon">✍ </span>Written and edited by the CoCoMAS Committee</span><br/>
+                               <span class="book-detail h6 published-date"><span class="icon">⌛ </span>1980</span><br/>
+                               <span class="book-detail h6 isbn "><span class="icon">🗀 </span>4382046645</span><br/>
+                               <span class="book-detail h6 publisher SANNOInstituteofManagementPublicationsDept."><span class="icon">📖 </span>SANNO Institute of Management Publications Dept.</span><br/>
+                               <a href="/category/systems/" class="book-detail h6 category u__color-systems"><span class="icon">● </span>systems</a><br/>
+                        </div>
                   </div>
                   <div>
                         <h1 class="h1 post-title" itemprop="name headline">Design Systems for Corporations: C2 — Developing a Basic Design System</h1>
-                        <div class="sp__1 sp__1-md sp__1-sm"></div>
-                         <span class="book-detail h6 author WrittenandeditedbytheCoCoMASCommittee"><span class="icon">✍ </span>Written and edited by the CoCoMAS Committee</span>
-                         <span class="book-detail h6 published-date"><span class="icon">⌛ </span>1980</span>
-                         <span class="book-detail h6 isbn "><span class="icon">🗀 </span>4382046645</span>
-                         <span class="book-detail h6 publisher SANNOInstituteofManagementPublicationsDept."><span class="icon">📖 </span>SANNO Institute of Management Publications Dept.</span>
-                         <a href="/category/systems/" class="book-detail h6 category u__underline u__color-systems"><span class="icon">● </span>systems</a>
+                        <div class="sp__2 sp__2-md sp__2-sm"></div>
                         
-
+                        
                   </div>
             </div>
       </div>
       <footer class="post-footer">
       </footer>
-      <script>
-      var isbn = $('.book').data('isbn');
-      if (isbn == "unknown") {
-           $('.thumbnail.isbn-unknown').attr('src', "../../images/placeholder.jpg");
-      } else {
-            console.log(isbn);
-            $.ajax({
-              dataType: 'json',
-              url: 'https://www.googleapis.com/books/v1/volumes?q=isbn:' + isbn,
-              success: handleResponse
-            });
-
-
-            function handleResponse( response ) {
-              console.log(response);
-              $.each( response.items, function( i, item ) {
-
-                var title    = item.volumeInfo.title,
-                    author   = item.volumeInfo.authors[0],
-                    thumb    = item.volumeInfo.imageLinks.thumbnail;
-
-                $('.author.unknown').text( author );
-                $('.thumbnail.isbn-unknown').attr('src', thumb);
-              });
-            }
-      }
-      </script>
     </article>
 </section>
 <h2 class="h2 u__border-padding">You May Also Enjoy</h2>
