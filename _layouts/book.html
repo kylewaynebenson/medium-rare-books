@@ -3,63 +3,55 @@ layout: default
 ---
 <section class="section u__border-padding">
     <article class="post book {{ page.category | remove: ' ' }}" data-isbn="{{ page.ISBN }}" itemscope itemtype="http://schema.org/BlogPosting">
-      <header class="post-header">
-            <div class="PageNavigation">
-                  {% if page.next_in_category != nil %}
-               	<a href="{{page.next_in_category.url}}" class="next-link">Older Post</a>
-               {% endif %}
-               {% if page.previous_in_category != nil %}
-               	<a href="{{page.previous_in_category.url}}" class="previous-link">Newer Post</a>
-               {% endif %}
-            </div>
-      </header>
       <div class="post-content" itemprop="articleBody">
             <div class="u__flex u__flex-break-sm">
-                  <div class="thumbnail">
-                        <img src="http://covers.openlibrary.org/b/isbn/{{ page.ISBN }}-L.jpg" alt="" class="isbn-{{ page.ISBN }}" />
+                  <div>
+                        <div class="carousel">
+                              <div class="carousel-shadow u__background-{{ page.category }} u__border"></div>
+                              <div class="siema">
+                                    <img src="{{ site.url }}{{ site.baseurl }}/images/books/{{ page.IBSN }}-1.jpg" alt="" class="ibsn-{{ page.IBSN }}" />
+                                    <img src="{{ site.url }}{{ site.baseurl }}/images/books/{{ page.IBSN }}-2.jpg" alt="" class="ibsn-{{ page.IBSN }}" />
+                                    <img src="{{ site.url }}{{ site.baseurl }}/images/books/{{ page.IBSN }}-3.jpg" alt="" class="ibsn-{{ page.IBSN }}" />
+                              </div>
+                              <div class="siema__navigation u__flex">
+                                    <a class="siema__nav u__pointer u__flex-grow-1 siema__nav-prev h6 t__center">prev</a>
+                                    <a class="siema__nav siema__nav-pagination u__flex-grow-1 h6 t__center"><span class="page">1</span>/3</a>
+                                    <a class="siema__nav u__pointer u__flex-grow-1 siema__nav-next h6 t__center">next</a>
+                              </div>
+                        </div>
+                        <div class="sp__1 sp__1-md sp__1-sm"></div>
+                        <div class="book-details">
+                              {% if page.author != "unknown" %} <span class="book-detail h6 author {{ page.author | remove: ' ' }}"><span class="icon">✍ </span>{{ page.author }}</span><br/>{% endif %}
+                              {% if page.published-date != "unknown" %} <span class="book-detail h6 published-date"><span class="icon">⌛ </span>{{ page.published-date }}</span><br/>{% endif %}
+                              {% if page.ISBN != "unknown" %} <span class="book-detail h6 isbn {{ page.published-isbn }}"><span class="icon">🗀 </span>{{ page.ISBN }}</span><br/>{% endif %}
+                              {% if page.publisher != "unknown" %} <span class="book-detail h6 publisher {{ page.publisher | remove: ' '}}"><span class="icon">📖 </span>{{ page.publisher }}</span><br/>{% endif %}
+                              {% if page.category != "unknown" %} <a href="{{ site.baseurl }}/category/{{ page.category }}/" class="book-detail h6 category u__color-{{ page.category | remove: ' '}}"><span class="icon">● </span>{{ page.category }}</a><br/>{% endif %}
+                        </div>
                   </div>
                   <div>
                         <h1 class="h1 post-title" itemprop="name headline">{{ page.title | escape }}</h1>
-                        <div class="sp__1 sp__1-md sp__1-sm"></div>
-                        {% if page.author != "unknown" %} <span class="book-detail h6 author {{ page.author | remove: ' ' }}"><span class="icon">✍ </span>{{ page.author }}</span>{% endif %}
-                        {% if page.published-date != "unknown" %} <span class="book-detail h6 published-date"><span class="icon">⌛ </span>{{ page.published-date }}</span>{% endif %}
-                        {% if page.ISBN != "unknown" %} <span class="book-detail h6 isbn {{ page.published-isbn }}"><span class="icon">🗀 </span>{{ page.ISBN }}</span>{% endif %}
-                        {% if page.publisher != "unknown" %} <span class="book-detail h6 publisher {{ page.publisher | remove: ' '}}"><span class="icon">📖 </span>{{ page.publisher }}</span>{% endif %}
-                        {% if page.category != "unknown" %} <a href="{{ site.baseurl }}/category/{{ page.category }}/" class="book-detail h6 category u__underline u__color-{{ page.category | remove: ' '}}"><span class="icon">● </span>{{ page.category }}</a>{% endif %}
-                        {% if page.description != "unknown" %} <div class="sp__1 sp__1-md sp__1-sm"></div><p class="published-description">{{ page.description }}</p>{% endif %}
-
+                        <div class="sp__2 sp__2-md sp__2-sm"></div>
+                        {% if page.description != "unknown" %}
+                              <h6 class="h6">Boring description</h6>
+                              <div class="post-description">
+                                    {% assign descriptionParagraphs = page.description | split: "\n"  %}
+                                    {% for paragraph in descriptionParagraphs %}
+                                          <p>{{ paragraph }}</p>
+                                    {% endfor %}
+                              </div>
+                        {% endif %}
+                        {% if page.description != "unknown" %}
+                              <div class="sp__1 sp__1-md sp__1-sm"></div>
+                              <h6 class="h6">Our take</h6>
+                              <div class="post-description">
+                                    <p>{{ page.description }}</p>
+                              </div>
+                        {% endif %}
                   </div>
             </div>
       </div>
       <footer class="post-footer">
       </footer>
-      <script>
-      var isbn = $('.book').data('isbn');
-      if (isbn == "unknown") {
-           $('.thumbnail.isbn-unknown').attr('src', "../../images/placeholder.jpg");
-      } else {
-            console.log(isbn);
-            $.ajax({
-              dataType: 'json',
-              url: 'https://www.googleapis.com/books/v1/volumes?q=isbn:' + isbn,
-              success: handleResponse
-            });
-
-
-            function handleResponse( response ) {
-              console.log(response);
-              $.each( response.items, function( i, item ) {
-
-                var title    = item.volumeInfo.title,
-                    author   = item.volumeInfo.authors[0],
-                    thumb    = item.volumeInfo.imageLinks.thumbnail;
-
-                $('.author.unknown').text( author );
-                $('.thumbnail.isbn-unknown').attr('src', thumb);
-              });
-            }
-      }
-      </script>
     </article>
 </section>
 <h2 class="h2 u__border-padding">You May Also Enjoy</h2>

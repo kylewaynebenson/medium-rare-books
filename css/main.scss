@@ -1,8 +1,7 @@
 ---
 ---
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
-/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
-/*# sourceMappingURL=normalize.min.css.map */
+html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
 
 $sm: 480px;
 $md-min: 481px;
@@ -167,6 +166,9 @@ $xl: 1440px;
 .u__pill {
       @extend .h6;
       padding: 6px 9px;
+}
+.u__pointer {
+      cursor: pointer;
 }
 /***********************
 Animations
@@ -670,35 +672,61 @@ body {
   background-size: 160px 43px;
 }
 .book {
-      .thumbnail {
-            width: 25vw;
-            margin: 25px;
+      .carousel {
             margin-right: 50px;
-            height: auto;
+            box-sizing: border-box;
             position: relative;
-            img {
+            .carousel-shadow {
+                  box-sizing: border-box;
+                  z-index: 0;
+                  position: absolute;
                   width: 100%;
-                  z-index: 1;
-                  position: relative;
-            }
-            &:before {
-                content: " ";
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                transform: rotate(2deg);
-                transition: transform 300ms ease-in-out;
+                  height: 100%;
+                  left: 0px;
+                  top: 0px;
+                  transform: rotate(0deg);
+                  transition: transform 100ms ease-in-out;
             }
             &:hover {
-                  &:before {
-                        transform: rotate(6deg);
+                  .carousel-shadow {
+                        transform: rotate(10deg);
+                  }
+            }
+            .siema {
+                  position: relative;
+                  z-index: 1;
+                  background: $white;
+                  border: $weight solid $black;
+                  width: 300px;
+                  min-height: 200px;
+                  border-bottom: 0px;
+                  img {
+                        width: 300px;
+                        min-width: 300px;
+                        max-width: 300px;
+                  }
+            }
+            .siema__nav {
+                  position: relative;
+                  z-index: 1;
+                  border: $weight solid $black;
+                  border-right: 0px;
+                  padding: 10px;
+                  box-sizing: border-box;
+                  margin-bottom: 0px;
+                  &:last-of-type {
+                        border-right: $weight solid $black;
                   }
             }
       }
       .book-detail {
             margin-right: 20px;
+      }
+      .post-description {
+            @media (min-width: $xl) {
+                  columns: 50% 2;
+                  column-gap: 20px;
+            }
       }
       &.illustration .thumbnail:before, &.children .thumbnail:before {
             @extend .u__background-orange;
@@ -818,28 +846,30 @@ body {
       min-width: 200px;
       text-align: center;
       padding: 10px;
-      img {
-            width: 93px;
-            margin-top: 3px;
+      line-height: 1.15;
+      .logo-text {
+            font-size: 16px;
+            letter-spacing: .02em;
       }
       svg {
             display: inline-block;
             height: 80px;
       }
       .logo-top, .logo-bottom, .logo-text {
-            transition: transform 300ms ease-in-out;
+            transition: transform 300ms ease-in-out, letter-spacing 100ms ease-in-out;
             transform: translateY(0px) scale(1);
             transform-origin: center;
       }
       &:hover {
             .logo-top {
-                  transform: translateY(27px);
+                  transform: translateY(28px) scale(1.15);
             }
             .logo-bottom {
-                  transform: translateY(-20px);
+                  transform: translateY(-21px) scale(1.07);
             }
             .logo-text {
-                  transform:scale(.6);
+                  transform: translateY(-2px) scale(.85);
+                  letter-spacing: -.01em;
             }
       }
 }

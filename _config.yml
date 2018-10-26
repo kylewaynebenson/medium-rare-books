@@ -3,7 +3,7 @@ email: brandstudio@intercom.io
 description: >- # this means to ignore newlines until "baseurl:"
   Medium, rare books
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://wooden-curlew.cloudvent.net" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://kylewaynebenson.github.io/medium-rare-books" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: intercombrandstudio
 instagram_username:  intercombrandstudio
 
