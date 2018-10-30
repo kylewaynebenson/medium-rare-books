@@ -373,8 +373,8 @@
   
     {
       "title"    : "Graphic Designs of Takashi Kono",
-      "category" : "design",
-      "tags"     : "design",
+      "category" : "collection",
+      "tags"     : "monograph, Japan, design",
       "url"      : "/books/graphic-designs-of-takashi-kono/"
     } ,
   
@@ -850,8 +850,15 @@
     {
       "title"    : "Typo",
       "category" : "typography",
-      "tags"     : "print, Swissdr, typography",
+      "tags"     : "print, Swiss, typography",
       "url"      : "/books/typo/"
+    } ,
+  
+    {
+      "title"    : "Betty Crocker’s Dinner for Two Cookbook",
+      "category" : "collection",
+      "tags"     : "photography, layout, illustration",
+      "url"      : "/books/betty-crockers-dinner-for-two-cookbook/"
     } 
   
 ]
