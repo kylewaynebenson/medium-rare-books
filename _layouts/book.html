@@ -4,7 +4,7 @@ layout: default
 <section class="section u__border-padding">
     <article class="post book {{ page.category | remove: ' ' }}" data-isbn="{{ page.ISBN }}" itemscope itemtype="http://schema.org/BlogPosting">
       <div class="post-content" itemprop="articleBody">
-            <div class="u__flex u__flex-break-sm">
+            <div class="u__flex u__flex-break-sm u__flex-break-md u__flex-break-lg">
                   <div>
                         <div class="carousel">
                               <div class="carousel-shadow u__background-{{ page.category }} u__border"></div>
@@ -32,7 +32,7 @@ layout: default
                         <h1 class="h1 post-title" itemprop="name headline">{{ page.title | escape }}</h1>
                         <div class="sp__2 sp__2-md sp__2-sm"></div>
                         {% if page.description != "unknown" %}
-                              <h6 class="h6">Boring description</h6>
+                              <h6 class="h6">Description</h6>
                               <div class="post-description">
                                     {% assign descriptionParagraphs = page.description | split: "\n"  %}
                                     {% for paragraph in descriptionParagraphs %}
@@ -40,11 +40,11 @@ layout: default
                                     {% endfor %}
                               </div>
                         {% endif %}
-                        {% if page.description != "unknown" %}
+                        {% if page.IBS-description != "unknown" %}
                               <div class="sp__1 sp__1-md sp__1-sm"></div>
-                              <h6 class="h6">Our take</h6>
+                              <h6 class="h6">In Our Words</h6>
                               <div class="post-description">
-                                    <p>{{ page.description }}</p>
+                                    <p>{{ page.IBS-description }}</p>
                               </div>
                         {% endif %}
                   </div>
@@ -109,3 +109,25 @@ layout: default
   {% endif %}
 {% endfor %}
 </ul>
+
+<script type="text/javascript">
+const bookCarousel = new Siema({
+ selector: '.siema',
+ easing: 'ease',
+ perPage: 1,
+ startIndex: 0,
+ draggable: false,
+ multipleDrag: true,
+ threshold: 20,
+ loop: false,
+ rtl: false,
+ onInit: () => {},
+ onChange: () => {
+      var page = bookCarousel.currentSlide + 1;
+      document.querySelector('.siema__nav-pagination .page').innerHTML = page;
+ },
+});
+
+document.querySelector('.siema__nav-prev').addEventListener('click', () => bookCarousel.prev());
+document.querySelector('.siema__nav-next').addEventListener('click', () => bookCarousel.next());
+</script>
