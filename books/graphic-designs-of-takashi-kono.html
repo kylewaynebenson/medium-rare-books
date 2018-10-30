@@ -17,9 +17,9 @@
   <meta name="twitter:card" content="/images/twitter-big.png"/>
   <meta name="twitter:image" content="/images/twitter-big.png"/>
 
-  <link href="/css/main.css?1540939240420539045" rel="stylesheet">
+  <link href="/css/main.css?1540940213318851269" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="/js/application.js?1540939240420539045" type="text/javascript"></script>
+<script src="/js/application.js?1540940213318851269" type="text/javascript"></script>
   <link rel="icon" type="image/png" href="/images/favicon.png">
   <link rel="canonical" href="https://kylewaynebenson.github.io/medium-rare-books/books/graphic-designs-of-takashi-kono.html">
   <link rel="alternate" type="application/rss+xml" title="Medium Rare Books" href="/feed.xml">
@@ -45,21 +45,23 @@
 
       <div class="max-container u__flex u__flex-break-md u__flex-break-sm">
       <aside class="margin__aside">
-            <div class="margin__aside-wrapper">
-                  <span class="h2 u__rotate-270">Medium Rare Books</span>
+            <div class="margin__aside-wrapper u__hidden-sm u__hidden-md">
+                  <span class="h2 u__rotate-270">About Medium Rare Books</span>
                   <span class="h2 u__rotate-270">IBS</span>
             </div>
             <section class="hidden-content">
                   <div class="sp__1"></div>
                   <h2 class="h2">About the Intercom Brand Studio Library</h2>
                   <p>Our library began in April 2018 with the aquisition of a chunk of rare books from <a href="https://www.grainedit.com/">Dave Cuzner</a>.</p>
-
                   <h3 class="h3">Why do we have our own library?</h3>
                   <p>We’re constantly bombarded on a daily basis by visual “inspiration”. New websites, rebrands etc. It can be overwhelming and tough to critically assess what parts of that can influence our work. That inspired me to think of ways that we can surface inspiration material that just doesn’t exist online. And though it is from years gone by, still influences design today. We should have access to that material.</p>
                   <p>The act of picking a book, sitting with it, enjoying it and absorbing helps us slow down and form a more thoughtful perspective on where design has been, and how it can shape our current and future work. It also acts as a counter balance to so much of the trend driven work that surrounds us. </p>
             </section>
+            <div class="margin__aside-wrapper u__hidden-lg t__center u__border-padding u__border-bottom">
+                  About
+            </div>
       </aside>
-      <div class="center-content-chunk u__flex-grow-1 u__border-left u__border-right">
+      <div class="center-content-chunk u__flex-grow-1">
             <header class="site-header" role="banner">
                 
                 
@@ -99,14 +101,14 @@
           <section class="section u__border-padding">
     <article class="post book collection" data-isbn="unknown" itemscope itemtype="http://schema.org/BlogPosting">
       <div class="post-content" itemprop="articleBody">
-            <div class="u__flex u__flex-break-sm">
+            <div class="u__flex u__flex-break-sm u__flex-break-md u__flex-break-lg">
                   <div>
                         <div class="carousel">
                               <div class="carousel-shadow u__background-collection u__border"></div>
                               <div class="siema">
-                                    <img src="https://kylewaynebenson.github.io/medium-rare-books/images/books/-1.jpg" alt="" class="ibsn-" />
-                                    <img src="https://kylewaynebenson.github.io/medium-rare-books/images/books/-2.jpg" alt="" class="ibsn-" />
-                                    <img src="https://kylewaynebenson.github.io/medium-rare-books/images/books/-3.jpg" alt="" class="ibsn-" />
+                                    <img src="https://kylewaynebenson.github.io/medium-rare-books/images/books/00000054-1.jpg" alt="" class="ibsn-00000054" />
+                                    <img src="https://kylewaynebenson.github.io/medium-rare-books/images/books/00000054-2.jpg" alt="" class="ibsn-00000054" />
+                                    <img src="https://kylewaynebenson.github.io/medium-rare-books/images/books/00000054-3.jpg" alt="" class="ibsn-00000054" />
                               </div>
                               <div class="siema__navigation u__flex">
                                     <a class="siema__nav u__pointer u__flex-grow-1 siema__nav-prev h6 t__center">prev</a>
@@ -127,7 +129,7 @@
                         <h1 class="h1 post-title" itemprop="name headline">Graphic Designs of Takashi Kono</h1>
                         <div class="sp__2 sp__2-md sp__2-sm"></div>
                         
-                              <h6 class="h6">Boring description</h6>
+                              <h6 class="h6">Description</h6>
                               <div class="post-description">
                                     
                                     
@@ -137,9 +139,9 @@
                         
                         
                               <div class="sp__1 sp__1-md sp__1-sm"></div>
-                              <h6 class="h6">Our take</h6>
+                              <h6 class="h6">In Our Words</h6>
                               <div class="post-description">
-                                    <p>Best known by his posters for Shochiku Kinema, a major movie production company, Takashi Kono (1906-1999) was a designer whose career almost entirely overlapped with the history of Japanese graphic design. In particular, his work for the magazine NIPPON contributed to innovation in visual expression.</p>
+                                    <p>We haven't reviewed this book yet.</p>
                               </div>
                         
                   </div>
@@ -338,6 +340,28 @@
         
 </ul>
 
+<script type="text/javascript">
+const bookCarousel = new Siema({
+ selector: '.siema',
+ easing: 'ease',
+ perPage: 1,
+ startIndex: 0,
+ draggable: false,
+ multipleDrag: true,
+ threshold: 20,
+ loop: false,
+ rtl: false,
+ onInit: () => {},
+ onChange: () => {
+      var page = bookCarousel.currentSlide + 1;
+      document.querySelector('.siema__nav-pagination .page').innerHTML = page;
+ },
+});
+
+document.querySelector('.siema__nav-prev').addEventListener('click', () => bookCarousel.prev());
+document.querySelector('.siema__nav-next').addEventListener('click', () => bookCarousel.next());
+</script>
+
       </main>
                   <div class="u__border-padding t__center categories">
                   <ul class="color-proof">
@@ -353,7 +377,10 @@
             </div>
       </div><!-- end flex-grow big -->
       <aside class="margin__aside">
-            <div class="margin__aside-wrapper">
+            <div class="margin__aside-wrapper u__hidden-lg t__center u__border-padding u__border-top">
+                  Cooked just right
+            </div>
+            <div class="margin__aside-wrapper u__hidden-md u__hidden-sm">
                   <span class="h2 u__rotate-90">Cooked just right</span>
                   <span class="h2 u__rotate-90">IBS</span>
             </div>
