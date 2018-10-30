@@ -582,8 +582,7 @@ Fonts
   @media (max-width: 480px) {
     .h1 {
       font-size: 35px;
-      font-weight: 200;
-      font-weight: 200;
+      font-weight: 300;
       letter-spacing: .01em;
       line-height: 1.3; } }
 
@@ -736,31 +735,14 @@ body {
   background: url("../images/tile-background@2x-80.jpg") repeat;
   background-size: 160px 43px; }
 
+@media (min-width: 1040px) {
+  .book .book-column {
+    width: 45%;
+    max-width: 600px;
+    margin-right: 4%; } }
 .book .carousel {
   box-shadow: 0 0 0 2px #231f20;
-  box-sizing: border-box;
   position: relative; }
-  @media (min-width: 1041px) {
-    .book .carousel {
-      margin-right: 50px; }
-      .book .carousel .siema {
-        width: 300px; }
-      .book .carousel img {
-        width: 300px; } }
-  @media (min-width: 769px) and (max-width: 1040px) {
-    .book .carousel .siema {
-      width: 100%;
-      max-width: 100%; }
-    .book .carousel img {
-      width: 100%;
-      max-width: 500px; } }
-  @media (max-width: 768px) {
-    .book .carousel .siema {
-      width: 100%;
-      max-width: 100%; }
-    .book .carousel img {
-      width: 100%;
-      max-width: 400px; } }
   .book .carousel .carousel-shadow {
     z-index: 0;
     position: absolute;
@@ -771,21 +753,25 @@ body {
     transform: rotate(0deg);
     transition: transform 100ms ease-in-out; }
   .book .carousel:hover .carousel-shadow {
-    transform: rotate(10deg); }
+    transform: rotate(8deg); }
   .book .carousel .siema {
     position: relative;
     z-index: 1;
-    min-height: 200px; }
+    min-height: 200px;
+    width: 100%;
+    transition: width 100ms ease-in-out; }
     .book .carousel .siema img {
-      box-shadow: 0 0 0 2px #231f20; }
+      margin-bottom: -10px;
+      width: 100%; }
   .book .carousel .siema__nav {
     position: relative;
     z-index: 1;
     border-top: 2px solid #231f20;
     border-right: 2px solid #231f20;
+    border-bottom: 2px solid #231f20;
+    margin-bottom: -2px;
     padding: 10px;
-    box-sizing: border-box;
-    margin-bottom: 0px; }
+    box-sizing: border-box; }
     .book .carousel .siema__nav:last-of-type {
       border-right: 0px; }
 .book .book-detail {
@@ -876,7 +862,7 @@ body {
         .margin__aside .margin__aside-wrapper .u__rotate-90:first-of-type {
           top: 20px; }
         .margin__aside .margin__aside-wrapper .u__rotate-90:last-of-type {
-          bottom: 40px; }
+          bottom: 10px; }
       .margin__aside .margin__aside-wrapper .u__rotate-270 {
         transform-origin: 0px 0px;
         white-space: nowrap;
@@ -886,10 +872,10 @@ body {
         left: 47px;
         transform: rotate(270deg) translateY(-50%); }
         .margin__aside .margin__aside-wrapper .u__rotate-270:first-of-type {
-          top: 340px;
+          top: 344px;
           text-align: right; }
         .margin__aside .margin__aside-wrapper .u__rotate-270:last-of-type {
-          bottom: 0px; } }
+          bottom: -34px; } }
 
 .logo {
   min-width: 200px;
@@ -950,13 +936,13 @@ body {
     margin-right: 2px;
     margin-left: -20px; }
   .list__colors li:nth-child(5n+2):before {
-    color: #5772f7;
+    color: #f8b61d;
     font-size: 20px;
     content: "● ";
     margin-right: 2px;
     margin-left: -20px; }
   .list__colors li:nth-child(5n+3):before {
-    color: #a1c144;
+    color: #f8e4e8;
     font-size: 20px;
     content: "● ";
     margin-right: 2px;
@@ -968,37 +954,37 @@ body {
     margin-right: 2px;
     margin-left: -20px; }
   .list__colors li:nth-child(5n+5):before {
-    color: #f8e4e8;
+    color: #a1c144;
     font-size: 20px;
     content: "● ";
     margin-right: 2px;
     margin-left: -20px; }
   .list__colors li:nth-child(5n+6):before {
-    color: #f8e4e8;
+    color: #f8b61d;
     font-size: 20px;
     content: "● ";
     margin-right: 2px;
     margin-left: -20px; }
   .list__colors li:nth-child(5n+7):before {
-    color: #f8e4e8;
-    font-size: 20px;
-    content: "● ";
-    margin-right: 2px;
-    margin-left: -20px; }
-  .list__colors li:nth-child(5n+8):before {
-    color: #a1c144;
-    font-size: 20px;
-    content: "● ";
-    margin-right: 2px;
-    margin-left: -20px; }
-  .list__colors li:nth-child(5n+9):before {
     color: #fe5128;
     font-size: 20px;
     content: "● ";
     margin-right: 2px;
     margin-left: -20px; }
+  .list__colors li:nth-child(5n+8):before {
+    color: #fe5128;
+    font-size: 20px;
+    content: "● ";
+    margin-right: 2px;
+    margin-left: -20px; }
+  .list__colors li:nth-child(5n+9):before {
+    color: #5772f7;
+    font-size: 20px;
+    content: "● ";
+    margin-right: 2px;
+    margin-left: -20px; }
   .list__colors li:nth-child(5n+10):before {
-    color: #a1c144;
+    color: #5772f7;
     font-size: 20px;
     content: "● ";
     margin-right: 2px;
@@ -1016,13 +1002,13 @@ body {
     margin-right: 2px;
     margin-left: -20px; }
   .list__colors li:nth-child(5n+13):before {
-    color: #f8b61d;
+    color: #f8e4e8;
     font-size: 20px;
     content: "● ";
     margin-right: 2px;
     margin-left: -20px; }
   .list__colors li:nth-child(5n+14):before {
-    color: #f8b61d;
+    color: #fe5128;
     font-size: 20px;
     content: "● ";
     margin-right: 2px;
@@ -1046,19 +1032,19 @@ body {
     margin-right: 2px;
     margin-left: -20px; }
   .list__colors li:nth-child(5n+18):before {
-    color: #f8e4e8;
+    color: #a1c144;
     font-size: 20px;
     content: "● ";
     margin-right: 2px;
     margin-left: -20px; }
   .list__colors li:nth-child(5n+19):before {
-    color: #fe5128;
+    color: #5772f7;
     font-size: 20px;
     content: "● ";
     margin-right: 2px;
     margin-left: -20px; }
   .list__colors li:nth-child(5n+20):before {
-    color: #5772f7;
+    color: #fe5128;
     font-size: 20px;
     content: "● ";
     margin-right: 2px;
