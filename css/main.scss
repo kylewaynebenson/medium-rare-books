@@ -724,8 +724,8 @@ body {
       }
       .post-description {
             @media (min-width: $xl) {
-                  columns: 50% 2;
-                  column-gap: 20px;
+                  columns: 300px 3;
+                  column-gap: 25px;
             }
       }
       &.illustration .thumbnail:before, &.children .thumbnail:before {
