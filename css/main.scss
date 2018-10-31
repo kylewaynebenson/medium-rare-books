@@ -220,20 +220,18 @@ $pink: #f8e4e8;
 
 .u__background-writing { background-color: $black; color: $white; }
 .u__background-iconography { background-color: $canary; }
-.u__background-layout { background-color: $yellow; }
 .u__background-systems { background-color: $pink; }
 .u__background-illustration { background-color: $orange; }
 .u__background-typography { background-color: $brown; }
-.u__background-catalog { background-color: $blue; }
+.u__background-layout { background-color: $blue; }
 .u__background-collection { background-color: $green; }
 
 .u__color-writing { color: $black; }
 .u__color-iconography { color: $canary; }
-.u__color-layout { color: $yellow; }
 .u__color-systems { color: $pink; }
 .u__color-illustration { color: $orange; }
 .u__color-typography { color: $brown; }
-.u__color-catalog { color: $blue; }
+.u__color-layout { color: $blue; }
 .u__color-collection { color: $green; }
 
 .svg__fill-orange { fill: $orange; }
@@ -590,8 +588,8 @@ $repeat: 20;
             &.typography {
                   @extend .u__background-typography;
             }
-            &.catalog {
-                  @extend .u__background-catalog;
+            &.layout {
+                  @extend .u__background-layout;
             }
             &.collection  {
                   @extend .u__background-collection;
@@ -599,9 +597,6 @@ $repeat: 20;
             &.writing, &.writing {
                   @extend .u__background-writing;
                   color: $white;
-            }
-            &.layout {
-                  @extend .u__background-layout;
             }
             &.iconography {
                   @extend .u__background-iconography;
@@ -697,7 +692,7 @@ body {
       &.typography .thumbnail:before {
             @extend .u__background-brown;
       }
-      &.catalog .thumbnail:before {
+      &.layout .thumbnail:before {
             @extend .u__background-blue;
       }
       &.collection .thumbnail:before, &.design .thumbnail:before {
@@ -706,9 +701,6 @@ body {
       &.writing .thumbnail:before {
             @extend .u__background-black;
             color: $white;
-      }
-      &.layout .thumbnail:before {
-            @extend .u__background-yellow;
       }
       &.iconography .thumbnail:before {
             @extend .u__background-canary;
@@ -885,7 +877,7 @@ body {
                   &.typography:hover {
                         @extend .u__background-brown;
                   }
-                  &.catalog:hover {
+                  &.layout:hover {
                         @extend .u__background-blue;
                   }
                   &.collection:hover, &.design:hover {
@@ -894,9 +886,6 @@ body {
                   &.writing:hover {
                         @extend .u__background-black;
                         color: $white;
-                  }
-                  &.layout:hover {
-                        @extend .u__background-yellow;
                   }
                   &.iconography:hover {
                         @extend .u__background-canary;
