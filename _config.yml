@@ -3,7 +3,7 @@ email: brandstudio@intercom.io
 description: >- # this means to ignore newlines until "baseurl:"
   Medium, rare books
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://kylewaynebenson.github.io/medium-rare-books" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://wooden-curlew.cloudvent.net/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: intercombrandstudio
 instagram_username:  intercombrandstudio
 
@@ -13,7 +13,7 @@ plugins:
   - jekyll-feed
   - jekyll-archives
 
-include: ['_books']
+include: ['books']
 paginate_path: "/books/page:num/"
 
 sass:
@@ -22,7 +22,7 @@ sass_dir: css
 page_gen-dirs: true # uncomment, if you prefer to generate named folders
 
 page_gen:
-  - index_files: false
+  - index_files: true
     data: 'books'
     template: 'book'
     name: 'title'
