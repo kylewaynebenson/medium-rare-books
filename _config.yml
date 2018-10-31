@@ -13,7 +13,7 @@ plugins:
   - jekyll-feed
   - jekyll-archives
 
-include: ['_books']
+include: ['books']
 paginate_path: "/books/page:num/"
 
 sass:
@@ -22,7 +22,7 @@ sass_dir: css
 page_gen-dirs: true # uncomment, if you prefer to generate named folders
 
 page_gen:
-  - index_files: false
+  - index_files: true
     data: 'books'
     template: 'book'
     name: 'title'
