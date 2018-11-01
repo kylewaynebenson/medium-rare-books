@@ -10,4 +10,8 @@ $(document).ready(function () {
               resultsContainer: document.getElementById('results-container'),
               json: '/search.json'
       })
+      var time = 500;
+      $('.svg__group').each(function(i) {
+            $(this).delay(1000*i).addClass('active');
+      });
 });
