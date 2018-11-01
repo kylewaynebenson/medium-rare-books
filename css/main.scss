@@ -433,7 +433,7 @@ Fonts
       line-height: 1;
       letter-spacing: -.005em;
       margin: 0px;
-      @media (min-width: $md-min ) and (max-width: $md) {
+      @media (min-width: $md-min ) and (max-width: $xl) {
         font-size: 50px;
         font-weight: 200;
         letter-spacing: 0em;
@@ -443,8 +443,8 @@ Fonts
       @media (max-width: $sm) {
         font-size: 35px;
         font-weight: 300;
-        letter-spacing: .01em;
-        line-height: 1.3;
+        letter-spacing: .02em;
+        line-height: 1.15;
       }
 }
 .h2 {
@@ -454,7 +454,7 @@ Fonts
       font-size: 40px;
       line-height: 1.1;
       letter-spacing: -.005em;
-      margin: 0 0 20px;
+      margin: 0;
       @media (min-width: $md-min ) and (max-width: $md) {
         font-size: 28px;
         letter-spacing: 0em;
@@ -639,6 +639,10 @@ body {
   background: url("../images/tile-background@2x-80.jpg") repeat;
   background-size: 160px 43px;
 }
+::selection {
+      color:$black;
+      background: $orange;
+}
 .home {
       #home__hero {
             position: relative;
@@ -648,6 +652,8 @@ body {
       .home__hero-wrapper {
             margin: 0 auto;
             max-width: 500px;
+            position: relative;
+            z-index: 1;
       }
       .svg__group {
             position:fixed;
@@ -721,12 +727,15 @@ body {
             .siema {
                   position: relative;
                   z-index: 1;
-                  min-height: 200px;
                   width: 100%;
                   transition: width 100ms ease-in-out;
                   img {
                        margin-bottom: -10px;
                        width: 100%;
+                       @media (min-width: $xl-min) {
+                             width: 600px;
+                             max-width: 100%;
+                       }
                   }
             }
             .siema__navigation {
@@ -741,6 +750,7 @@ body {
                   margin-bottom: -$weight;
                   padding: 10px;
                   box-sizing: border-box;
+                  transition: background 100ms ease-in-out;
                   &:hover {
                         background: $pink;
                   }
@@ -757,7 +767,7 @@ body {
       }
       .post-description {
             @media (min-width: $xl) {
-                  columns: 300px 3;
+                  columns: 200px 2;
                   column-gap: 25px;
             }
       }
