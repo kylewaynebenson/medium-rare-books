@@ -4,6 +4,8 @@ layout: default
 <section class="section u__border-padding">
     <article class="post book {{ page.category | remove: ' ' }}" data-isbn="{{ page.ISBN }}" itemscope itemtype="http://schema.org/BlogPosting">
       <div class="post-content" itemprop="articleBody">
+            <h1 class="h1 post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+            <div class="sp__2 sp__2-md sp__2-sm"></div>
             <div class="u__flex u__flex-break-sm u__flex-break-md u__flex-break-lg">
                   <div class="book-column">
                         <div class="carousel">
@@ -29,8 +31,6 @@ layout: default
                         </div>
                   </div>
                   <div>
-                        <h1 class="h1 post-title" itemprop="name headline">{{ page.title | escape }}</h1>
-                        <div class="sp__2 sp__2-md sp__2-sm"></div>
                         {% if page.description != "unknown" %}
                               <h6 class="h6">Description</h6>
                               <div class="post-description">

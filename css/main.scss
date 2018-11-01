@@ -10,6 +10,8 @@ $lg-min: 769px;
 $lg: 1040px;
 $xl-min: 1041px;
 $xl: 1440px;
+$xxl-min: 1441px;
+$xxl: 1768px;
 
 /* Skeleton
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -122,7 +124,20 @@ $xl: 1440px;
 /***********************
 Animations
 ************************/
-
+@keyframes movearound {
+      0%, 100% {
+        -webkit-transform: translateX(30px) translateY(30px) rotate(0deg);
+      }
+      25% {
+        -webkit-transform: translateX(-30px) translateY(30px) rotate(45deg);
+      }
+      50% {
+        -webkit-transform: translateX(-30px) translateY(-30px) rotate(270deg);
+      }
+      75% {
+        -webkit-transform: translateX(30px) translateY(-30px) rotate(90deg);
+      }
+}
 @keyframes shake {
   10% {
     -webkit-transform: translateX(3px) rotate(2deg);
@@ -418,7 +433,7 @@ Fonts
       line-height: 1;
       letter-spacing: -.005em;
       margin: 0px;
-      @media (min-width: $md-min ) and (max-width: $md) {
+      @media (min-width: $md-min ) and (max-width: $xl) {
         font-size: 50px;
         font-weight: 200;
         letter-spacing: 0em;
@@ -428,8 +443,8 @@ Fonts
       @media (max-width: $sm) {
         font-size: 35px;
         font-weight: 300;
-        letter-spacing: .01em;
-        line-height: 1.3;
+        letter-spacing: .02em;
+        line-height: 1.15;
       }
 }
 .h2 {
@@ -439,7 +454,7 @@ Fonts
       font-size: 40px;
       line-height: 1.1;
       letter-spacing: -.005em;
-      margin: 0 0 20px;
+      margin: 0;
       @media (min-width: $md-min ) and (max-width: $md) {
         font-size: 28px;
         letter-spacing: 0em;
@@ -525,6 +540,9 @@ i {
 }
 .t__right {
       text-align: right;
+}
+.t__frac {
+      font-feature-settings: "frac" 1;
 }
 
 
@@ -617,15 +635,72 @@ body {
   letter-spacing: .045rem;
   font-weight: 400;
   font-family: "Medium Rare Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-feature-settings: "ss02" 1;
   color: $black;
   background: url("../images/tile-background@2x-80.jpg") repeat;
   background-size: 160px 43px;
 }
+::selection {
+      color:$black;
+      background: $orange;
+}
+.home {
+      #home__hero {
+            position: relative;
+            overflow: hidden;
+            padding: 18vh 0;
+      }
+      .home__hero-wrapper {
+            margin: 0 auto;
+            max-width: 500px;
+            position: relative;
+            z-index: 1;
+      }
+      .svg__group {
+            position:fixed;
+            &.active {
+                  transform-origin: center center;
+                  &:nth-of-type(1) {
+                        animation: movearound 20s infinite;
+                  }
+                  &:nth-of-type(2) {
+                        animation: movearound 12s infinite;
+                  }
+                  &:nth-of-type(3) {
+                        animation: movearound 25s infinite;
+                  }
+                  &:nth-of-type(4) {
+                        animation: movearound 40s infinite;
+                  }
+                  &:nth-of-type(5) {
+                        animation: movearound 17s infinite;
+                  }
+                  &:nth-of-type(6) {
+                        animation: movearound 20s infinite;
+                  }
+            }
+      }
+      #svg__background {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-55%);
+            height: 70vh;
+      }
+}
 .book {
-      @media (min-width: $lg) {
-            .book-column {
+      .post-content {
+            max-width: $xl-min+200;
+            margin: 1vw auto;
+      }
+
+      .book-column {
+            @media (min-width: $xl-min) {
                   width: 45%;
+                  max-width: 600px;
+                  margin-right: 4%;
+            }
+            @media (min-width: $xxl-min) {
+                  width: 55%;
                   max-width: 600px;
                   margin-right: 4%;
             }
@@ -652,12 +727,15 @@ body {
             .siema {
                   position: relative;
                   z-index: 1;
-                  min-height: 200px;
                   width: 100%;
                   transition: width 100ms ease-in-out;
                   img {
                        margin-bottom: -10px;
                        width: 100%;
+                       @media (min-width: $xl-min) {
+                             width: 600px;
+                             max-width: 100%;
+                       }
                   }
             }
             .siema__navigation {
@@ -672,6 +750,13 @@ body {
                   margin-bottom: -$weight;
                   padding: 10px;
                   box-sizing: border-box;
+                  transition: background 100ms ease-in-out;
+                  &:hover {
+                        background: $pink;
+                  }
+                  &:nth-of-type(2) {
+                        background: $white;
+                  }
                   &:last-of-type {
                         border-right: 0px;
                   }
@@ -682,7 +767,7 @@ body {
       }
       .post-description {
             @media (min-width: $xl) {
-                  columns: 300px 3;
+                  columns: 200px 2;
                   column-gap: 25px;
             }
       }
@@ -711,7 +796,7 @@ body {
 }
 .max-container {
       background: $white;
-      max-width: $xl + 500px;
+      max-width: $xxl;
       transition: background 500ms ease-in-out;
       .center-content-chunk {
             @media (min-width: $lg-min) {
