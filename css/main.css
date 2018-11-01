@@ -576,7 +576,7 @@ Fonts
   line-height: 1;
   letter-spacing: -.005em;
   margin: 0px; }
-  @media (min-width: 481px) and (max-width: 768px) {
+  @media (min-width: 481px) and (max-width: 1440px) {
     .h1 {
       font-size: 50px;
       font-weight: 200;
@@ -586,8 +586,8 @@ Fonts
     .h1 {
       font-size: 35px;
       font-weight: 300;
-      letter-spacing: .01em;
-      line-height: 1.3; } }
+      letter-spacing: .02em;
+      line-height: 1.15; } }
 
 .h2 {
   font-family: "Messer Condensed";
@@ -596,7 +596,7 @@ Fonts
   font-size: 40px;
   line-height: 1.1;
   letter-spacing: -.005em;
-  margin: 0 0 20px; }
+  margin: 0; }
   @media (min-width: 481px) and (max-width: 768px) {
     .h2 {
       font-size: 28px;
@@ -740,13 +740,19 @@ body {
   background: url("../images/tile-background@2x-80.jpg") repeat;
   background-size: 160px 43px; }
 
+::selection {
+  color: #231f20;
+  background: #fe5128; }
+
 .home #home__hero {
   position: relative;
   overflow: hidden;
   padding: 18vh 0; }
 .home .home__hero-wrapper {
   margin: 0 auto;
-  max-width: 500px; }
+  max-width: 500px;
+  position: relative;
+  z-index: 1; }
 .home .svg__group {
   position: fixed; }
   .home .svg__group.active {
@@ -800,12 +806,15 @@ body {
   .book .carousel .siema {
     position: relative;
     z-index: 1;
-    min-height: 200px;
     width: 100%;
     transition: width 100ms ease-in-out; }
     .book .carousel .siema img {
       margin-bottom: -10px;
       width: 100%; }
+      @media (min-width: 1041px) {
+        .book .carousel .siema img {
+          width: 600px;
+          max-width: 100%; } }
   .book .carousel .siema__nav {
     position: relative;
     z-index: 1;
@@ -814,7 +823,8 @@ body {
     border-bottom: 2px solid #231f20;
     margin-bottom: -2px;
     padding: 10px;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    transition: background 100ms ease-in-out; }
     .book .carousel .siema__nav:hover {
       background: #f8e4e8; }
     .book .carousel .siema__nav:nth-of-type(2) {
@@ -825,7 +835,7 @@ body {
   margin-right: 20px; }
 @media (min-width: 1440px) {
   .book .post-description {
-    columns: 300px 3;
+    columns: 200px 2;
     column-gap: 25px; } }
 .book.writing .thumbnail:before {
   color: #fff; }
@@ -977,7 +987,7 @@ body {
 .list__colors li {
   list-style: none; }
   .list__colors li:nth-child(5n+1):before {
-    color: #fe5128;
+    color: #f8b61d;
     font-size: 20px;
     content: "● ";
     margin-right: 2px;
@@ -989,13 +999,13 @@ body {
     margin-right: 2px;
     margin-left: -20px; }
   .list__colors li:nth-child(5n+3):before {
-    color: #a1c144;
+    color: #fe5128;
     font-size: 20px;
     content: "● ";
     margin-right: 2px;
     margin-left: -20px; }
   .list__colors li:nth-child(5n+4):before {
-    color: #5772f7;
+    color: #f8e4e8;
     font-size: 20px;
     content: "● ";
     margin-right: 2px;
@@ -1007,19 +1017,19 @@ body {
     margin-right: 2px;
     margin-left: -20px; }
   .list__colors li:nth-child(5n+6):before {
-    color: #fe5128;
+    color: #f8b61d;
     font-size: 20px;
     content: "● ";
     margin-right: 2px;
     margin-left: -20px; }
   .list__colors li:nth-child(5n+7):before {
-    color: #fe5128;
+    color: #f8b61d;
     font-size: 20px;
     content: "● ";
     margin-right: 2px;
     margin-left: -20px; }
   .list__colors li:nth-child(5n+8):before {
-    color: #f8b61d;
+    color: #5772f7;
     font-size: 20px;
     content: "● ";
     margin-right: 2px;
@@ -1031,19 +1041,19 @@ body {
     margin-right: 2px;
     margin-left: -20px; }
   .list__colors li:nth-child(5n+10):before {
-    color: #5772f7;
+    color: #f8e4e8;
     font-size: 20px;
     content: "● ";
     margin-right: 2px;
     margin-left: -20px; }
   .list__colors li:nth-child(5n+11):before {
-    color: #fe5128;
+    color: #a1c144;
     font-size: 20px;
     content: "● ";
     margin-right: 2px;
     margin-left: -20px; }
   .list__colors li:nth-child(5n+12):before {
-    color: #f8b61d;
+    color: #f8e4e8;
     font-size: 20px;
     content: "● ";
     margin-right: 2px;
@@ -1079,7 +1089,7 @@ body {
     margin-right: 2px;
     margin-left: -20px; }
   .list__colors li:nth-child(5n+18):before {
-    color: #f8e4e8;
+    color: #f8b61d;
     font-size: 20px;
     content: "● ";
     margin-right: 2px;
@@ -1091,7 +1101,7 @@ body {
     margin-right: 2px;
     margin-left: -20px; }
   .list__colors li:nth-child(5n+20):before {
-    color: #f8e4e8;
+    color: #f8b61d;
     font-size: 20px;
     content: "● ";
     margin-right: 2px;
