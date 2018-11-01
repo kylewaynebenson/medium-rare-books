@@ -78,10 +78,10 @@
     } ,
   
     {
-      "title"    : "Illustrated Leisure European Map book (Edition Nobel)",
-      "category" : "illustration",
-      "tags"     : "design",
-      "url"      : "/books/illustrated-leisure-european-map-book-edition-nobel/"
+      "title"    : "Illustrated Leisure European Map",
+      "category" : "systems",
+      "tags"     : "Japan, illustration, map",
+      "url"      : "/books/illustrated-leisure-european-map/"
     } ,
   
     {
@@ -240,15 +240,15 @@
   
     {
       "title"    : "Nippon Design Center",
-      "category" : "design",
-      "tags"     : "design",
+      "category" : "collection",
+      "tags"     : "Japan, advertising",
       "url"      : "/books/nippon-design-center/"
     } ,
   
     {
       "title"    : "Nippon Design Center",
-      "category" : "design",
-      "tags"     : "design",
+      "category" : "collection",
+      "tags"     : "Japan, advertising",
       "url"      : "/books/nippon-design-center/"
     } ,
   
@@ -675,7 +675,7 @@
     {
       "title"    : "Jazz",
       "category" : "illustration",
-      "tags"     : "children, illustration",
+      "tags"     : "German, jazz, illustration",
       "url"      : "/books/jazz/"
     } ,
   
