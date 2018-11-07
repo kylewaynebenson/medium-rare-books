@@ -22,4 +22,18 @@ $(document).ready(function () {
       $('.center-content-chunk').on("click", function() {
             $('.margin__aside').removeClass("active");
       });
+      new Siema({
+        selector: '.siema',
+        duration: 200,
+        easing: 'ease-out',
+        perPage: 3,
+        startIndex: 0,
+        draggable: true,
+        multipleDrag: true,
+        threshold: 20,
+        loop: false,
+        rtl: false,
+        onInit: () => {},
+        onChange: () => {},
+      });
 });
