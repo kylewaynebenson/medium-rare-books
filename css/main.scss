@@ -708,7 +708,6 @@ body {
       .carousel {
             box-shadow: 0 0 0 $weight $black;
             position: relative;
-
             .carousel-shadow {
                   z-index: 0;
                   position: absolute;
@@ -729,8 +728,12 @@ body {
                   z-index: 1;
                   width: 100%;
                   transition: width 100ms ease-in-out;
+                  overflow-x: hidden !important;
                   @media (min-width: $lg-min) {
-                        min-width: 470px;
+                        width: 100%;
+                  }
+                  @media (min-width: $lg) {
+                        width: 470px;
                         max-width: 100%;
                   }
                   @media (min-width: $xl) {
