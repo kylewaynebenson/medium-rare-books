@@ -126,16 +126,32 @@ Animations
 ************************/
 @keyframes movearound {
       0%, 100% {
-        -webkit-transform: translate3d(30px) rotate(5px);
+        -webkit-transform: translateX(0px) rotate(0deg);
       }
-      25% {
-        -webkit-transform: translate3d(30px) rotate(-5px);
+      25%, 75% {
+        -webkit-transform: translateX(1000px) rotate(-20deg);
       }
       50% {
-        -webkit-transform: translate3d(30px) rotate(5px);
+        -webkit-transform: translateX(-1000px) rotate(25deg);
       }
-      75% {
-        -webkit-transform: translate3d(30px) rotate(-5px);
+}
+@keyframes spinoccassionally {
+      0%, 100% {
+        -webkit-transform: translateX(0px) rotate(0deg);
+      }
+      15% {
+        -webkit-transform: rotate(-360deg);
+      }
+      50% {
+        -webkit-transform: rotate(0deg);
+      }
+}
+@keyframes raisetheroof {
+      10%,30%,50%,70% {
+        -webkit-transform: translateY(10px);
+      }
+      20%,40%,60%,80% {
+        -webkit-transform: translateY(0px);
       }
 }
 @keyframes shake {
@@ -217,6 +233,8 @@ $blue: #5772f7;
 $black: #231f20;
 $white: #fff;
 $pink: #f8e4e8;
+$purple: #E897C1;
+$darkblue: #243E8D;
 
 .orange { color: $orange; }
 .yellow { color: $yellow; }
@@ -250,16 +268,25 @@ $pink: #f8e4e8;
 .u__color-collection { color: $green; }
 
 .svg__fill-orange { fill: $orange; }
+.svg__fill-purple { fill: $purple; }
+.svg__fill-blue { fill: $blue; }
+.svg__fill-darkblue { fill: $darkblue; }
 .svg__fill-brown { fill: $brown; }
 .svg__fill-yellow { fill: $yellow; }
 .svg__fill-black { fill: $black; }
 .svg__fill-white { fill: $white; }
+.svg__fill-transparent { fill: transparent; }
+
+.svg__stroke-purple { stroke: $purple; vector-effect: non-scaling-stroke; }
+.svg__stroke-darkblue { stroke: $darkblue; vector-effect: non-scaling-stroke; }
+.svg__stroke-blue { stroke: $blue; vector-effect: non-scaling-stroke; }
 .svg__stroke-orange { stroke: $orange; vector-effect: non-scaling-stroke; }
 .svg__stroke-yellow { stroke: $yellow; vector-effect: non-scaling-stroke; }
 .svg__stroke-black { stroke: $black; vector-effect: non-scaling-stroke; }
 .svg__stroke-white { stroke: $white; vector-effect: non-scaling-stroke; }
 
-.svg__stroke-weight1 { stroke-weight: 1; }
+.svg__stroke-weight1 { stroke-width: 1; }
+.svg__stroke-weightthree { stroke-width: 3; }
 .u__border {
       border: $weight $black solid;
 }
@@ -659,23 +686,10 @@ body {
             position:fixed;
             &.active {
                   transform-origin: center center;
-                  &:nth-of-type(1) {
-                        animation: movearound 20s infinite;
-                  }
-                  &:nth-of-type(2) {
-                        animation: movearound 12s infinite;
-                  }
-                  &:nth-of-type(3) {
-                        animation: movearound 25s infinite;
-                  }
-                  &:nth-of-type(4) {
-                        animation: movearound 40s infinite;
-                  }
-                  &:nth-of-type(5) {
-                        animation: movearound 17s infinite;
-                  }
-                  &:nth-of-type(6) {
-                        animation: movearound 20s infinite;
+                  animation-timing-function: linear;
+                  animation: movearound 20s infinite;
+                  &:nth-of-type(odd) {
+                        animation: movearound 30s infinite;
                   }
             }
       }
@@ -686,6 +700,16 @@ body {
             transform: translateX(-55%);
             height: 70vh;
       }
+}
+.svg__animation-spin {
+      animation-timing-function: linear;
+      transform-origin: center center;
+      animation: spinoccassionally 20s infinite;
+}
+.svg__animation-raisetheroof {
+      animation-timing-function: linear;
+      transform-origin: center center;
+      animation: raisetheroof 5s infinite;
 }
 .book {
       .post-content {
@@ -816,8 +840,8 @@ body {
             display: flex;
             flex-direction: column;
             .categories {
-                  border-top: $weight solid $black;
                   background: $white;
+                  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 60%, rgba(255,255,255,1) 100%);
                   position: sticky;
                   bottom: 0px;
             }

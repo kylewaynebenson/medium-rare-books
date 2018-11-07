@@ -111,21 +111,23 @@ layout: default
 </ul>
 
 <script type="text/javascript">
-const bookCarousel = new Siema({
- selector: '.siema',
- easing: 'ease',
- perPage: 1,
- startIndex: 0,
- draggable: false,
- multipleDrag: true,
- threshold: 20,
- loop: false,
- rtl: false,
- onInit: () => {},
- onChange: () => {
-      var page = bookCarousel.currentSlide + 1;
-      document.querySelector('.siema__nav-pagination .page').innerHTML = page;
- },
+ // Carousel
+new Siema({
+  selector: '.siema',
+  duration: 200,
+  easing: 'ease-out',
+  perPage: 3,
+  startIndex: 0,
+  draggable: true,
+  multipleDrag: true,
+  threshold: 20,
+  loop: false,
+  rtl: false,
+  onInit: () => {},
+  onChange: () => {
+       var page = bookCarousel.currentSlide + 1;
+       document.querySelector('.siema__nav-pagination .page').innerHTML = page;
+});
 });
 
 document.querySelector('.siema__nav-prev').addEventListener('click', () => bookCarousel.prev());

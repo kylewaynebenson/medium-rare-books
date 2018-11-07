@@ -11,8 +11,11 @@ $(document).ready(function () {
               json: '/search.json'
       })
       $('.svg__group').each(function(i) {
-            // make position sensitive to size and document's width
-            $(this).delay(1000*i).addClass('active');
+            var self = this; //in scope
+            var time = i*750;
+            $(self).data('timer', setTimeout(function(){ //new scope
+                  $(self).addClass('active'); //out of scope
+            },time));
       });
 
       $('.margin__aside').on("click", function() {
@@ -22,18 +25,5 @@ $(document).ready(function () {
       $('.center-content-chunk').on("click", function() {
             $('.margin__aside').removeClass("active");
       });
-      new Siema({
-        selector: '.siema',
-        duration: 200,
-        easing: 'ease-out',
-        perPage: 3,
-        startIndex: 0,
-        draggable: true,
-        multipleDrag: true,
-        threshold: 20,
-        loop: false,
-        rtl: false,
-        onInit: () => {},
-        onChange: () => {},
-      });
+
 });
