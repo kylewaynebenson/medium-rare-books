@@ -16,9 +16,9 @@ layout: default
                                     <img src="{{ site.url }}{{ site.baseurl }}/images/books/{{ page.IBSN }}-C.jpg" alt="" class="ibsn-{{ page.IBSN }}" />
                               </div>
                               <div class="siema__navigation u__flex">
-                                    <a class="siema__nav u__pointer u__flex-grow-1 siema__nav-prev h6 t__center">prev</a>
+                                    <a id="siema__nav-prev" class="siema__nav u__pointer u__flex-grow-1 siema__nav-prev h6 t__center">prev</a>
                                     <a class="siema__nav siema__nav-pagination u__flex-grow-1 h6 t__center"><span class="page">1</span>/3</a>
-                                    <a class="siema__nav u__pointer u__flex-grow-1 siema__nav-next h6 t__center">next</a>
+                                    <a id="siema__nav-next" class="siema__nav u__pointer u__flex-grow-1 siema__nav-next h6 t__center">next</a>
                               </div>
                         </div>
                         <div class="sp__1 sp__1-md sp__1-sm"></div>
@@ -111,23 +111,34 @@ layout: default
 </ul>
 
 <script type="text/javascript">
- // Carousel
-new Siema({
-  selector: '.siema',
-  duration: 200,
-  easing: 'ease-out',
-  perPage: 3,
-  startIndex: 0,
-  draggable: true,
-  multipleDrag: true,
-  threshold: 20,
-  loop: false,
-  rtl: false,
-  onInit: () => {},
-  onChange: () => {
-       var page = bookCarousel.currentSlide + 1;
-       document.querySelector('.siema__nav-pagination .page').innerHTML = page;
-});
+const bookCarousel = new Siema({
+ selector: '.siema',
+ easing: 'ease',
+ perPage: 1,
+ startIndex: 0,
+ draggable: false,
+ multipleDrag: true,
+ threshold: 20,
+ loop: false,
+ rtl: false,
+ onInit: () => {
+       var prev = document.getElementById('siema__nav-prev');
+       prev.classList.add("disabled");
+ },
+ onChange: () => {
+      var page = bookCarousel.currentSlide + 1;
+      var next = document.getElementById('siema__nav-next');
+      var prev = document.getElementById('siema__nav-prev');
+      document.querySelector('.siema__nav-pagination .page').innerHTML = page;
+      if (page === 3) {
+            next.classList.add("disabled");
+      } else if (page === 1) {
+            prev.classList.add("disabled");
+      } else {
+            next.classList.remove("disabled");
+            prev.classList.remove("disabled");
+      }
+ },
 });
 
 document.querySelector('.siema__nav-prev').addEventListener('click', () => bookCarousel.prev());

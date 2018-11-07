@@ -148,7 +148,7 @@ Animations
 }
 @keyframes raisetheroof {
       10%,30%,50%,70% {
-        -webkit-transform: translateY(10px);
+        -webkit-transform: translateY(-10px);
       }
       20%,40%,60%,80% {
         -webkit-transform: translateY(0px);
@@ -482,6 +482,11 @@ Fonts
       line-height: 1.1;
       letter-spacing: -.005em;
       margin: 0;
+      &.h2__super {
+            font-size: 70px;
+            letter-spacing: -.015em;
+            line-height: 1;
+      }
       @media (min-width: $md-min ) and (max-width: $md) {
         font-size: 28px;
         letter-spacing: 0em;
@@ -489,9 +494,12 @@ Fonts
       }
 
       @media (max-width: $sm) {
-        font-size: 20px;
+        font-size: 24px;
         letter-spacing: .01em;
         line-height: 1.3;
+        &.h2__super {
+             font-size: 50px;
+        }
       }
 }
 .h3 {
@@ -546,6 +554,13 @@ p {
       margin-top: 0;
       line-height: 1.5;
 }
+.p {
+      font-family: "Medium Rare Sans";
+      letter-spacing: .032em;
+      font-weight: 400;
+      margin-top: 0;
+      line-height: 1.5;
+}
 em {
       font-style: italic;
       font-weight: 300;
@@ -561,6 +576,11 @@ i {
 }
 .t__center {
       text-align: center;
+}
+.t__center-sm {
+      @media (max-width: $sm) {
+            text-align: center;
+      }
 }
 .t__left {
       text-align: left;
@@ -681,6 +701,9 @@ body {
             max-width: 500px;
             position: relative;
             z-index: 1;
+            @media (max-width: $md) {
+                  max-width: 90%;
+            }
       }
       .svg__group {
             position:fixed;
@@ -699,6 +722,7 @@ body {
             left: 50%;
             transform: translateX(-55%);
             height: 70vh;
+            min-width: 100vw;
       }
 }
 .svg__animation-spin {
@@ -744,7 +768,7 @@ body {
             }
             &:hover {
                   .carousel-shadow {
-                        transform: rotate(8deg);
+
                   }
             }
             .siema {
@@ -792,6 +816,10 @@ body {
                   }
                   &:last-of-type {
                         border-right: 0px;
+                  }
+                  &.disabled {
+                        background: $white;
+                        cursor: default;
                   }
             }
       }
@@ -856,22 +884,26 @@ body {
       }
 }
 .margin__aside {
-      @media (max-width: $md) {
-            height: 100px;
+      @media (max-width: $lg) {
             background: $white;
             overflow: hidden;
-            transition: height 500ms ease-in-out, background 2s ease-in-out;
+            transition: background 2s ease-in-out;
+            .margin__aside-wrapper.u__hidden-lg {
+                  z-index: 2;
+                  background: transparent;
+            }
             .hidden-content {
                   overflow: hidden;
                   opacity: 0;
+                  max-height: 0px;
+                  transition: max-height 500ms ease-in-out, opacity 500ms ease-in-out;
             }
             &.active {
-                  height: 500px;
                   background: $yellow;
                   .hidden-content {
+                        max-height: 700px;
                         opacity: 1;
                         display: inline-block;
-                        height: calc(500px - 100px);
                         overflow-y: scroll;
                   }
             }
@@ -946,12 +978,13 @@ body {
       padding: 10px;
       line-height: 1.15;
       .logo-text {
-            font-size: 16px;
+            font-size: 14px;
             letter-spacing: .02em;
       }
       svg {
             display: inline-block;
-            height: 80px;
+            height: 100px;
+
       }
       .logo-top, .logo-bottom, .logo-text {
             transition: transform 300ms ease-in-out, letter-spacing 100ms ease-in-out;
@@ -960,10 +993,10 @@ body {
       }
       &:hover {
             .logo-top {
-                  transform: translateY(28px) scale(1.15);
+                  transform: translateY(28px) scale(1.12);
             }
             .logo-bottom {
-                  transform: translateY(-21px) scale(1.07);
+                  transform: translateY(-18px) scale(1.12);
             }
             .logo-text {
                   transform: translateY(-2px) scale(.85);
@@ -1049,9 +1082,11 @@ body {
 .color-proof {
       margin: 0px;
       padding: 0px;
+      margin-bottom: -10px;
       li {
             list-style-type: none;
             display: inline-block;
+            margin-bottom: 10px;
             a {
                   border-radius: 25px;
             }
