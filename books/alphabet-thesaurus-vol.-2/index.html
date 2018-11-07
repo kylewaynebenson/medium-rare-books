@@ -17,9 +17,9 @@
   <meta name="twitter:card" content="/images/twitter-big.png"/>
   <meta name="twitter:image" content="/images/twitter-big.png"/>
 
-  <link href="/css/main.css?1541555036934862922" rel="stylesheet">
+  <link href="/css/main.css?1541621291677441569" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="/js/application.js?1541555036934862922" type="text/javascript"></script>
+<script src="/js/application.js?1541621291677441569" type="text/javascript"></script>
   <link rel="icon" type="image/png" href="/images/favicon.png">
   <link rel="canonical" href="https://wooden-curlew.cloudvent.net//books/alphabet-thesaurus-vol.-2/">
   <link rel="alternate" type="application/rss+xml" title="Medium Rare Books" href="/feed.xml">
@@ -335,21 +335,23 @@
 </ul>
 
 <script type="text/javascript">
-const bookCarousel = new Siema({
- selector: '.siema',
- easing: 'ease',
- perPage: 1,
- startIndex: 0,
- draggable: false,
- multipleDrag: true,
- threshold: 20,
- loop: false,
- rtl: false,
- onInit: () => {},
- onChange: () => {
-      var page = bookCarousel.currentSlide + 1;
-      document.querySelector('.siema__nav-pagination .page').innerHTML = page;
- },
+ // Carousel
+new Siema({
+  selector: '.siema',
+  duration: 200,
+  easing: 'ease-out',
+  perPage: 3,
+  startIndex: 0,
+  draggable: true,
+  multipleDrag: true,
+  threshold: 20,
+  loop: false,
+  rtl: false,
+  onInit: () => {},
+  onChange: () => {
+       var page = bookCarousel.currentSlide + 1;
+       document.querySelector('.siema__nav-pagination .page').innerHTML = page;
+});
 });
 
 document.querySelector('.siema__nav-prev').addEventListener('click', () => bookCarousel.prev());
