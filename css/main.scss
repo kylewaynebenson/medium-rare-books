@@ -126,16 +126,16 @@ Animations
 ************************/
 @keyframes movearound {
       0%, 100% {
-        -webkit-transform: translateX(30px) translateY(30px) rotate(0deg);
+        -webkit-transform: translate3d(30px) rotate(5px);
       }
       25% {
-        -webkit-transform: translateX(-30px) translateY(30px) rotate(45deg);
+        -webkit-transform: translate3d(30px) rotate(-5px);
       }
       50% {
-        -webkit-transform: translateX(-30px) translateY(-30px) rotate(270deg);
+        -webkit-transform: translate3d(30px) rotate(5px);
       }
       75% {
-        -webkit-transform: translateX(30px) translateY(-30px) rotate(90deg);
+        -webkit-transform: translate3d(30px) rotate(-5px);
       }
 }
 @keyframes shake {
@@ -847,6 +847,7 @@ body {
             width: 92px;
             overflow: hidden;
             position: relative;
+            cursor: pointer;
             background: $white;
             transition: width 500ms ease-in-out, background 2s ease-in-out;
             .hidden-content {
@@ -857,7 +858,7 @@ body {
                   padding-left: 92px;
                   padding-right: 30px;
             }
-            &:hover {
+            &.active {
                   width: 500px;
                   background: $yellow;
                   .hidden-content {
@@ -883,7 +884,7 @@ body {
                               top: 20px;
                         }
                         &:last-of-type {
-                              bottom: 10px;
+                              bottom: 20px;
                         }
                   }
                   .u__rotate-270 {
@@ -899,7 +900,7 @@ body {
                               text-align: right;
                         }
                         &:last-of-type {
-                              bottom: -34px;
+                              bottom: -16px;
                         }
                   }
             }

@@ -11,6 +11,15 @@ $(document).ready(function () {
               json: '/search.json'
       })
       $('.svg__group').each(function(i) {
+            // make position sensitive to size and document's width
             $(this).delay(1000*i).addClass('active');
+      });
+
+      $('.margin__aside').on("click", function() {
+            $('.margin__aside').not(this).removeClass("active");
+            $(this).toggleClass("active");
+      });
+      $('.center-content-chunk').on("click", function() {
+            $('.margin__aside').removeClass("active");
       });
 });
