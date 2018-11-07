@@ -17,9 +17,9 @@
   <meta name="twitter:card" content="/images/twitter-big.png"/>
   <meta name="twitter:image" content="/images/twitter-big.png"/>
 
-  <link href="/css/main.css?1541621291677441569" rel="stylesheet">
+  <link href="/css/main.css?1541634857742683690" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="/js/application.js?1541621291677441569" type="text/javascript"></script>
+<script src="/js/application.js?1541634857742683690" type="text/javascript"></script>
   <link rel="icon" type="image/png" href="/images/favicon.png">
   <link rel="canonical" href="https://wooden-curlew.cloudvent.net//books/lenergie/">
   <link rel="alternate" type="application/rss+xml" title="Medium Rare Books" href="/feed.xml">
@@ -68,15 +68,16 @@
                 <div class="u__flex">
                       <a class=" logo" href="/">
                             <svg xmlns="http://www.w3.org/2000/svg" width="94.351" height="82.579" viewBox="0 0 94.351 82.579">
-                                  <foreignobject class="logo-text t__center" x="-1" y="34" width="100" height="100">
-                                        <a class="t__underline" href="/">Medium <br/>Rare Books</a>
+                                  <foreignobject class="logo-text t__center" x="-2" y="36" width="100" height="100">
+                                        <a class="t__underline" href="/">Medium<br/>Rare Books</a>
                                   </foreignobject>
                                   <g class="logo-bottom">
-                                        <ellipse class="svg__stroke-black svg__stroke-weight1 svg__fill-orange" cx="47.176" cy="78.461" rx="46.715" ry="3.658" />
+                                        <path class="svg__stroke-black svg__stroke-weight1 svg__fill-orange" d="M84.7,73.5h-75c0,1.3,1.2,2.6,2.6,3.7c0.8,0.7,1.8,1.1,2.8,1.1l64.2,0c1,0,2-0.4,2.8-1.1
+                                         C83.5,76,84.7,74.8,84.7,73.5z"/>
                                   </g>
                                     <g class="logo-top">
-                                          <circle cx="48.164" cy="4.242" r="3.798" class="svg__fill-brown svg__stroke-black svg__stroke-weight1"/>
-                                          <path class="svg__stroke-black svg__stroke-weight1 svg__fill-orange" d="M48.164,7.357c-20.811,0-37.682,10.717-37.682,23.937H85.846C85.846,18.074,68.975,7.357,48.164,7.357Z" />
+                                         <circle class="svg__fill-brown svg__stroke-black svg__stroke-weight1" cx="47.2" cy="5.8" r="3.7"/>
+                                         <path class="svg__stroke-black svg__stroke-weight1 svg__fill-orange" d="M47.2,8.8c-20.1,0-36.3,10.3-36.3,23.1h36.3h36.3C83.5,19.1,67.2,8.8,47.2,8.8z"/>
                                     </g>
 
                            </svg>
@@ -113,9 +114,9 @@
                                     <img src="https://wooden-curlew.cloudvent.net//images/books/00000078-C.jpg" alt="" class="ibsn-00000078" />
                               </div>
                               <div class="siema__navigation u__flex">
-                                    <a class="siema__nav u__pointer u__flex-grow-1 siema__nav-prev h6 t__center">prev</a>
+                                    <a id="siema__nav-prev" class="siema__nav u__pointer u__flex-grow-1 siema__nav-prev h6 t__center">prev</a>
                                     <a class="siema__nav siema__nav-pagination u__flex-grow-1 h6 t__center"><span class="page">1</span>/3</a>
-                                    <a class="siema__nav u__pointer u__flex-grow-1 siema__nav-next h6 t__center">next</a>
+                                    <a id="siema__nav-next" class="siema__nav u__pointer u__flex-grow-1 siema__nav-next h6 t__center">next</a>
                               </div>
                         </div>
                         <div class="sp__1 sp__1-md sp__1-sm"></div>
@@ -785,23 +786,34 @@
 </ul>
 
 <script type="text/javascript">
- // Carousel
-new Siema({
-  selector: '.siema',
-  duration: 200,
-  easing: 'ease-out',
-  perPage: 3,
-  startIndex: 0,
-  draggable: true,
-  multipleDrag: true,
-  threshold: 20,
-  loop: false,
-  rtl: false,
-  onInit: () => {},
-  onChange: () => {
-       var page = bookCarousel.currentSlide + 1;
-       document.querySelector('.siema__nav-pagination .page').innerHTML = page;
-});
+const bookCarousel = new Siema({
+ selector: '.siema',
+ easing: 'ease',
+ perPage: 1,
+ startIndex: 0,
+ draggable: false,
+ multipleDrag: true,
+ threshold: 20,
+ loop: false,
+ rtl: false,
+ onInit: () => {
+       var prev = document.getElementById('siema__nav-prev');
+       prev.classList.add("disabled");
+ },
+ onChange: () => {
+      var page = bookCarousel.currentSlide + 1;
+      var next = document.getElementById('siema__nav-next');
+      var prev = document.getElementById('siema__nav-prev');
+      document.querySelector('.siema__nav-pagination .page').innerHTML = page;
+      if (page === 3) {
+            next.classList.add("disabled");
+      } else if (page === 1) {
+            prev.classList.add("disabled");
+      } else {
+            next.classList.remove("disabled");
+            prev.classList.remove("disabled");
+      }
+ },
 });
 
 document.querySelector('.siema__nav-prev').addEventListener('click', () => bookCarousel.prev());
