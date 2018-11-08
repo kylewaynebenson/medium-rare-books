@@ -539,7 +539,7 @@ Fonts
       text-transform: uppercase;
       line-height: 1.5;
       letter-spacing: .045em;
-      margin: 0 auto 20px;
+      margin: 0;
       @media (min-width: $md-min ) and (max-width: $md) {
         font-size: 12px;
       }
@@ -896,13 +896,15 @@ body {
                   overflow: hidden;
                   opacity: 0;
                   max-height: 0px;
-                  transition: max-height 500ms ease-in-out, opacity 500ms ease-in-out;
+                  padding: 0px 24px 0px 24px;
+                  transition: max-height 500ms ease-in-out, opacity 500ms ease-in-out, padding 500ms ease-in-out;
             }
             &.active {
                   background: $yellow;
                   .hidden-content {
                         max-height: 700px;
                         opacity: 1;
+                        padding: 20px 24px 0px 24px;
                         display: inline-block;
                         overflow-y: scroll;
                   }
